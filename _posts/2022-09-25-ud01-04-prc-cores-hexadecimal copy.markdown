@@ -31,12 +31,12 @@ Por exemplo unha secuencia para o vermello podería ser **11111111** . Neste cas
 
 
 ## Enunciado 
-* [PDF](/unidade01/t04.pdf)
-* [ODT](/unidade01/t04.odt)
+* [PDF](unidade01/t04.pdf)
+* [ODT](unidade01/t04.odt)
 
 
 ## Solución 
-* [PDF](/unidade01/t04-sol.pdf)
-* [ODT](/unidade01/t04-sol.odt)
+* [PDF](unidade01/t04-sol.pdf)
+* [ODT](unidade01/t04-sol.odt)
 
 

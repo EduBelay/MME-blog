@@ -14,6 +14,6 @@ Explicación nas seguintes ligazóns:
 
 
 ## Enunciado 
-[PDF](/unidade01/t03.pdf)
-[ODT](/unidade01/t03.odt)
+[PDF](unidade01/t03.pdf)
+[ODT](unidade01/t03.odt)
 
