@@ -26,7 +26,13 @@ Unidade 01: Que é o computador?
    {% if post.categories contains "unidade01" %}
      {% if post.categories contains "resumo" %}
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-     
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+        <ul>
+          <li> {{ post.id }}"</li>
+          <li> {{ post.url }}"</li>
+                <li> {{ site.baseurl }}"</li>
+        </ul>
      {% endif %}
    {% endif %}
   {% endfor %}
