@@ -30,8 +30,8 @@ twitter_username: belay
 github_username:  pbelay
 
 # Build settings
-#theme: minima
-theme: just-the-docs
+theme: minima
+#theme: just-the-docs
 plugins:
   - jekyll-feed
 
