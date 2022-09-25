@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "UD01: Resumos"
+date:   2022-09-25 12:49:00 +0200
+categories: unidade01 resumo
+---
+
+- [Resumos da unidade](#resumos-da-unidade)
+  - [Sistemas de numeración](#sistemas-de-numeración)
+  - [Unidades de binario](#unidades-de-binario)
+  - [Solución](#solución)
+
+
+
+# Resumos da unidade
+
+## Sistemas de numeración 
+* [PDF](/unidade01/resumos/UD01-cambios-base.pdf)
+
+## Unidades de binario 
+* [PDF](/unidade01/resumos/UD01-unidades_medida.pdf)
+* [ODG](/unidade01/resumos/UD01-unidades_medida.odg)
+
+
+## Solución 
+* [PDF](/unidade01/t04-sol.pdf)
+* [ODT](/unidade01/t04-sol.odt)
+
+
