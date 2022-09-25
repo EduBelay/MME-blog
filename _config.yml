@@ -31,7 +31,7 @@ github_username:  pbelay
 
 # Build settings
 #theme: minima
-theme: just-the-docs
+#theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 
 plugins:
