@@ -31,8 +31,8 @@ github_username:  pbelay
 
 # Build settings
 #theme: minima
-#theme: just-the-docs
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
+#remote_theme: just-the-docs/just-the-docs
 
 plugins:
   - jekyll-feed
@@ -56,3 +56,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+back_to_top: true
+back_to_top_text: Inicio
+
+footer_content: "Esta documentación ten unha licenza <a href=\"#/LICENSE\">GNU General Public License v2.0</a>"
