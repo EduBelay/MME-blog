@@ -16,6 +16,6 @@ Nesta práctica afonase no uso do comando ping e os sistemas de numeración.
 Ver explicación da práctica neste [artigo](https://www.redeszone.net/2017/11/19/asi-puedes-ping-equipo-ip-octal-hexadecimal-e-incluso-numero-entero/)
 
 ## Enunciado 
-[PDF](/unidade01/t01.pdf)
-[ODT](/unidade01/t01.odt)
+[PDF](unidade01/t01.pdf)
+[ODT](unidade01/t01.odt)
 
