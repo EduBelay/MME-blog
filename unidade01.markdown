@@ -22,24 +22,4 @@ Unidade 01: Que é o computador?
   {% endfor %}
 </ul>
 
-<h3>Resumos da unidade01</h3>
-
-<ul>
-{% assign basedir ="MME-blog" %}
-{% assign entradas = site.posts | sort: 'date' %}
-  {% for post in entradas %}
-   {% if post.categories contains "unidade01" %}
-        <ul>
-          <li>
-             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </li>
-          
-        </ul>
-   {% endif %}
-  {% endfor %}
-</ul>
-
-
-
-<h3> "{{site.url"}}</h3>
 

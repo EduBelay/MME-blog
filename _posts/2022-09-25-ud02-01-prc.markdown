@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "UD01-01: Sistemas de numeración con ping "
+title:  "UD02-01: Exemplo practica "
 date:   2022-09-25 12:35:00 +0200
-categories: unidade01
-tags: numeracion binario hexadecimal ping 
+categories: unidade02
+tags: numeracion 
 ---
-- [UD01-01: Sistemas de numeración co comando ping](#ud01-01-sistemas-de-numeración-co-comando-ping)
+- [UD02-01: Exemplo practica](#ud02-01-exemplo-practica)
   - [Resumo](#resumo)
   - [Enunciado](#enunciado)
 
-# UD01-01: Sistemas de numeración co comando ping
+# UD02-01: Exemplo practica 
 
 Nesta práctica afonase no uso do comando ping e os sistemas de numeración. 
 ## Resumo 
