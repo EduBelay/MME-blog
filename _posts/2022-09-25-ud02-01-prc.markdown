@@ -17,8 +17,4 @@ Ver explicación da práctica neste [artigo](https://www.redeszone.net/2017/11/1
 
 ## Enunciado 
 [PDF]({{site.baseurl}}/unidade01/t01.pdf)
-[ODT]({{site.baseurl}}/unidade01/t01.odt)
-
-
-
-             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+[ODT]({{site.baseurl}}unidade01/t01.odt)
