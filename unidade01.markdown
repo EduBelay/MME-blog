@@ -9,10 +9,15 @@ Unidade 01: Que é o computador?
 <h3>Prácticas da unidade01</h3>
 
 <ul>
-{% assign entradas = site.posts | sort: 'date' %}
+ {% assign entradas = site.posts | sort: 'date' %}
   {% for post in entradas %}
    {% if post.categories contains "unidade01" %}
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <ul>
+          <li>
+             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+          
+        </ul>
    {% endif %}
   {% endfor %}
 </ul>
@@ -24,21 +29,17 @@ Unidade 01: Que é o computador?
 {% assign entradas = site.posts | sort: 'date' %}
   {% for post in entradas %}
    {% if post.categories contains "unidade01" %}
-     {% if post.categories contains "resumo" %}
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
         <ul>
-          <li> {{ post.id }}"</li>
-          <li> {{ post.url }}"</li>
-                <li> {{ site.baseurl }}"</li>
+          <li>
+             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+          
         </ul>
-     {% endif %}
    {% endif %}
   {% endfor %}
 </ul>
 
-ola
+
 
 <h3> "{{site.url"}}</h3>
 
