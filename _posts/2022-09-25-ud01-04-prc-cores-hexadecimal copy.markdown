@@ -36,7 +36,7 @@ Por exemplo unha secuencia para o vermello podería ser **11111111** . Neste cas
 
 
 ## Solución 
-* [PDF](unidade01/t04-sol.pdf)
-* [ODT](unidade01/t04-sol.odt)
+* [PDF]({{site.baseurl}}/unidade01/t04-sol.pdf)
+* [ODT]({{site.baseurl}}/unidade01/t04-sol.odt)
 
 

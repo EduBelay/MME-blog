@@ -20,6 +20,6 @@ A maioría dos sistemas de ficheiros definen 7 tipos de arquivos:
 
 
 ## Enunciado 
-[PDF](unidade01/t02.pdf)
-[ODT](unidade01/t02.odt)
+[PDF]({{site.baseurl}}/unidade01/t02.pdf)
+[ODT]({{site.baseurl}}/unidade01/t02.odt)
 
