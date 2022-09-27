@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Portatiles
-permalink: /portatiles/
-nav_order: 91
-parent: Taller
+title: Taller
+permalink: /taller/
+nav_order: 90
+has_children: true
 
 ---
-Portatiles: xxx
+Taller: xxx
 --- 
 
 * Toshiba Satelite A300 - 1B1 [PSAJ4E - 00Q011C]

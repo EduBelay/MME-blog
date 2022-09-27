@@ -12,6 +12,8 @@ layout: home
   <ul>
     {% for cat in site.categories %}
         <li> <a href="{{ cat[0] | slugify }}" class="post-tag">{{ cat[0] | capitalize}} </a>  : [{{ cat[1].size }}]</li>
+
+
     {% endfor %}
     </ul>
   </div>

@@ -5,12 +5,14 @@ date:   2022-09-25 12:38:00 +0200
 categories: unidade01
 ---
 
-- [UD01-04: As cores en hexadecimal e o RGB](#ud01-04-as-cores-en-hexadecimal-e-o-rgb)
-  - [Resumo](#resumo)
-  - [Recursos](#recursos)
-  - [Enunciado](#enunciado)
-  - [Solución](#solución)
-
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 
 # UD01-04: As cores en hexadecimal e o RGB

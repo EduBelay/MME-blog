@@ -2,6 +2,9 @@
 layout: page
 title: Tablets
 permalink: tablets
+nav_order: 92
+parent: Taller
+
 ---
 Tablets: xxx
 --- 

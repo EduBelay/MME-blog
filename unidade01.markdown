@@ -2,6 +2,7 @@
 layout: page
 title: Unidade01
 permalink: /unidade01/
+nav_order: 1
 ---
 Unidade 01: Que é o computador? 
 --- 
