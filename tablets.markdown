@@ -1,6 +1,6 @@
 ---
 layout: page
-title: tablets
+title: Tablets
 permalink: tablets
 ---
 Tablets: xxx
