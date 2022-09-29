@@ -17,8 +17,12 @@ categories: unidade01
 * [PDF](unidade01/resumos/UD01-cambios-base.pdf)
 
 ## Unidades de binario 
+Presentación 
+* [PDF]({{site.baseurl}}//unidade01/resumos/UD01-RESUMEN%20UNIDADES%20DE%20MEDIDA.pdf)
+* [PPT]({{site.baseurl}}/unidade01/resumos/UD01-RESUMEN%20UNIDADES%20DE%20MEDIDA.odp)
+
+Esquemas
 * [PDF]({{site.baseurl}}/unidade01/resumos/UD01-unidades_medida.pdf)
 * [ODG]({{site.baseurl}}/unidade01/resumos/UD01-unidades_medida.odg)
-
 
 
