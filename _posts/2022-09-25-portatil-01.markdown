@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Portatil 01:   Satelite A300 "
+date:   2022-09-29 12:39:00 +0200
+categories: portatil
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
+# Portatil 01:  Satelite A300
+## Resumo 
+
+Nesta práctica afóndase manexo de comandos para obter o tamaño dos ficheiros e tamén o traballo coas escalas de medidas en bits e Bytes.  
+
+
+## Recursos
+Instalación de sysbench
+> sudo apt-get install sysbench
+
+Rendemento CPU
+> sysbench --test=cpu --cpu-max-prime=20000 run
+> sysbench --test=cpu run                     #
+
+Rendemento memoria
+> sysbench --test=memory --memory-total-size=1G run
+
+Rendemento disco
+> dd bs=1M count=512 if=/dev/zero of=test conv=fdatasync
+
+
+> 
+### Ligazóns:
+- https://linuxhint.com/use-sysbench-for-linux-performance-testing/
+- https://puerto53.com/linux/realizar-pruebas-de-estres-con-sysbench/
+- https://protegermipc.net/2017/05/31/raspberry-pi-benchmark-de-sistema-con-sysbench/ 
+- 
+
+## Enunciado 
+* [PDF]({{site.baseurl}}/unidade01/t06.pdf)
+* [ODT]({{site.baseurl}}/unidade01/t06.odt)
+
+
+## Solución 
+* [PDF]({{site.baseurl}}/unidade01/t06-sol.pdf)
+* [ODT]({{site.baseurl}}/unidade01/t06-sol.odt)
+
