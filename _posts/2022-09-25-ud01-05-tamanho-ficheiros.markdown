@@ -23,16 +23,17 @@ Nesta práctica afóndase manexo de comandos para obter o tamaño dos ficheiros 
 
 
 ## Recursos
-
-
+* df
+* ls 
+* du 
+* stat 
 
 ## Enunciado 
-* [PDF](unidade01/t05.pdf)
-* [ODT](unidade01/t05.odt)
+* [PDF]({{site.baseurl}}/unidade01/t05.pdf)
+* [ODT]({{site.baseurl}}/unidade01/t05.odt)
 
 
 ## Solución 
 * [PDF]({{site.baseurl}}/unidade01/t05-sol.pdf)
 * [ODT]({{site.baseurl}}/unidade01/t05-sol.odt)
-
 
