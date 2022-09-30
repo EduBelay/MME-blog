@@ -38,7 +38,9 @@ Portatiles: (inventario)
 
 
 # Webs de axuda
-- https://www.manualsbase.com/es
-- [https://elektrotanya.com/ ](https://elektrotanya.com/ )
+- [ifixit Guías](https://es.ifixit.com/Gu%C3%ADa?)
 - [https://www.manualslib.com/](https://www.manualslib.com/)
 - [Guias de desmontaxe para portatiles Toshiba](http://www.irisvista.com/tech/)
+- https://www.manualsbase.com/es
+- [https://elektrotanya.com/ ](https://elektrotanya.com/ )
+
