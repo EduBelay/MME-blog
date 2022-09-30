@@ -9,7 +9,7 @@ child_nav_order: desc
 
 
 ---
-Portatiles:
+Portatiles: (inventario)
 --- 
 
 1. Toshiba Satelite A300 - 1B1 [PSAJ4E - 00Q011C]
@@ -20,7 +20,7 @@ Portatiles:
 6. Compaq Presario CQ61  - WB906EA#ABE
 7. Fujitsu  Amilo A1655G
 
-# Entrada no blog
+# Portatiles:
 
 <ul>
  {% assign entradas = site.posts | sort: 'date' %}
