@@ -4,10 +4,6 @@ title: Portatiles
 permalink: /portatiles/
 nav_order: 91
 parent: Taller
-has_children: true
-child_nav_order: desc
-
-
 ---
 Portatiles: (inventario)
 --- 

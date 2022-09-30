@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Portatil 01:   Satelite A300 "
+title:  "Portátil 01:   Satellite A300 "
 date:   2022-09-29 12:39:00 +0200
-categories: portatiles
+categories: portátiles
 ---
 
 <details open markdown="block">
@@ -15,7 +15,7 @@ categories: portatiles
 </details>
 
 
-# Portatil 01:  Satelite A300
+# Portátil 01:  Satellite A300
 
 ## Tarefas
 1. Revisión inicial de danos externos que figurarán na folla de entrega ao cliente. 

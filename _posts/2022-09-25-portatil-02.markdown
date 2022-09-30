@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Portatil 02:   Toshiba Satelite A100- "
+title:  "Portátil 02:   Toshiba Satellite A100- "
 date:   2022-09-29 12:40:00 +0200
 categories: portatiles
 ---
@@ -15,7 +15,7 @@ categories: portatiles
 </details>
 
 
-# Portatil 02:  Toshiba Satellite A100 -
+# Portátil 02:  Toshiba Satellite A100 -
 
 ## Tarefas
 1. Revisión inicial de danos externos que figurarán na folla de entrega ao cliente. 

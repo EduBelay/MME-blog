@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Portatil 03:   Toshiba Satellite PRO C50 "
+title:  "Portátil 03:   Toshiba Satellite PRO C50 "
 date:   2022-09-29 12:41:00 +0200
 categories: portatiles
 ---
@@ -15,7 +15,7 @@ categories: portatiles
 </details>
 
 
-# Portatil 03:   Toshiba Satellite PRO C50 - 153 [PSCG7E - 00P004CE]
+# Portátil 03:   Toshiba Satellite PRO C50 - 153 [PSCG7E - 00P004CE]
 
 ## Tarefas
 1. Revisión inicial de danos externos que figurarán na folla de entrega ao cliente. 
