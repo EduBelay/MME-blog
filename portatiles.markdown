@@ -25,7 +25,7 @@ Portatiles: (inventario)
 <ul>
  {% assign entradas = site.posts | sort: 'date' %}
   {% for post in entradas %}
-   {% if post.categories contains "portatil" %}
+   {% if post.categories contains "portatiles" %}
         <ul>
           <li>
              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
