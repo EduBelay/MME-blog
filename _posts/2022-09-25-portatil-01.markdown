@@ -16,39 +16,28 @@ categories: portatil
 
 
 # Portatil 01:  Satelite A300
-## Resumo 
 
-Nesta práctica afóndase manexo de comandos para obter o tamaño dos ficheiros e tamén o traballo coas escalas de medidas en bits e Bytes.  
-
+## Tarefas
+1. Revisión inicial de danos externos que figurarán na folla de entrega ao cliente. 
+2. Identificación de todos os conectores de entrada e saída.
+3. Elabora un esquema dos diferentes parafusos. 
+4. Verificación do fonde de alimentación. 
+5. Reemplazo e verificación da batería
+6. Reemplazo do disco duro. 
+   1. Extraeo o disco duro e comproba o seu funcionamento montando nunha caixa externa.
+7. Reemplazo da memoria RAM. (ver páxina 161 do manual )
+8. Verificación da pila da BIOS. 
+9.  Cambio da pasta térmica do procesador e limpeza dos ventiladores. 
+10. Montaxe de desmontaxe da pantalla.
+## Documentos
+* [Manual de usuario - PDF ]({{site.baseurl}}/taller/portatil/01/manual_usuario.pdf)
+* [Manual  - PDF ]({{site.baseurl}}/taller/portatil/01/manual.pdf)
+* [Guia de desmontaxe  - PDF ]({{site.baseurl}}/taller/portatil/01/ToshibaSatelliteA300-GuiaDesmontaxe.pdf)
+* [Guia de desmontaxe da pantalla  - PDF ]({{site.baseurl}}/taller/portatil/01/ToshibaSatelliteA300-GuiaDesmontaxePantalla.pdf)
 
 ## Recursos
-Instalación de sysbench
-> sudo apt-get install sysbench
-
-Rendemento CPU
-> sysbench --test=cpu --cpu-max-prime=20000 run
-> sysbench --test=cpu run                     #
-
-Rendemento memoria
-> sysbench --test=memory --memory-total-size=1G run
-
-Rendemento disco
-> dd bs=1M count=512 if=/dev/zero of=test conv=fdatasync
-
-
-> 
-### Ligazóns:
-- https://linuxhint.com/use-sysbench-for-linux-performance-testing/
-- https://puerto53.com/linux/realizar-pruebas-de-estres-con-sysbench/
-- https://protegermipc.net/2017/05/31/raspberry-pi-benchmark-de-sistema-con-sysbench/ 
-- 
-
-## Enunciado 
-* [PDF]({{site.baseurl}}/unidade01/t06.pdf)
-* [ODT]({{site.baseurl}}/unidade01/t06.odt)
-
-
-## Solución 
-* [PDF]({{site.baseurl}}/unidade01/t06-sol.pdf)
-* [ODT]({{site.baseurl}}/unidade01/t06-sol.odt)
+ - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=W4OLWThNprc&ab_channel=FilipHoreck%C3%BD-Somit.cz)
+ - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=EaXQIjPOsfw&ab_channel=EnterBG)
+ - [Guia de desmontaxe do portatil](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A305/laptop-disassembly-process-1.htm)
+ - [Guía para mudar a pantalla](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A305/remove-replace-LCD-screen-inverter-1.htm)
 

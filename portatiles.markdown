@@ -39,5 +39,6 @@ Portatiles:
 
 # Webs de axuda
 - https://www.manualsbase.com/es
-- https://elektrotanya.com/ 
-- 
+- [https://elektrotanya.com/ ](https://elektrotanya.com/ )
+- [https://www.manualslib.com/](https://www.manualslib.com/)
+- [Guias de desmontaxe para portatiles Toshiba](http://www.irisvista.com/tech/)

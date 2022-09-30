@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Portatil 02:   Toshiba Satelite A100- "
+date:   2022-09-29 12:40:00 +0200
+categories: portatil
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
+# Portatil 02:  Toshiba Satellite A100 -
+
+## Tarefas
+1. Revisión inicial de danos externos que figurarán na folla de entrega ao cliente. 
+2. Identificación de todos os conectores de entrada e saída.
+3. Traduce ao galego o esquema da páxina 45 do **Manual de servicio**
+4. Elabora un esquema dos diferentes parafusos. 
+5. Verificación do fonde de alimentación. 
+6. Reemplazo e verificación da batería
+7. Reemplazo do disco duro. 
+   1. Extraeo o disco duro e comproba o seu funcionamento montando nunha caixa externa.
+8. Reemplazo da memoria RAM. (ver páxina 161 do manual )
+9. Verificación da pila da BIOS. 
+10. Cambio da pasta térmica do procesador e limpeza dos ventiladores. 
+11. Montaxe de desmontaxe da pantalla.
+
+
+## Documentos
+* [Especificación - PDF ]({{site.baseurl}}/taller/portatil/02/SatelliteA100-499-Especificacion.pdf)
+* [Especificación II  - PDF ]({{site.baseurl}}/taller/portatil/02/Especificacion02.pdf)
+* [Manual de servicio de Toshiba]({{site.baseurl}}/taller/portatil/02/satellite_a100.pdf)
+* [Guia de desmontaxe]({{site.baseurl}}/taller/portatil/02/GuiaDesmontaxe.pdf)
+
+## Recursos
+ - [Guía de desmontaxe](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A105/remove-motherboard-1.htm)
+ - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=W4OLWThNprc&ab_channel=FilipHoreck%C3%BD-Somit.cz)
+ - [Vídeo do proceso de desmontaxe II](https://www.youtube.com/watch?v=EaXQIjPOsfw&ab_channel=EnterBG)
+
