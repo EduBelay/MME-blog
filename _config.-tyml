@@ -24,15 +24,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/MME-blog/" # the subpath of your site, e.g. /blog
 url: "https://edubelay.github.io/MME-blog/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: belay
 github_username:  pbelay
 
 # Build settings
 #theme: minima
-theme: just-the-docs
-#remote_theme: just-the-docs/just-the-docs
+#theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 plugins:
   - jekyll-feed
@@ -57,7 +57,12 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+
+
 back_to_top: true
 back_to_top_text: Inicio
 
 footer_content: "Esta documentación ten unha licenza <a href=\"#/LICENSE\">GNU General Public License v2.0</a>"
+
+

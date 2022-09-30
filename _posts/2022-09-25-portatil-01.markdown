@@ -2,7 +2,7 @@
 layout: post
 title:  "Portátil 01:   Satellite A300 "
 date:   2022-09-29 12:39:00 +0200
-categories: portátiles
+categories: portatiles
 ---
 
 <details open markdown="block">
@@ -40,4 +40,5 @@ categories: portátiles
  - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=EaXQIjPOsfw&ab_channel=EnterBG)
  - [Guia de desmontaxe do portatil](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A305/laptop-disassembly-process-1.htm)
  - [Guía para mudar a pantalla](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A305/remove-replace-LCD-screen-inverter-1.htm)
+
  
