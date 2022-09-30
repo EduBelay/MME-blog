@@ -36,10 +36,8 @@ categories: portatiles
 * [manual-usuario.pdf - PDF ]({{site.baseurl}}/taller/portatil/03/manual-usuario.pdf)
 * [guia-usuario.pdf  - PDF ]({{site.baseurl}}/taller/portatil/03/guia-usuario.pdf)
 * [manual-servizo.pdf]({{site.baseurl}}/taller/portatil/03/manual-servizo.pdf)
-* [Guia de desmontaxe]({{site.baseurl}}/taller/portatil/02/GuiaDesmontaxe.pdf)
 
 ## Recursos
- - [Guía de desmontaxe](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A105/remove-motherboard-1.htm)
- - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=W4OLWThNprc&ab_channel=FilipHoreck%C3%BD-Somit.cz)
+ - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=kYkggmBkAxg&ab_channel=LaptopReparaturHandyj500j500)
  - [Vídeo do proceso de desmontaxe II](https://www.youtube.com/watch?v=EaXQIjPOsfw&ab_channel=EnterBG)
 
