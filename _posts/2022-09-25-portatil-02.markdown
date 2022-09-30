@@ -2,7 +2,7 @@
 layout: post
 title:  "Portatil 02:   Toshiba Satelite A100- "
 date:   2022-09-29 12:40:00 +0200
-categories: portatil
+categories: portatiles
 ---
 
 <details open markdown="block">

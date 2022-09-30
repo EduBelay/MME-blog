@@ -2,7 +2,7 @@
 layout: post
 title:  "Portatil 01:   Satelite A300 "
 date:   2022-09-29 12:39:00 +0200
-categories: portatil
+categories: portatiles
 ---
 
 <details open markdown="block">
