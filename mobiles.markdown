@@ -1,0 +1,14 @@
+---
+layout: page
+title: Móbiles
+permalink: /taller/mobil
+nav_order: 91
+parent: taller
+
+---
+Móbiles:
+--- 
+
+1.  xx
+2.  yy
+
