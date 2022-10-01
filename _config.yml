@@ -57,12 +57,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-
-
-
 back_to_top: true
 back_to_top_text: Inicio
 
 footer_content: "Esta documentación ten unha licenza <a href=\"#/LICENSE\">GNU General Public License v2.0</a>"
-
-
