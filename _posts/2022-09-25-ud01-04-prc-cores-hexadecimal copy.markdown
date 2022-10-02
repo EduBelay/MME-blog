@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "UD01-04:  As cores en hexadecimal e o RGB "
-date:   2022-09-25 12:38:00 +0200
+date:   2022-01-25 12:38:00 +0200
 categories: unidade01
 ---
 

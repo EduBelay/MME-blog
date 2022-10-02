@@ -1,9 +1,20 @@
 ---
 layout: post
 title:  "UD01-02: Tipos de ficheiros "
-date:   2022-09-25 12:36:00 +0200
+date:   2022-01-25 12:36:00 +0200
 categories: unidade01
 ---
+
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 # UD01-02: Tipo de ficheiros
 
 Nesta práctica afóndase no uso dos comandos: file, stat, which. 

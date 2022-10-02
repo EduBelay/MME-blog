@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "UD01-01: Sistemas de numeración con ping "
-date:   2022-01-25 12:35:00 +0200
-categories: unidade01
-tags: numeracion binario hexadecimal ping 
+title:  "UD06-00: Exemplo práctica "
+date:   2022-06-01 00:01:00 +0200
+categories: unidade06
+tags: numeracion 
 ---
 
 <details open markdown="block">
@@ -15,13 +15,12 @@ tags: numeracion binario hexadecimal ping
 {:toc}
 </details>
 
-# UD01-01: Sistemas de numeración co comando ping
+# UD06-01: Exemplo practica 
 
-Nesta práctica afonase no uso do comando ping e os sistemas de numeración. 
+Nesta práctica afóndase  ....
 ## Resumo 
 Ver explicación da práctica neste [artigo](https://www.redeszone.net/2017/11/19/asi-puedes-ping-equipo-ip-octal-hexadecimal-e-incluso-numero-entero/)
 
 ## Enunciado 
 [PDF]({{site.baseurl}}/unidade01/t01.pdf)
-[ODT]({{site.baseurl}}/unidade01/t01.odt)
-
+[ODT]({{site.baseurl}}unidade01/t01.odt)
