@@ -4,7 +4,7 @@ title: Unidade03
 permalink: /unidade03/
 nav_order: 3
 ---
-Unidade 03: xxxx
+Unidade 03: Análise do mercado de compoñentes microinformáticos. Placa base e periféricos.
 --- 
 
 <h3>Elementos da unidade</h3>

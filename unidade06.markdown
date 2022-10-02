@@ -4,7 +4,7 @@ title: Unidade06
 permalink: /unidade06/
 nav_order: 06
 ---
-Unidade 06: xxxx
+Unidade 06: Instalación de sistemas operativos
 --- 
 
 <h3>Elementos da unidade</h3>

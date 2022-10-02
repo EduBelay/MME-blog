@@ -4,7 +4,7 @@ title: Unidade07
 permalink: /unidade07/
 nav_order: 7
 ---
-Unidade 07: xxxx
+Unidade 07: Instalación de software
 --- 
 
 <h3>Elementos da unidade</h3>
