@@ -6,8 +6,26 @@ nav_order: 92
 parent: Taller
 
 ---
-Tablets: xxx
+Tablets: 
+
 --- 
 
-*  Tablet Nevir Nvr Tab7 S2 7 Dualcore
-*  Tablet Amazon Fire [Version ¿¿??]
+
+# Tablets:
+
+<ul>
+ {% assign entradas = site.posts | sort: 'date' %}
+  {% for post in entradas %}
+   {% if post.categories contains "tablet" %}
+        <ul>
+          <li>
+             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+          
+        </ul>
+   {% endif %}
+  {% endfor %}
+</ul>
+
+# Webs de axuda
+* [Guias de reparacion de Impextrom](https://nadiemellamagallina.com/)

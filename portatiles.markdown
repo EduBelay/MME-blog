@@ -35,6 +35,7 @@ Portatiles: (inventario)
 
 # Webs de axuda
 - [ifixit Guías](https://es.ifixit.com/Gu%C3%ADa?)
+- [Manuais paso a paso: Nadie me llama gallina](https://nadiemellamagallina.com/)
 - [https://www.manualslib.com/](https://www.manualslib.com/)
 - [Guias de desmontaxe para portatiles Toshiba](http://www.irisvista.com/tech/)
 - https://www.manualsbase.com/es
