@@ -4,7 +4,7 @@ title: Unidade04
 permalink: /unidade04/
 nav_order: 4
 ---
-Unidade 04: Electricidade nos sistemas microinformáticos. A fonte de alimentación.
+Unidade 04: Análise do mercado de compoñentes microinformáticos. Placa base e periféricos.
 --- 
 
 <h3>Elementos da unidade</h3>
