@@ -17,18 +17,18 @@ categories: tablet
 En progreso
 {: .label .label-yellow }
 
-# Tablet 01:  Tablet Amazon Fire 
+# Tablet 01:  Tablet Amazon Fire  
 
 ## Tarefas
 > Guía de desmontaxe na páxina [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/)
 
-1. [Reemplazo do autofalante](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/)
-2.  [Reemplazo da bateria](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/bater-a-6803)
-3.  [Reemplazo das teclas laterais](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/teclas-laterales-6798)
-4. [Pulsadores de volumen](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/pulsadores-de-volumen-6796)
-5. [Pulsador de encendido](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/pulsador-de-encendido-6795)
-6. [Cámara traseira](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/c-mara-trasera-6797)
-7. [Placa base](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/placa-base-6804)
+1. [Reemplazo do autofalante]({{site.baseurl}}/taller/tablet/01/01_autofalante.pdf) / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/)
+2.  [Reemplazo da bateria]({{site.baseurl}}/taller/tablet/01/02_remplazo_bateria.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/bater-a-6803)
+3.  [Reemplazo das teclas laterais]({{site.baseurl}}/taller/tablet/01/03_teclas_laterais.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/teclas-laterales-6798)
+4. [Pulsadores de volumen]({{site.baseurl}}/taller/tablet/01/04_pulsador_volumen.pdff)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/pulsadores-de-volumen-6796)
+5. [Pulsador de encendido]({{site.baseurl}}/taller/tablet/01/05_pulsador_encendido.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/pulsador-de-encendido-6795)
+6. [Cámara traseira]({{site.baseurl}}/taller/tablet/01/06_camara_traseira.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/c-mara-trasera-6797)
+7. [Placa base]({{site.baseurl}}/taller/tablet/01/07_placa_base.pdf)   / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/placa-base-6804)
 
 
 ## Documentos
