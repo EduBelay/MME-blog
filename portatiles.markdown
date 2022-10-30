@@ -41,3 +41,8 @@ Portatiles: (inventario)
 - https://www.manualsbase.com/es
 - [https://elektrotanya.com/ ](https://elektrotanya.com/ )
 
+# Tendas de compoñentes
+- [Impextrom](https://www.impextrom.com/) [Vigo]
+- [ovisat](https://www.ovisat.com/) [Asturias]
+- [repuestosfuentes](https://www.repuestosfuentes.es/) [Huelva]
+
