@@ -8,13 +8,7 @@ parent: Taller
 Portatiles: (inventario)
 --- 
 
-1. Toshiba Satelite A300 - 1B1 [PSAJ4E - 00Q011C]
-2. Toshiba Satelite  A100-999 [PSAARE-04K019SP]
-3. Toshiba Satelite PRO  C50   - 153 [PSCG7E - 00P004CE]
-4. Samsung NP-R522 
-5. MSI MS-163C 
-6. Compaq Presario CQ61  - WB906EA#ABE
-7. Fujitsu  Amilo A1655G
+
 
 # Portatiles:
 
@@ -36,13 +30,21 @@ Portatiles: (inventario)
 # Webs de axuda
 - [ifixit Guías](https://es.ifixit.com/Gu%C3%ADa?)
 - [Manuais paso a paso: Nadie me llama gallina](https://nadiemellamagallina.com/)
-- [https://www.manualslib.com/](https://www.manualslib.com/)
+- [Manualslib.com](https://www.manualslib.com/)
 - [Guias de desmontaxe para portatiles Toshiba](http://www.irisvista.com/tech/)
 - https://www.manualsbase.com/es
 - [https://elektrotanya.com/ ](https://elektrotanya.com/ )
 
 # Tendas de compoñentes
 - [Impextrom](https://www.impextrom.com/) [Vigo]
-- [ovisat](https://www.ovisat.com/) [Asturias]
-- [repuestosfuentes](https://www.repuestosfuentes.es/) [Huelva]
+- [Ovisat](https://www.ovisat.com/) [Asturias]
+- [Repuestos Fuentes](https://www.repuestosfuentes.es/) [Huelva]
 
+# Inventario
+1. Toshiba Satelite A300 - 1B1 [PSAJ4E - 00Q011C]
+2. Toshiba Satelite  A100-999 [PSAARE-04K019SP]
+3. Toshiba Satelite PRO  C50   - 153 [PSCG7E - 00P004CE]
+4. Samsung NP-R522 
+5. MSI MS-163C 
+6. Compaq Presario CQ61  - WB906EA#ABE
+7. Fujitsu  Amilo A1655G
