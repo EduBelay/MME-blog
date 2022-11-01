@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "UD02-01: Exemplo practica "
+title:  "UD02-01: Cadro de ferramentas "
 date:   2022-02-25 12:35:00 +0200
 categories: unidade02
-tags: numeracion 
+tags: ferramentas 
 ---
 
 <details open markdown="block">
@@ -15,12 +15,20 @@ tags: numeracion
 {:toc}
 </details>
 
-# UD02-01: Exemplo practica 
+# UD02-01: Cadro de ferramentas
 
-Nesta práctica afonase no uso do comando ping e os sistemas de numeración. 
+Nesta práctica afóndase sobre as ferramentas e os riscos.
+
 ## Resumo 
-Ver explicación da práctica neste [artigo](https://www.redeszone.net/2017/11/19/asi-puedes-ping-equipo-ip-octal-hexadecimal-e-incluso-numero-entero/)
+
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade01/t01.pdf)
-[ODT]({{site.baseurl}}unidade01/t01.odt)
+* [Enunciado TXT]({{site.baseurl}}/unidade02/UD02-T01-cadro-ferramenta-enunciado.txt)
+* [Exemplo PNG]({{site.baseurl}}/unidade02/UD02-T01-cadro-ferramenta-exemplo-resolto.png-1.png)
+* [PDF]({{site.baseurl}}/unidade02/UD02-T01-cadro-ferramenta.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T01-cadro-ferramenta.odt)
+
+## Solución 
+
+* [PDF]({{site.baseurl}}/unidade02/UD02-T01-cadro-ferramenta-exemplo-resolto.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T01-cadro-ferramenta-exemplo-resolto.odt)
