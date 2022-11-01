@@ -41,4 +41,7 @@ categories: portatiles
  - [Guia de desmontaxe do portatil](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A305/laptop-disassembly-process-1.htm)
  - [Guía para mudar a pantalla](http://www.irisvista.com/tech/laptops/Toshiba-Satellite-A305/remove-replace-LCD-screen-inverter-1.htm)
 
- 
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/01/fotos/fotos.pdf)

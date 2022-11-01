@@ -42,6 +42,12 @@ Guía de  instalación de compoñentes no  [manual de usuario]({{site.baseurl}}/
 * [Manual de usuario]({{site.baseurl}}/taller/portatil/07/amilo.pdf)
 * [Guía de servizo]({{site.baseurl}}/taller/portatil/07/fujitsu_siemens_amilo_service_guide.pdf)
 
+
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/07/fotos/fotos.pdf)
+
 ## Recursos
   - [Vídeo: Como desarmar e limpiar](https://www.youtube.com/watch?v=GzO5SXYIWWA&ab_channel=Laptopdisassembly)
 

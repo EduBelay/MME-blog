@@ -44,3 +44,7 @@ En progreso
  - [Vídeo: Como desarmar e limpiar](https://www.youtube.com/watch?v=1efK2y3at7U&ab_channel=FastVideoTech)
 
 
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/05/fotos/fotos.pdf)

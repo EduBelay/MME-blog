@@ -43,3 +43,7 @@ categories: portatiles
  - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=W4OLWThNprc&ab_channel=FilipHoreck%C3%BD-Somit.cz)
  - [Vídeo do proceso de desmontaxe II](https://www.youtube.com/watch?v=EaXQIjPOsfw&ab_channel=EnterBG)
 
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/02/fotos/fotos.pdf)

@@ -33,3 +33,6 @@ En progreso
 ## Recursos
 
 
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/tablet/02/fotos/fotos.pdf)

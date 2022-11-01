@@ -41,3 +41,7 @@ categories: portatiles
  - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=kYkggmBkAxg&ab_channel=LaptopReparaturHandyj500j500)
  - [Vídeo do proceso de desmontaxe II](https://www.youtube.com/watch?v=EaXQIjPOsfw&ab_channel=EnterBG)
 
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/03/fotos/fotos.pdf)

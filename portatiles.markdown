@@ -29,11 +29,11 @@ Portatiles: (inventario)
 
 # Webs de axuda
 - [ifixit Guías](https://es.ifixit.com/Gu%C3%ADa?)
-- [Manuais paso a paso: Nadie me llama gallina](https://nadiemellamagallina.com/)
 - [Manualslib.com](https://www.manualslib.com/)
 - [Guias de desmontaxe para portatiles Toshiba](http://www.irisvista.com/tech/)
 - https://www.manualsbase.com/es
 - [https://elektrotanya.com/ ](https://elektrotanya.com/ )
+- [Manuais paso a paso: Nadie me llama gallina](https://nadiemellamagallina.com/)
 
 # Tendas de compoñentes
 - [Impextrom](https://www.impextrom.com/) [Vigo]

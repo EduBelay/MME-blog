@@ -53,3 +53,7 @@ En progreso
  - [Vídeo:  como mudar a pantalla do NP-R522 ](https://www.youtube.com/watch?v=T_UkiKi7Jew&ab_channel=How-FixIT)
  - [Blog: Conxunto de vídeos](https://www.how-fixit.com/laptop-repair-guides/samsung-laptop/samsung-r518-r520-r522/)
 
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/04/fotos/fotos.pdf)

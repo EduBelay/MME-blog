@@ -39,3 +39,6 @@ En progreso
  - [Vídeo: Como reaparar](https://www.youtube.com/watch?v=HBUFDZVnfdY&ab_channel=RepairsUniverse)
  - [Guia iFixit](https://es.ifixit.com/Gu%C3%ADa/Amazon+Fire+Tablet+(5th+Generation)+Repairability+Assessment/79137)
 
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/tablet/01/fotos/fotos.pdf)

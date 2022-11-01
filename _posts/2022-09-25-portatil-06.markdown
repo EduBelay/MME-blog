@@ -51,6 +51,12 @@ En progreso
 - [Vídeo: Como desarmar e limpiar](https://www.youtube.com/watch?v=5iHpPfdSrZE&ab_channel=HighVoltage)
 
 
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/06/fotos/fotos.pdf)
+
+
 ## Procedementos no manual de servizo
 
 ```
