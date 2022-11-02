@@ -18,6 +18,8 @@ categories: portatiles
 # Portátil 01:  Satellite A300
 
 ## Tarefas
+Ten en conta para realizar as diferentes tarefas o manual de usuario e * [Guia de desmontaxe  Ifixit - PDF ]({{site.baseurl}}/taller/portatil/01/guia_ifixit_desmontaxe.pdf)
+
 1. Revisión inicial de danos externos que figurarán na folla de entrega ao cliente. 
 2. Identificación de todos os conectores de entrada e saída.
 3. Elabora un esquema dos diferentes parafusos. 
@@ -32,6 +34,7 @@ categories: portatiles
 ## Documentos
 * [Manual de usuario - PDF ]({{site.baseurl}}/taller/portatil/01/manual_usuario.pdf)
 * [Manual  - PDF ]({{site.baseurl}}/taller/portatil/01/manual.pdf)
+* [Guia de desmontaxe  Ifixit - PDF ]({{site.baseurl}}/taller/portatil/01/guia_ifixit_desmontaxe.pdf)
 * [Guia de desmontaxe  - PDF ]({{site.baseurl}}/taller/portatil/01/ToshibaSatelliteA300-GuiaDesmontaxe.pdf)
 * [Guia de desmontaxe da pantalla  - PDF ]({{site.baseurl}}/taller/portatil/01/ToshibaSatelliteA300-GuiaDesmontaxePantalla.pdf)
 
