@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Mobil Samsung Galaxy Mini (GT-S5570)  - PDTE"
-date:   2022-09-29 12:51:00 +0200
+title:  "Mobil 10: Samsung Galaxy Mini (GT-S5570)  - PDTE"
+date:   2022-09-29 12:54:00 +0200
 categories: mobil
 ---
 
