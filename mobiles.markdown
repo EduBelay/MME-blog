@@ -9,9 +9,6 @@ parent: Taller
 Móbiles:
 --- 
 
-1. Nokia 6700 Classic
-2. Nokia Lumia 530 (RM-1017) 
-
 
 # Mobiles:
 
@@ -31,3 +28,5 @@ Móbiles:
 
 # Webs de axuda
 * [Guias de reparacion de Impextrom](https://nadiemellamagallina.com/)
+* [iFixit](https://es.ifixit.com/Search?doctype=guide)
+* [Sosav](https://www.sosav.com/es/guias)

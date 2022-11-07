@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Mobil 09: HTC Wildfire s   - PDTE"
+date:   2022-09-29 12:52:00 +0200
+categories: mobil
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
+# Móbil 09: HTC Wildfire s 
+
+## Tarefas
+
+ 
+ 
+
+
+
+## Documentos
+* [Especificacións](https://www.movilcelular.es/especificaciones/htc/wildfire-s/)
+* [Guia SOSAV](https://www.sosav.com/es/guias/telefonos/htc/incendio-forestal-s/)
+
+## Recursos
+ - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=bmJSWrVuIVQ&ab_channel=Fixez.com)
+
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/mobil/09/fotos/fotos.pdf)

@@ -42,7 +42,7 @@ categories: mobil
 
 ## Documentos
 * [Especificacións](https://www.movilcelular.es/especificaciones/samsung/galaxy-a3-2017/sm-a320fl/)
-* [Guía Ifixit](https://es.ifixit.com/Device/Nokia_Lumia_530)
+* [Guía Impextrom](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/pantalla-completa-con-chasis-4334)
 
 
 ## Recursos

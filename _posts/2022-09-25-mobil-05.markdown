@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Mobil 05: Samsung Galaxy a3 2017 sm-a320fl"
-date:   2022-09-29 12:43:00 +0200
+title:  "Mobil 05: Samsung Galaxy A3 2016 (SM-A310F)"
+date:   2022-09-29 12:44:00 +0200
 categories: mobil
 ---
 
@@ -15,35 +15,37 @@ categories: mobil
 </details>
 
 
-# Móbil 04: Samsung Galaxy a3 2017 sm-a320fl
+# Móbil 05: Samsung Galaxy A3 2016 (SM-A310F)
 
 ## Tarefas
-1.  Módulo de antena inferior | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/m-dulo-de-antena-inferior-4326) | [Doc]({{site.baseurl}}/taller/mobiles/04/01_-m-dulo-de-antena-inferior.pdf)
 
-2.  Carcasa interna altavoz | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/carcasa-interna-con-altavoz-43246) | [Doc]({{site.baseurl}}/taller/mobiles/04/02_carcasa_interna_altavoz.pdf)
+1. Auricular | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/auricular-3508)
 
-3.  Antena NFC | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/antena-nfc-4319) | [Doc]({{site.baseurl}}/taller/mobiles/04/03_äntena_nfc.pdf)
+2. Cámara dianteira | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/c-mara-delantera-3511)
 
-4. Auricular | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/)
+3.  Carcasa Módulo de alatavoz  | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/carcasa-con-m-dulo-de-altavoz-3522) | 
 
-5. Batería | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/bater-a-4321)
+4. Placa base | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/placa-base-3516)
 
-6. Vibrador | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/vibrador-4333)
 
-7. Sensor proximidade | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/sensor-de-proximidad-4331)
+5.  Pulsadores de volumen  | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/pulsadores-de-volumen-3518)  
 
-8. Placa base | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/placa-base-4328)
+6. Vibrador | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/vibrador-3523)
 
-9. Cámara dianteira | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/c-mara-delantera-4322)
 
-10. Camara traseira | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/c-mara-trasera-4323)
+7. Placa auxiliar | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/placa-auxiliar-3515)
 
-11. Pantalla completa con chasis | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2017-565/pantalla-completa-con-chasis-4334)
+
+8. Batería | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/bater-a-3510)
+
+9. Cámara traseira | [Web](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/c-mara-trasera-3512)
+
+
 
 ## Documentos
 * [Especificacións](https://www.movilcelular.es/especificaciones/samsung/galaxy-a3-2017/sm-a320fl/)
-* [Guía Ifixit](https://es.ifixit.com/Device/Nokia_Lumia_530)
-
+* [Guía Impextrom](https://www.nadiemellamagallina.com/es/manuales/smartphones-1/samsung-4/samsung-galaxy-a3-2016-493/)
+* [Guia Ifixit](https://es.ifixit.com/Device/Samsung_Galaxy_A3_2016)
 
 ## Recursos
  - [Vídeo do proceso de desmontaxe]( https://www.youtube.com/watch?v=fAKM-YgE8Zs&ab_channel=MovilOne)
@@ -51,4 +53,4 @@ categories: mobil
 
 ## Fotografías
 
- * [Fotografías]({{site.baseurl}}/taller/mobil/04/fotos/fotos.pdf)
+ * [Fotografías]({{site.baseurl}}/taller/mobil/05/fotos/fotos.pdf)
