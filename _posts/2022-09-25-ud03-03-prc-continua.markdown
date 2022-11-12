@@ -19,9 +19,13 @@ tags: ferramentas
 
 ## Resumo 
 A)  OBTER OS PARÁMETROS DA PILA CR2032
+
 B)  OBTER OS PARÁMETROS DA BATERÍA DO SAI 
+
 C)  Medir a voltaxe de saída do cargador de baterías.
+
 D)  Medir a voltaxe de saída do  transformador do portatil.
+
 
 ## Enunciado 
 [PDF]({{site.baseurl}}/unidade03/t03-electricidade-continua.pdf)
