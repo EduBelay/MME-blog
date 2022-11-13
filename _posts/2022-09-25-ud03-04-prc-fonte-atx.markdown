@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UD03-04: Inventario caixa de ferramentas "
+title:  "UD03-04: Comprobación dunha fonte ATX "
 date:   2022-03-01 00:04:00 +0200
 categories: unidade03
 tags: ferramentas
@@ -15,7 +15,7 @@ tags: ferramentas
 {:toc}
 </details>
 
-# UD03-04: Inventario caixa de ferramentas
+# UD03-04: Comprobación dunha fonte ATX
 
 Inventario da caixa de ferramentas
 
