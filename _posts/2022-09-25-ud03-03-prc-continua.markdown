@@ -18,19 +18,17 @@ tags: ferramentas
 # UD03-03: Electricidade continua
 
 ## Resumo 
-A)  OBTER OS PARÁMETROS DA PILA CR2032
+A) Identificación dos conectores
 
-B)  OBTER OS PARÁMETROS DA BATERÍA DO SAI 
+B)  Identificación dos parámetros relevantes dunha fonte.
 
-C)  Medir a voltaxe de saída do cargador de baterías.
+C)  Medir a tensión  do conector ATX.
 
-D)  Medir a voltaxe de saída do  transformador do portatil.
+D)  Comprobar a PSU cun tester específico.
 
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade03/t03-electricidade-continua.pdf)
-[ODT]({{site.baseurl}}/unidade03/t03-electricidade-continua.odt)
+[PDF]({{site.baseurl}}/unidade03/t04-electricidade-atx.pdf)
+[ODT]({{site.baseurl}}/unidade03/t04-electricidade-atx.odt)
 
-## Solucións 
-[PDF]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas.pdf)
-[ODT]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas.odt)
+ 
