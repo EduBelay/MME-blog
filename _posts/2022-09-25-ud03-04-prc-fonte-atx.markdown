@@ -16,15 +16,21 @@ tags: ferramentas
 </details>
 
 # UD03-04: Comprobación dunha fonte ATX
-
-Inventario da caixa de ferramentas
+Coñecer os parámetros das fontes de alimentación e a sua verificación.
 
 ## Resumo 
-Inventario do material a empregar existente na caixa de ferramentas. 
+A) Identificación dos conectores
+
+B) Identificación dos parámetros relevantes dunha fonte.
+
+C) Medir a tensión do conector ATX.
+
+D) Comprobar a PSU cun tester específico.
+
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas-alumno.pdf)
-[ODT]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas-alumno.odt)
+[PDF]({{site.baseurl}}/unidade03/t04-electricidade-atx.pdf)
+[ODT]({{site.baseurl}}/unidade03/t04-electricidade-atx.odt)
 
 ## Solucións 
 [PDF]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas.pdf)
