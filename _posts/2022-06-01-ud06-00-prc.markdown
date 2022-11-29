@@ -17,6 +17,15 @@ tags:
 
 # UD06-01: Contidos 
 
+## Comandos linux
+* [Consultar o tempo dende o terminal](https://www.busindre.com/consulta_y_prediccion_del_tiempo_en_la_terminal)
+* [Diferencias entre executar con bash, ./ source, sh](https://www.busindre.com/formas_de_ejecutar_scripts_bash_._._source)
+
+### Smart Tools
+https://www.busindre.com/configurar_smartd_con_alertas_a_gmail_facil
+
+https://www.busindre.com/guia_de_smartctl_en_linea_de_comandos
+
 
 ## Vagrant
 * [Introducción a Vagrant](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
