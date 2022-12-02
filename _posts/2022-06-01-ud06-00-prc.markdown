@@ -17,6 +17,9 @@ tags:
 
 # UD06-01: Contidos 
 
+## Xerar un USB Booteable. 
+* [Burn ISO to USB from Linux command line](https://linuxconfig.org/burning-cds-over-the-internet-with-or-without-iso-image)
+
 ## Comandos linux
 * [Consultar o tempo dende o terminal](https://www.busindre.com/consulta_y_prediccion_del_tiempo_en_la_terminal)
 * [Diferencias entre executar con bash, ./ source, sh](https://www.busindre.com/formas_de_ejecutar_scripts_bash_._._source)
