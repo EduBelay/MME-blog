@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Ferramentas 01:   Compresor"
-date:   2022-09-29 12:39:00 +0200
-categories: mobil
+date:   2022-01-01 00:00:01 +0200
+categories: ferramentas
 ---
 
 <details open markdown="block">
