@@ -76,7 +76,7 @@ Pasos:
 5. Coloca o recepiente debaixo e garda o aceite usado. 
 6. Axusta o parafuso de drenaxe de aceite do compresor. 
 7. Incorpora o novo aceite sen empregar pola apertura identificada na imaxe co número (2). Para esta operación debes ter o compresor sen ningunha inclinación. O aceite debe situarse entre o MIN e o MAX. 
-!()[https://imgur.com/XrMPwJl.png]
+![](https://imgur.com/XrMPwJl.png)
 
 ## Problemas habituais 
 Revisa o [ Manual de instruccións]({{site.baseurl}}/taller/ferramentas/compresor/ManualCompresor.pdf) na páxina 37 en adiante. Aqui describe os seguintes problemas habituais:
