@@ -1,0 +1,37 @@
+Question
+========
+No ATX12VO o valor máximo segundo a especificación para 12V2DC2 é de ... 
+
+Answerlist
+----------
+* 12.5V
+* 12.6V
+* 12.7V 
+* 12.4V
+* 12.3V
+* 12.8V
+* 12.9V 
+
+
+
+Solution
+========
+12.6V é decir o 5% do valor agardado de 12V. 
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: rango_funcionamento_06
+extype: schoice
+exsolution: 0100000
+exshuffle: 3

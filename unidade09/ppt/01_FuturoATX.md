@@ -7,6 +7,10 @@ footer: 'Pablo Belay Fernández'
 
 
 ---
+<!--
+Notas para a presentación
+-->
+ATX3.0 e ATX12VO
 <style>
   :root{
      --color-background: #101010;
@@ -22,6 +26,7 @@ footer: 'Pablo Belay Fernández'
 </style>
 
 <!-- _colorPreset: dark -->
+--- 
 Índice
 
 - [Introducción](#introducción)
@@ -80,7 +85,7 @@ footer: 'Pablo Belay Fernández'
 * Funcionamento:
   *  **acende** a fonte **cando se cambia de nivel alto a baixo** 
   *  **apágase** ao pasar de **baixo a alto** ou en circuíto aberto.
-  *  Permite que a placa basee poida controlar á PSU. 
+  *  Permite que a placa base poida controlar á PSU. 
 
 
   ![bg right height:200px ]( https://i.imgur.com/vmoKaJo.png) 
@@ -160,10 +165,10 @@ Fonte: [Intel: ATX12VO Desktop Power Supply](https://bityl.co/GRZi)
 
 ---
 ## ATX12VO, desvantaxes:
-- Traslada o problema de complexidade da PSU á placa basee,
+- Traslada o problema de complexidade da PSU á placa base,
   -  Ten que agregar os conversores para outras voltaxes se algún dos seus compoñentes o precisa.
 -  Encarece o prezo da placa base.
--  As actuais placas basee e fontes de alimentación non son compatibles
+-  As actuais placas bases e fontes de alimentación non son compatibles
 -  Traslada o problema da eficiencia enerxética a placa base .
 
 
