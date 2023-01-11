@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "UD06-00: Exemplo práctica "
-date:   2022-06-01 00:01:00 +0200
+title:  "UD06-00: Contidos "
+date:   2022-06-01 00:00:10 +0200
 categories: unidade06
-tags: numeracion 
+tags: 
 ---
 
 <details open markdown="block">
@@ -15,11 +15,41 @@ tags: numeracion
 {:toc}
 </details>
 
-# UD06-01: Exemplo practica 
+# UD06-01: Contidos 
 
-Nesta práctica afóndase  ....
-## Resumo 
-Ver explicación da práctica neste [artigo](https://www.redeszone.net/2017/11/19/asi-puedes-ping-equipo-ip-octal-hexadecimal-e-incluso-numero-entero/)
+## Xerar un USB Booteable. 
+* [Burn ISO to USB from Linux command line](https://linuxconfig.org/burning-cds-over-the-internet-with-or-without-iso-image)
+
+## Comandos linux
+* [Consultar o tempo dende o terminal](https://www.busindre.com/consulta_y_prediccion_del_tiempo_en_la_terminal)
+* [Diferencias entre executar con bash, ./ source, sh](https://www.busindre.com/formas_de_ejecutar_scripts_bash_._._source)
+
+[Detectar ficheiros repetidos](https://www.busindre.com/detectar_ficheros_identicos_repetidos_en_disco)
+
+### Smart Tools
+https://www.busindre.com/configurar_smartd_con_alertas_a_gmail_facil
+
+https://www.busindre.com/guia_de_smartctl_en_linea_de_comandos
+
+### ...
+ Problema con comandos largos en consola
+No se ha escrito la tabla de particiones
+Alinear particiones con parted
+Nociones básicas sobre la memoria
+Nociones sobre el tamaño de bloque de disco
+Memoria RAM en GNU/Linux con smem
+Medir velocidad de un RAMDISK / tmpfs
+Auditar / Modificar la memoria cache (RAM)
+Auditando el sistema con auditd
+Optimización de memoria RAM en Linux
+
+## Vagrant
+* [Introducción a Vagrant](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
+* [Intro Vagrant.Redes](https://www.josedomingo.org/pledin/2021/10/introduccion-vagrant-libvirt-redes/)
+* [Intro Vagrant.Almacenamento](https://www.josedomingo.org/pledin/2021/10/introduccion-vagrant-libvirt-almacenamiento/)
+* [Guia rápida de Vagrant](https://www.busindre.com/guia_rapida_de_vagrant)
+
+
 
 ## Enunciado 
 [PDF]({{site.baseurl}}/unidade01/t01.pdf)

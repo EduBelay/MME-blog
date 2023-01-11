@@ -32,6 +32,3 @@ D) Comprobar a PSU cun tester específico.
 [PDF]({{site.baseurl}}/unidade03/t04-electricidade-atx.pdf)
 [ODT]({{site.baseurl}}/unidade03/t04-electricidade-atx.odt)
 
-## Solucións 
-[PDF]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas.pdf)
-[ODT]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas.odt)

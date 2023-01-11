@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UD03-06: Inventario caixa de ferramentas "
+title:  "UD03-06: Consumo enerxético "
 date:   2022-03-01 00:06:00 +0200
 categories: unidade03
 tags: ferramentas
@@ -15,17 +15,14 @@ tags: ferramentas
 {:toc}
 </details>
 
-# UD03-06: Inventario caixa de ferramentas
+# UD03-06: Consumo eléctrico.
 
-Inventario da caixa de ferramentas
 
 ## Resumo 
-Inventario do material a empregar existente na caixa de ferramentas. 
+Verificación do consumo eléctrico de diferentes dispositivos. 
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas-alumno.pdf)
-[ODT]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas-alumno.odt)
+[PDF]({{site.baseurl}}/unidade03/t06-consumo-enerxetico.pdf)
+[ODT]({{site.baseurl}}/unidade03/t06-consumo-enerxetico.odt)
 
-## Solucións 
-[PDF]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas.pdf)
-[ODT]({{site.baseurl}}/unidade03/t00-inventario-caixa-ferramentas.odt)
+ 

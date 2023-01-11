@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "UD03-05: O SAI "
+date:   2022-03-01 00:05:00 +0200
+categories: unidade03
+tags: ferramentas
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD03-05: Verificación dun SAI.
+Coñecer os elementos dun SAI. 
+
+## Resumo 
+A)  Identificación dos parámetros dun SAI.
+B) Cambio de baterías dun SAI. 
+
+
+## Enunciado 
+[PDF]({{site.baseurl}}/unidade03/t05-cambiar-baterias-sai-alumno.pdf)
+[ODT]({{site.baseurl}}/unidade03/t05-cambiar-baterias-sai-alumno.odt)
+
+## Solución 
+[PDF]({{site.baseurl}}/unidade03/t05-cambiar-baterias-sai.pdf)
+[ODT]({{site.baseurl}}/unidade03/t05-cambiar-baterias-sai.odt)
+[ODS]({{site.baseurl}}/unidade03/t05-cambiar-baterias-sai-calculadora.ods)

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "UD05-00: Exemplo práctica "
-date:   2022-05-01 00:01:00 +0200
+title:  "UD05-00: Relación de contidos"
+date:   2022-05-01 00:00:01 +0200
 categories: unidade05
-tags: numeracion 
+tags: contidos 
 ---
 
 <details open markdown="block">
@@ -15,12 +15,9 @@ tags: numeracion
 {:toc}
 </details>
 
-# UD05-01: Exemplo practica 
+# UD05-00: Contidos
 
-Nesta práctica afóndase  ....
 ## Resumo 
-Ver explicación da práctica neste [artigo](https://www.redeszone.net/2017/11/19/asi-puedes-ping-equipo-ip-octal-hexadecimal-e-incluso-numero-entero/)
+* [Tipos de parafusos]({{site.baseurl}}/unidade05/contidos/Tipos-de-tornillos-para-montaje-de-ordenadores.pdf)
 
-## Enunciado 
-[PDF]({{site.baseurl}}/unidade01/t01.pdf)
-[ODT]({{site.baseurl}}unidade01/t01.odt)
+
