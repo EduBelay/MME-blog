@@ -6,15 +6,16 @@ footer: 'Pablo Belay Fernández'
 
 
 ---
-- [Riscos coa electricidade](#riscos-coa-electricidade)
-- [2.1 proba](#21-proba)
-- [2.2.1 Proba 3](#221-proba-3)
+- - [Factores de forma](#factores-de-forma)
+  - [2.1 proba](#21-proba)
+      - [2.2.1 Proba 3](#221-proba-3)
+
 
 ---
 
-# Riscos coa electricidade
+# Factores de forma
+O factor de forma determina, por tanto:
 
-Start writing!
 
 ## 2.1 proba
 #### 2.2.1 Proba 3

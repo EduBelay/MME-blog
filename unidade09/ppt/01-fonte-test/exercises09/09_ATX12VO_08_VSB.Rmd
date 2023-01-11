@@ -1,0 +1,34 @@
+Question
+========
+No ATX12VO  o identificador **Vsb** fai refrencia a...   
+
+Answerlist
+----------
+* A voltaxe de POWER_OK
+* A voltaxe en repouso da fonte.
+* Aos W combinados da fonte. 
+* Ao estado de máxima entrega de enerxía da fonte. 
+* AHPM
+* Alternative Hight Power Mode. 
+* High Power
+
+Solution
+========
+Voltaxe proporcionado en repouso a fonte de 12V
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False 
+  
+Meta-information
+================
+exname: VSB_08
+extype: schoice
+exsolution: 0100000
+exshuffle: 3

@@ -1,0 +1,37 @@
+Question
+========
+Cal das seguintes características é certa referente ao ATX12VO
+
+Answerlist
+----------
+* POWER_OK ten unha voltaxe de 12V
+* POWER_OK ten unha voltaxe de 5V
+* POWER_OK ten unha voltaxe de 3.3V
+* POWER_OK ten unha voltaxe de 2.5V
+* POWER_OK ten unha voltaxe de 120V
+* POWER_OK ten unha voltaxe de 3V
+* POWER_OK ten unha voltaxe de 1.5V
+
+
+
+Solution
+========
+Logic level High, Between 2.4 V and 5 V output while sourcing 200 μA
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: POWER_OK
+extype: schoice
+exsolution: 0100000
+exshuffle: 3

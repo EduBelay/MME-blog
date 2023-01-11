@@ -1,0 +1,37 @@
+Question
+========
+No ATX12VO o valor **mínimo** segundo a especificación para 12V2DC2 é de ... 
+
+Answerlist
+----------
+* 11.5V
+* 11.2V
+* 11.7V 
+* 11.4V
+* 11.3V
+* 11.8V
+* 11.9V 
+
+
+
+Solution
+========
+11.2V é decir o -7% do valor agardado de 12V. 
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: rango_funcionamento_07
+extype: schoice
+exsolution: 0100000
+exshuffle: 3
