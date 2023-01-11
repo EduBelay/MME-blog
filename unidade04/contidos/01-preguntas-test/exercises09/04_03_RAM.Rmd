@@ -1,0 +1,36 @@
+Question
+========
+Na actualidade a memoria RAM que se comercializa nos equipos actuais é  .... 
+
+Answerlist
+----------
+*  DDR3 e DDR4
+*  DDR4 e DDR5
+*  DDR5 e DDR6
+*   SDRAM
+*  RAM3.0  
+*  DDR2 e DDR3
+*  M2 e SDRAM
+
+
+Solution
+========
+DDR4 e DDR5
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: Nº pins ATX12VO
+extype: schoice
+exsolution: 0100000
+exshuffle: 3
