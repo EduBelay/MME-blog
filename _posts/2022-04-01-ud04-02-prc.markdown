@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "UD04-02: Identificar elementos placa base (pack)"
+date:   2022-04-01 00:01:02 +0200
+categories: unidade04
+tags: numeracion 
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD04-02: Identificar elementos placa base (pack
+
+
+
+## Enunciado 
+* [PLACAS SIN SOLUCION]({{site.baseurl}}/unidade04/t02-identificar-elementos-placa-base/public/PLACAS_SIN_SOL.zip)
+* [PLACAS CON SOLUCION]({{site.baseurl}}unidade04/t02-identificar-elementos-placa-base/public/PLACAS_SOLUCION.zip)
