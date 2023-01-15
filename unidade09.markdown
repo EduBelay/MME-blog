@@ -4,7 +4,7 @@ title: Unidade09
 permalink: /unidade09/
 nav_order: 9
 ---
-Unidade 09: Periféricos e o seu mantemento.
+Unidade 09: Novas tendencias en equipamentos microinformáticos
 --- 
 
 <h3>Elementos da unidade</h3>

@@ -1,0 +1,24 @@
+Question
+========
+
+¿Cuál de estas ciudades es la capital de España?
+
+Answerlist
+----------
+
+* Madrid
+* Sevilla
+* Barcelona
+* Valencia
+* París
+* Londres
+* Bilbao
+    
+    
+
+Meta-information
+================
+exname: Capital de España
+extype: schoice
+exsolution: 1000000
+exshuffle: 5

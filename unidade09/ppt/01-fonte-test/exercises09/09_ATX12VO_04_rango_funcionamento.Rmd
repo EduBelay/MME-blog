@@ -1,0 +1,37 @@
+Question
+========
+No ATX12VO o rango de funcionamento está comprendido entre ....
+
+Answerlist
+----------
+* 5% e -7% para todos os pins con número par.
+* 5% e -7% para todos os pins.
+* 5% e -7% para as voltaxes positivas e do 10% para as negativas. 
+* 5% para todos os pins.
+* 10% para todos os pins.
+* 15% e -7% para todos os pins.
+* +-0.5V en todos os pins. 
+
+
+
+Solution
+========
+ 5% e -7% para todos os pins.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: rango_funcionamento 04
+extype: schoice
+exsolution: 0100000
+exshuffle: 3
