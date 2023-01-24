@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "UD04-05: Comandos para obter información do hardware"
+date:   2022-04-01 00:01:04 +0200
+categories: unidade04
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD04-05: Comandos para obter información do hardware
+
+
+
+## Enunciado 
+* [ODT]({{site.baseurl}}/unidade04/t05-info-bash-placa/t05-obter-info-linux-placa-alumno.odt)
+* [PDF]({{site.baseurl}}/unidade04/t05-info-bash-placa/t05-obter-info-linux-placa-alumno.pdf)
+
+
+## Solución 
+* [ODT]({{site.baseurl}}/unidade04/t05-info-bash-placa/t05-obter-info-linux-placa.odt.odt)
+* [PDF]({{site.baseurl}}/unidade04/t05-info-bash-placa/ t05-obter-info-linux-placa.pdf)
+

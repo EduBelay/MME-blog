@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "UD04-04: Bios tools"
+date:   2022-04-01 00:01:04 +0200
+categories: unidade04
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD04-04: Bios tools
+
+
+
+## Enunciado 
+* [ODT]({{site.baseurl}}/unidade04/t04-bios-tools/t04-INFO-PLACA-BASE-CoolerMaster-AMD_alumno.odt)
+* [PDF]({{site.baseurl}}/unidade04/t04-bios-tools/t04-INFO-PLACA-BASE-CoolerMaster-AMD_alumno.pdf)
+
+
+## Solución 
+* [ODT]({{site.baseurl}}/unidade04/t04-bios-tools/t04-INFO-PLACA-BASE-CoolerMaster-AMD.odt)
+* [PDF]({{site.baseurl}}/unidade04/t04-bios-tools/t04-INFO-PLACA-BASE-CoolerMaster-AMD.pdf)
+
