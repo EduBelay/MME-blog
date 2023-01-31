@@ -1,9 +1,11 @@
+<!--
+
 ---
 marp: true
 paginate: true
 header: 'Montaxe e mantemento de equipos'
 footer: 'Pablo Belay Fernández'
-
+-->
 
 ---
 # Conectores externos de alimentación
