@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UD04-00: Exemplo practica "
+title:  "UD04-01: Identificación visual elementos placa base. "
 date:   2022-04-01 00:01:01 +0200
 categories: unidade04
 tags: numeracion 
