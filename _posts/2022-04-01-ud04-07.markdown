@@ -17,5 +17,5 @@ categories: unidade04
 # UD04-07: Práctica resumo. 
 
 ## Enunciado 
-* [ODT]({{site.baseurl}}/unidade04/t-07-practica-resumo/t07-practica-resumo.odt)
-* [PDF]({{site.baseurl}}/unidade04/t-07-practica-resumo/t07-practica-resumo.odt)
+* [ODT]({{site.baseurl}}/unidade04/t07-practica-resumo/t07-practica-resumo.odt)
+* [PDF]({{site.baseurl}}/unidade04/t07-practica-resumo/t07-practica-resumo.odt)
