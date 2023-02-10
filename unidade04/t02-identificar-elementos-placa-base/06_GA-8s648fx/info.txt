@@ -1,9 +1,0 @@
-Supports Intel® Pentium® 4 800MHz FSB Processor with HT Technology
-Soporta memoria de alta eficiencia DDR400
-6 x USB 2.0
-Soporta AGP 8X para un alto rendimiento gráfico
-Gigabyte unique EZ-Fix™ AGP slot
-Integrated 6-channel AC’ 97 audio with SPDIF function
-Integrated IEEE 1394 Firewire interface (Optional)
-
-Web: http://es.gigabyte.com/products/page/mb/ga-8s648fx#kf

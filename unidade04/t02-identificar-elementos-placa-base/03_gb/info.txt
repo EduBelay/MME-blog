@@ -1,9 +1,0 @@
-
-
-Supports AMD Athlon™64
-Soporta memoria de alta eficiencia DDR400
-6 x USB 2.0
-Integra Serial-ATA con RAID 0,1
-Integra audio de 8 canales de alta calidad
-Integra conexión Ethernet 10/100Mb
-
