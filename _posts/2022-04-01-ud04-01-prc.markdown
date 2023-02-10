@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "UD04-01: Identificación visual elementos placa base. "
+date:   2022-04-01 00:01:01 +0200
+categories: unidade04
+tags: numeracion 
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details> 
+
+
+
+# UD04-01: Identificar elementos placa base de prácticas
+
+Nesta práctica afóndase  ....
+## Resumo 
+UD04-01: Identificar elementos placa base de práctica
+
+## Enunciado AMD
+[PDF]({{site.baseurl}}/unidade04/t01-placa-base/t01-elementos-placa-base-CoolerMaster-AMD.pdf)
+
+[ODT]({{site.baseurl}}unidade04/t01-placa-base/t01-elementos-placa-base-CoolerMaster-AMD.odt)
+
+## Enunciado INTEL
+[PDF]({{site.baseurl}}/unidade04/t01-placa-base/t01-elementos-placa-base-CoolerMaster-Intel.pdf)
+
+[ODT]({{site.baseurl}}unidade04/t01-placa-base/t01-elementos-placa-base-CoolerMaster-Intel.odt)
+
+
+## Enunciado DELL OPTIPLEX 740
+
+[PDF]({{site.baseurl}}/unidade04/t01-placa-base/t01-elementos-placa-base-DELL-OptiPlex-740.pdf)
+
+[ODT]({{site.baseurl}}unidade04/t01-placa-base/t01-elementos-placa-base-DELL-OptiPlex-740.odt)
+
+## Enunciado DELL OPTIPLEX 745
+ [PDF]({{site.baseurl}}unidade04/t01-placa-base/t01-elementos-placa-base-DELL-OptiPlex-745.pdf)
+
+[ODT]({{site.baseurl}}unidade04/t01-placa-base/t01-elementos-placa-base-DELL-OptiPlex-745.odt)

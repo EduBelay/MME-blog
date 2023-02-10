@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Mobil 08: iPhone 6  - PDTE"
+date:   2022-09-29 12:51:00 +0200
+categories: mobil
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
+# Móbil 08: iPhone 6 
+
+## Tarefas
+
+ 
+ 
+
+
+
+## Documentos
+* [Especificacións](https://support.apple.com/kb/SP705?locale=es_LAMR)
+* [Impextrom](https://nadiemellamagallina.com/es/manuales/smartphones-1/apple-5/apple-iphone-6-208/)
+* [iFixit](https://es.ifixit.com/Device/iPhone_6)
+
+* [Guia SOSAV](https://www.sosav.com/es/guias/telefonos/iphone/iphone-6/)
+
+## Recursos
+ - [Vídeo do proceso de desmontaxe](https://www.youtube.com/watch?v=bmJSWrVuIVQ&ab_channel=Fixez.com)
+
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/mobil/08/fotos/fotos.pdf)

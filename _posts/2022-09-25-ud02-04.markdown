@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "UD02-04: Cuestións test"
+date:   2022-02-25 12:39:00 +0200
+categories: unidade02
+tags: ferramentas 
+---
+
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD02-04: Cuestións test
+
+Nesta práctica afóndase sobre os conceptos da unidade.
+
+## Resumo 
+
+
+## Enunciado 
+* [PDF]({{site.baseurl}}/unidade02/UD02-T04-test.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T04-test.odt)
+
+## Solución 
+
+* [PDF]({{site.baseurl}}/unidade02/UD02-T04-test-resolto.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T04-test-resolto

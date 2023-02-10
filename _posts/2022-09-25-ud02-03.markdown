@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "UD02-03: Conceptos"
+date:   2022-02-25 12:37:00 +0200
+categories: unidade02
+tags: ferramentas 
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD02-03:  Conceptos
+
+Nesta práctica afóndase sobre os conceptos da unidade.
+
+## Resumo 
+
+
+## Enunciado 
+* [PDF]({{site.baseurl}}/unidade02/UD02-T03-conceptos.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T03-conceptos.odt)
+
+## Solución 
+
+* [PDF]({{site.baseurl}}/unidade02/UD02-T03-conceptos-resolto.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T03-conceptos-resolto.odt)

@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Tablet 01:  Tablet Amazon Fire "
+date:   2022-09-29 12:30:00 +0200
+categories: tablet
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+En progreso
+{: .label .label-yellow }
+
+# Tablet 01:  Tablet Amazon Fire  
+
+## Tarefas
+> Guía de desmontaxe na páxina [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/)
+
+1. [Reemplazo do autofalante]({{site.baseurl}}/taller/tablet/01/01_autofalante.pdf) / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/)
+2.  [Reemplazo da bateria]({{site.baseurl}}/taller/tablet/01/02_remplazo_bateria.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/bater-a-6803)
+3.  [Reemplazo das teclas laterais]({{site.baseurl}}/taller/tablet/01/03_teclas_laterais.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/teclas-laterales-6798)
+4. [Pulsadores de volumen]({{site.baseurl}}/taller/tablet/01/04_pulsador_volumen.pdff)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/pulsadores-de-volumen-6796)
+5. [Pulsador de encendido]({{site.baseurl}}/taller/tablet/01/05_pulsador_encendido.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/pulsador-de-encendido-6795)
+6. [Cámara traseira]({{site.baseurl}}/taller/tablet/01/06_camara_traseira.pdf)  / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/c-mara-trasera-6797)
+7. [Placa base]({{site.baseurl}}/taller/tablet/01/07_placa_base.pdf)   / [web](https://nadiemellamagallina.com/es/manuales/tablets-2/amazon-796/amazon-fire-797/placa-base-6804)
+
+
+## Documentos
+ - [Guías oficiais de Amazon Fire](https://www.amazon.es/gp/help/customer/display.html?nodeId=GSVHEM38SNSZE2HS)
+
+ 
+## Recursos
+ - [Vídeo: Como reaparar](https://www.youtube.com/watch?v=HBUFDZVnfdY&ab_channel=RepairsUniverse)
+ - [Guia iFixit](https://es.ifixit.com/Gu%C3%ADa/Amazon+Fire+Tablet+(5th+Generation)+Repairability+Assessment/79137)
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/tablet/01/fotos/fotos.pdf)

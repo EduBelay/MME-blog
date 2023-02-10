@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Tablet 02  Nevir Nvr Tab7 S2 7 Dualcore "
+date:   2022-09-29 12:31:00 +0200
+categories: tablet
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+En progreso
+{: .label .label-yellow }
+
+
+
+# Tablet 02:  Nevir Nvr Tab7 S2 7 Dualcore
+
+## Tarefas
+> Guía de desmontaxe  PENDENTE
+ 
+
+## Documentos
+  - [Manual PDF]({{site.baseurl}}/taller/tablet/02/ManualPDF.pdf)  
+ - [Manual](https://manuall.co.uk/nevir-nvr-tab7-s5-tablet/)
+
+ 
+## Recursos
+
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/tablet/02/fotos/fotos.pdf)

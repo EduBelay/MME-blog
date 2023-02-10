@@ -1,0 +1,36 @@
+Question
+========
+Cal das seguintes afirmacións é certa sobre o conector dos ventiladores. 
+
+
+Answerlist
+----------
+*  O conector para o ventilador cando ten 2 pins permítenos alimentar o ventilador e por medio dun segundo pin mídese a velocidade de xiro
+*  O conector para o ventilador cando ten 3 pins permítenos alimentar o ventilador e por medio dun terceiro pin mídese a velocidade de xiro
+*  O conector para o ventilador cando ten 2 pins permítenos alimentar o ventilador e controlar a  velocidade de xiro
+*  O conector para o ventilador cando ten 3 pins permítenos: alimentar o ventilador, medir a velocidade de xiro e controlar as revolucións do ventilador.
+*  O conector para o ventilador cando ten 2 pins permítenos controlar a velocidade de xiro e tamén medir a súa velocidade.  
+*  O conector para o ventilador cando ten 5 pins permítenos: alimentar o ventilador, medir a velocidade de xiro e controlar as revolucións do ventilador.
+*  O conector para o ventilador cando ten 7 pins permítenos: alimentar o ventilador, medir a velocidade de xiro e controlar as revolucións do ventilador.
+
+Solution
+========
+Dous dos pines empréganse para alimentar o ventilador, por medio dun terceiro pin mídese a velocidade de xiro do ventilador, e por medio dun cuarto pin contrólase a velocidade de xiro. Os conectores de tres pines están actualmente en desuso, polo que as placas modernas traerán conectores de catro pines. Con catro pines, as placas actuais permiten controlar a velocidade do ventilador e crear manualmente perfiles de velocidade en función da temperatura da CPU.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: Nº pins ATX12VO
+extype: schoice
+exsolution: 0100000
+exshuffle: 3

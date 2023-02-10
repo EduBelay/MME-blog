@@ -1,0 +1,34 @@
+Question
+========
+O **Vsb**  en cal das seguintes funcións non se emprega?    
+
+Answerlist
+----------
+* Wake on Lan
+* Na alimentación extraordinaria da CPU
+* Detección de intrusións.
+* O control da enerxía.  
+* ALPM ( Alternative Low Power Mode)
+* Wake on modem 
+* En modo suspensión
+
+Solution
+========
+Voltaxe proporcionado en repouso a fonte de 12V
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+Meta-information
+================
+exname: VSB_09
+extype: schoice
+exsolution: 0100000
+exshuffle: 3

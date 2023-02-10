@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "UD02-02: Sinais no taller"
+date:   2022-02-25 12:36:00 +0200
+categories: unidade02
+tags: ferramentas 
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD02-02:  Sinais no taller.
+
+Nesta práctica afóndase sobre as ferramentas e os riscos.
+
+## Resumo 
+
+
+## Enunciado 
+* [Enunciado TXT]({{site.baseurl}}/unidade02/UD02-T01-cadro-ferramenta-enunciado.txt)
+* [Exemplo PNG]({{site.baseurl}}/unidade02/UD02-T02-sinalectica-taller-exemplo.png)
+* [PDF]({{site.baseurl}}/unidade02/UD02-T02-sinalectica-taller.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T02-sinalectica-taller.odt)
+
+## Solución 
+
+* [PDF]({{site.baseurl}}/unidade02/UD02-T02-sinalectica-taller-resolto.pdf)
+* [ODT]({{site.baseurl}}unidade02/UD02-T02-sinalectica-taller-resolto.odt)

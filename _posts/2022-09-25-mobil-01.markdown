@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Mobil 01:   Nokia 6700 Classic - PDTE"
+date:   2022-09-29 12:39:00 +0200
+categories: mobil
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
+# Móbil 01:   
+
+## Tarefas
+
+ 
+## Documentos
+* 
+
+## Recursos
+ - [Vídeo do proceso de desmontaxe]( https://www.youtube.com/watch?v=lL-7QexDiWk&ab_channel=VRM24.com)
+
+
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/mobil/01/fotos/fotos.pdf)

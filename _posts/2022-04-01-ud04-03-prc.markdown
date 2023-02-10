@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "UD04-03: Información da placa base. "
+date:   2022-04-01 00:01:03 +0200
+categories: unidade04
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD04-03: Información da placa base. 
+
+
+
+## Enunciado 
+* [ODT]({{site.baseurl}}/unidade04/t03-info-placa-base-bios/t03-INFO-PLACA-BASE-CoolerMaster-AMD-alumno.odt)
+* [PDF]({{site.baseurl}}/unidade04/t03-info-placa-base-bios/t03-INFO-PLACA-BASE-CoolerMaster-AMD-alumno.pdf)
+
+
+## Solución 
+* [ODT]({{site.baseurl}}/unidade04/t03-info-placa-base-bios/t03-INFO-PLACA-BASE-CoolerMaster-AMD.odt)
+* [PDF]({{site.baseurl}}/unidade04/t03-info-placa-base-bios/t03-INFO-PLACA-BASE-CoolerMaster-AMD.pdf)
+

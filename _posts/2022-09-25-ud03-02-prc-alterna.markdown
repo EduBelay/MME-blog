@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "UD03-02: Electricidade alterna "
+date:   2022-03-01 00:02:00 +0200
+categories: unidade03
+tags: electricidade alterna
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD03-02: Electricidade alterna
+
+## Resumo 
+
+A)  Medir a tensión nunha toma de electricidade.
+
+B)  Medir a tensión nunha regleta.
+
+C)  Medir a tensión nunha regleta en estado OFF.
+
+D)  Medir a tensión nun cable de alimentación.
+
+E)  Medir a tensión de saída nun SAI .
+
+F)  Medir a intensidade coa pinza amperimétrica.
+
+H)  Comprobar a continuidade.
+
+## Enunciado 
+[PDF]({{site.baseurl}}/unidade03/t02-electricidade.pdf)
+[ODT]({{site.baseurl}}/unidade03/t02-electricidade.odt)
+

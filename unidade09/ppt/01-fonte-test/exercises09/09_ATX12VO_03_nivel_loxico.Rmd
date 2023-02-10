@@ -1,0 +1,36 @@
+Question
+========
+O nivel lóxico alto para POWER_GOOD esta definido entre... 
+
+Answerlist
+----------
+* 4V e 5V
+* 2.4V e 5V
+* 12.4V e 11.2V
+* 4V e 5V
+* 3V e 5V
+* 1.4V e 3.3V
+* 12.4V e 15V
+
+
+Solution
+========
+Logic level High, Between 2.4 V and 5 V output while sourcing 200 μA
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: POWER_OK
+extype: schoice
+exsolution: 0100000
+exshuffle: 3
