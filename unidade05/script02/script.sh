@@ -12,6 +12,11 @@ mostrar_menu_inicial(){
 escolla_menu_inicial(){
 
  case $1 in
+    "0")
+         exit;
+    ;;
+
+
     "1")
          echo " 0: Saír                                            ";
          echo " 1: Ver un listado xeral do hardware con lshw       ";
@@ -34,6 +39,7 @@ escolla_menu_inicial(){
         echo " 5: Ver información dos dispositivos SATA                ";
         echo " Introduza a opción desexada:                            ";
         read opcion;
+        menu02 $opcion;
     ;;
     *)
     echo "ERRO!! Opción non valida do menú ";
@@ -104,27 +110,38 @@ menu02(){
 
      "2")
          echo " 2: Ver particións do disco duro e espazo libre con df       ";
-         #TODO
-         #exit;
+         df -h
      ;;
 
       "3")
          echo " 3: Ver memoria RAM e intercambio con free                       "; 
-         #TODO
-         #exit;
+         free -t
      ;;
 
     "4")
          echo " 4: Ver información de /proc                             ";
-         #TODO
-         #exit;
+         result=$(ls /proc/);
+         echo $result;
+         echo " Introduza o nome do arquivo sobre o que quere ver información: cpuinfo";
+         read arquivoproc;
+         cpu-info /proc/$arquivoproc
+
+
+
      ;;
      "5")
          echo " Ver información dos dispositivos SATA                      "; 
-         #TODO
+         echo "Listando os contidos de /dev que comezan por 'sd':";
+         result=$(ls /dev/sd*);
+         echo $result;
+
+         echo "Introduza o nome do dispositivo do que quere ver información:"
+         read  entrada;
+         sudo hdparm /dev/$entrada -i
          #exit;
      ;;
   
+
 
     *)
         echo "ERRO!! Opción non valida do menú ";
@@ -134,7 +151,9 @@ esac
 
 }
 
-
+# ------------------------------
+# ---         MAIN           ---
+# ------------------------------
 
 mostrar_menu_inicial;
 read opcion;
