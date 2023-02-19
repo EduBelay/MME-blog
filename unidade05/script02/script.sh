@@ -51,41 +51,34 @@ menu01(){
      ;;
      "1")
          echo " 1: Ver un listado xeral do hardware con lshw      ";
-         #TODO
-        # exit;
+         lshw -short
      ;;
 
      "2")
          echo " 2: Ver información do hardware con hwinfo          ";
-         #TODO
-         #exit;
+         lshw -short
      ;;
 
       "3")
          echo " 3: Ver a información da CPU                        "; 
-         #TODO
-         #exit;
+         lscpu -y
      ;;
 
     "4")
          echo " 4: Ver os buses PCI                                ";
-         #TODO
-         #exit;
+         lspci 
      ;;
      "5")
          echo " 5: Ver os dispositivos SCSI                        "; 
-         #TODO
-         #exit;
+        lsscsi
      ;;
     "6")
          echo " 6: Ver os dispositivos USB                         "; 
-         #TODO
-         #exit;
+         lsusb
      ;;
     "7")
          echo " 7: Ver os dispositivos de bloque                   ";
-         #TODO
-         #exit;
+         lsblk
      ;;
 
      *)
@@ -106,8 +99,7 @@ menu02(){
      ;;
      "1")
          echo " 1: Ver o listado de particións con fdisk        ";
-         #TODO
-        # exit;
+         sudo fdisk -l
      ;;
 
      "2")
