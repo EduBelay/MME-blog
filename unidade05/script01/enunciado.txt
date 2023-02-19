@@ -1,0 +1,46 @@
+Descrición detallada da tarefa e dos pasos para realizala.
+
+Nesta tarefa imos practicar con varios dos elementos que vimos nos apuntamentos:
+
+As sentenzas condicionais,
+As comprobacións de números.
+As comprobacións de ficheiros.
+As comprobacións de textos.
+E tamén aprenderemos un par de comandos novos:
+
+A ferramenta speedtest-cli, para comprobar a velocidade dunha conexión a Internet. Notas:
+Precisas que a túa máquina teña conexión a Internet, polo que suxiro que en VirtualBox teñas unha interface en modo NAT.
+Probablemente non teñas a ferramenta instalada, así que deberás instalala mediante o comando:
+sudo apt install speedtest-cli
+O manexo básico da aplicación pódese ver en https://www.omglinux.com/test-internet-speed-from-the-command-line/
+O comando grep para obter unha determinada fila da resposta.
+O comando cut ou ben o comando awk, para obter unha ou máis columnas de texto.
+Para iso teremos que escribir un script que cumpra as seguintes condicións:
+
+Recibe como primeiro parámetro unha letra, que debe ser ou ben o “s” ou ben o “c”. De non ser así, advertirá disto nunha mensaxe de erro e sairá.
+Recibe como segundo parámetro un nome de ficheiro, e comproba que isto sexa así. De non cumprirse, amosará nunha liña como usar o script e sairá.
+Comproba se o devandito ficheiro existe. De ser así, amosará a mensaxe de erro pertinente e sairá.
+Obtén as velocidades de subida e baixada da conexión a Internet. Se o primeiro parámetro era “c”, debería executar speedtest-cli sen parámetros e logo analizar a saída sintacticamente para obter ditos valores. Se o primeiro parámetro era “s”, debería executar speedtest-cli coa opción --simple e logo analizar dita saída.
+Deposita os valores obtidos no ficheiro indicado como segundo parámetro do script.
+Comprobará se a velocidade de subida é inferior ou non a 3 (aquí por simplicidade imos asumir que a velocidade sempre ben en Mbps). Se o valor é maior que 3, o programa amosará a mensaxe "A túa conexión é rápida". En caso contrario, amosará a mensaxe "A túa conexión é lenta".
+Por exemplo, supoñamos que temos unha conexión que vai a 6.47 Mbps de baixada e 27.65 Mbps de subida, e que o ficheiro resultado.txt non existe. Agora invocamos o noso script:
+
+./velocidade.sh c resultado.txt
+Debería responder algo como:
+
+A túa conexión é rápida
+E agora comprobamos o contido do ficheiro resultado.txt deste xeito:
+
+cat resultado.txt 
+Temos os valores:
+
+6.47
+27.65
+
+Pasos para realizar a tarefa Pasos para realizar a tarefa:
+
+As seguintes son algunhas pistas por se non logras realizar o script buscando a información por ti mesmo.
+
+Comeza por comprobar que os parámetros do script sexan correctos mediante as sentenzas condicionais que vimos nos apuntamentos. Como se obtén o número de argumentos pasado pola consola? Cal é a forma de comparar números? Que pasa se o meu ficheiro contén espazos no nome?
+O resultado de speedtest-cli conterá varias liñas con información moi diversa. Se gardo dita información en na variable variable, cal é a diferenza entre facer echo $variable e echo "$variable"? Co comando grep podes obter certas liñas. Co comando cut ou o comando awk (máis complexo pero máis potente que cut) podes obter cada valor por separado. Aquí tes algúns exemplos de cut e exemplos de awk.
+Nas sentenzas if só podemos comparar números enteiros, non reais. Para quitar os decimais dun número podes empregar cut ou awk. Simplemente terás que empregar outro separador que non sexa o espazo en branco.
