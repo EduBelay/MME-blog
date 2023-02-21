@@ -1,16 +1,20 @@
 #!/bin/bash
 
 validacion(){
+
     if [[ $# -ne 1 ]]
     then 
         echo "O script $0 precisa que se indique o nome do ficheiro de combates";
-        exit;
-    fi 
-
-    if  [ -r $1 -o  -f $1 ] 
+        exit 0;
+    elif  [[ ! -f $1 ]] 
     then
-        echo "ERRO!! O ficheiro de $1 non existe ou non ten permisos de lectura";
+        echo "ERRO!! O ficheiro de $1 non existe ";
         exit;
+    elif  [[ ! -r $1 ]] 
+    then
+        echo "ERRO!! O ficheiro de $1 non ten permisos de lectura";
+        exit 0;
+  
     else
          #Amañar o ficheiro por se incorpora o final de linha 
          echo "" | tee -a  $1 > /dev/null #Forzamos unha nova linha
