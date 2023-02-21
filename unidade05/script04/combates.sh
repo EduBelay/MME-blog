@@ -5,9 +5,11 @@ validacion(){
     then 
         echo "O script $0 precisa que se indique o nome do ficheiro de combates";
         exit;
-    elif  [ -r $1 -a  -f $1 ] 
+    fi 
+
+    if  [ -r $1 -o  -f $1 ] 
     then
-        echo "ERRO!! O ficheiro de >$1< non existe ou non ten permisos de lectura";
+        echo "ERRO!! O ficheiro de $1 non existe ou non ten permisos de lectura";
         exit;
     else
          #Amañar o ficheiro por se incorpora o final de linha 
