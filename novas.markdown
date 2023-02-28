@@ -49,7 +49,8 @@ has_toc: false
 
 
 ## RAM 
-- [26/08/2022 :Esta solución reemplazará la memoria RAM y los discos duros](https://hardzone.es/noticias/componentes/cxl-ssd-posibilidades/)
+- [27/02/2023 : Partes da DDR5](https://www.guiahardware.es/partes-de-una-ddr5/)
+- [2/6/08/2022 :Esta solución reemplazará la memoria RAM y los discos duros](https://hardzone.es/noticias/componentes/cxl-ssd-posibilidades/)
   - Intersante sobre a tecnoloxía CXL 
 
 
