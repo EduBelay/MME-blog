@@ -54,7 +54,8 @@ has_toc: false
 
 ## RAM 
 - [27/02/2023 : Partes da DDR5](https://www.guiahardware.es/partes-de-una-ddr5/)
-- [2/6/08/2022 :Esta solución reemplazará la memoria RAM y los discos duros](https://hardzone.es/noticias/componentes/cxl-ssd-posibilidades/)
+- [15/02/2023 :Mezclar diferentes módulos de memoria RAM: Pros y Contras](https://www.guiahardware.es/mezclar-diferentes-modulos-memoria-ram-pros-y-contras/)
+- [06/08/2022 :Esta solución reemplazará la memoria RAM y los discos duros](https://hardzone.es/noticias/componentes/cxl-ssd-posibilidades/)
   - Intersante sobre a tecnoloxía CXL 
 
 
@@ -64,6 +65,12 @@ has_toc: false
  - [22/02/2023 : Airjet: todo sobre el nuevo sistema de refrigeración de estado sólido](https://www.guiahardware.es/airjet-todo-sobre-el-nuevo-sistema-de-refrigeracion-de-estado-solido/)
 # Mantemento
 - [10/02/2023 : Cómo solucionar Error «Inaccesible Boot Device» en Windows](https://www.guiahardware.es/como-solucionar-error-inaccesible-boot-device-en-windows/)
+- [10/02/2023 : Cómo solucionar Error «System Service Exception» en Windows](https://www.guiahardware.es/como-solucionar-error-system-service-exception-en-windows/)
+- [7/02/2023 : Cómo eliminar pagefile.sys e hiberfil.sys para liberar espacio](https://www.guiahardware.es/eliminar-pagefile-sys-hiberfil-sys/)
 ## Pantallas
+- [ 06/02/2023 : Splitter HDMI: qué es y en qué se diferencia de un switch](https://www.guiahardware.es/splitter-hdmi-vs-switch/)
 - [ 19/08/2022 : Nunca utilices esto para limpiar la pantalla de tu ordenador portátil](https://hardzone.es/noticias/componentes/como-no-limpiar-pantalla-ordenador-portatil/)
 - [ 21/08/2022 : Cómo limpiar un portátil lleno de insectos](https://hardzone.es/noticias/componentes/limpiar-insectos-portatil/)
+
+## Clonación
+- [01/02/2023 : Ferramentas para clonación](https://www.guiahardware.es/mejores-herramientas-clonar-windows-ssd/)
