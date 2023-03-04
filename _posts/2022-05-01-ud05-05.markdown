@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "UD05-05: Verificación dun disco. "
+date:   2022-05-01 00:05:00 +0200
+categories: unidade05
+tags: numeracion 
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD05-05 : Verificación dun disco
+
+
+## Resumo 
+Nesta práctica afóndase na verificación de erros nun disco.
+
+## Enunciado 
+[PDF]({{site.baseurl}}/unidade05/t05-check-disk.pdf)
+[ODT]({{site.baseurl}}unidade05/t05-check-disk.odt)
+
+
