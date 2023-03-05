@@ -1,0 +1,10 @@
+---
+role:
+    - role::zabbix
+profile::base::packages:
+    - vim-enhanced
+    - tcpdump
+    - mc
+
+zabbix::zabbix_url: 'localhost'
+zabbix::agent::listenip: '127.0.0.1'
