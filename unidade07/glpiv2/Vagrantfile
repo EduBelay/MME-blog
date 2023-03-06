@@ -1,0 +1,52 @@
+Vagrant.configure("2") do |config|
+    config.vm.define "glpi" do |subconfig|
+      subconfig.vm.box = "ubuntu/lunar64"
+      subconfig.vm.hostname = "glpi"
+      #subconfig.vm.network "private_network", ip: "192.168.30.4",  virtualbox__intnet: true, name: "rede01"
+      subconfig.vm.network "private_network", ip: "192.168.56.4"
+      subconfig.vm.network "forwarded_port", guest: 80, host: 8080
+      subconfig.vm.provider :virtualbox do |vb1|
+          vb1.name = "glpi"
+            vb1.cpus= "2"
+      end
+
+      subconfig.vm.provision "shell", inline: <<-SHELL
+          RED='\033[0;31m'
+          NC='\033[0m' # No Color
+          echo  -e "***************** ${RED}GLPI${NC}*******************";
+          sudo apt-get update
+          sudo apt install zip -y 
+          sudo apt install -y apache2 libapache2-mod-php php-mysql mariadb-server php-mbstring php-curl php-gd php-xml php-intl php-ldap php-apcu php-xmlrpc php-cas php-zip php-bz2
+          sudo echo "date.timezone = Europe/Madrid" >> /etc/php/8.1/apache2/php.ini
+          cd /var/www/html
+          wget https://github.com/glpi-project/glpi/releases/download/10.0.6/glpi-10.0.6.tgz
+          tar -xf glpi-10.0.6.tgz
+          cd glpi
+          sudo chown www-data:www-data . -R
+          #Habilitar os modulos
+          sudo a2enmod expires rewrite
+          sudo systemctl restart apache2
+          #wg; unzip master.zip
+          #cd fogproject-master/bin
+          #sudo ./installfog.sh
+      SHELL
+    end
+  
+    config.vm.define "win01" do |subconfig|
+      subconfig.vm.box = "gusztavvargadr/windows-10-21h2-enterprise-ltsc"
+      subconfig.vm.hostname = "win-01-glpi"
+      #subconfig.vm.network "private_network", ip: "192.168.30.5",  virtualbox__intnet: true, name: "rede01"
+      subconfig.vm.network "private_network", ip: "192.168.56.5"
+      subconfig.vm.provider :virtualbox do |vb2|
+        vb2.name = "win-glpi"
+        vb2.cpus= "2"
+      end
+    end
+  
+   # config.vm.define "node2" do |subconfig|
+   #   subconfig.vm.box = "bento/ubuntu-16.04"
+   # end
+  end
+  
+  
+  
