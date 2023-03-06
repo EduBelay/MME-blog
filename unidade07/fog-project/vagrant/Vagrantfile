@@ -1,0 +1,38 @@
+Vagrant.configure("2") do |config|
+    config.vm.define "fog" do |subconfig|
+      subconfig.vm.box = "ubuntu/lunar64"
+      subconfig.vm.hostname = "fog"
+      subconfig.vm.network "private_network", ip: "192.168.40.4",  virtualbox__intnet: true, name: "rede01"
+      subconfig.vm.network "forwarded_port", guest: 80, host: 8080
+      subconfig.vm.provider :virtualbox do |vb1|
+          vb1.name = "fog"
+            vb1.cpus= "2"
+      end
+
+      subconfig.vm.provision "shell", inline: <<-SHELL
+          echo "script";
+          #apt-get update
+          #sudo apt install zip -y 
+          #wget https://github.com/FOGProject/fogproject/archive/master.zip; unzip master.zip
+          #cd fogproject-master/bin
+          #sudo ./installfog.sh
+      SHELL
+    end
+  
+    config.vm.define "win01" do |subconfig|
+      subconfig.vm.box = "gusztavvargadr/windows-10-21h2-enterprise-ltsc"
+      subconfig.vm.hostname = "win-01"
+      subconfig.vm.network "private_network", ip: "192.168.40.5",  virtualbox__intnet: true, name: "rede01"
+      subconfig.vm.provider :virtualbox do |vb2|
+        vb2.name = "win-fog"
+        vb2.cpus= "2"
+      end
+    end
+  
+   # config.vm.define "node2" do |subconfig|
+   #   subconfig.vm.box = "bento/ubuntu-16.04"
+   # end
+  end
+  
+  
+  

@@ -1,0 +1,62 @@
+Repo GitHUB https://github.com/FOGProject/fogproject
+
+Configuración Vagrant maquina ubuntu
+$ vagrant init ubuntu/trusty64
+
+Editar ficheiro Vagrantfile
+
+
+>> Descargar do Repo
+>> https://github.com/FOGProject/fogproject/archive/refs/heads/master.zip 
+sudo apt update
+sudo apt install unzip 
+unzip master.zip
+cd fogproject-master/bin/
+sudo ./installfog.sh 
+
+## PREGUNTAS. 
+Pregunta 1. ¿Sistema operativo donde se va a realizar la instalación? En este caso sería Ubuntu.
+2
+
+Pregunta 2. Modos de instalación ¿Servidor normal o nodo de almacenamiento? Servidor Normal.
+N 
+
+Pregunta 3. Elección de interface con la que va a trabajar FOG. Elegimos la interfaz de la red interna (enp0s8) porque las imágenes que se van a clonar está en la red interna.
+y - enp0s8
+
+Pregunta 4. ¿Quieres configurar la dirección de red para el servicio DHCP? Indicamos que SI para tener asignación de IPs en la red interna y seria mas fácil de configurar el cliente.
+
+Pregunta 5. ¿Qué dirección IP va a utilizar el servidor DHCP? Indicamos la IP de la interfaz interna.
+
+Pregunta 6. ¿Quiere que se encargue el servidor de DHCP del DNS? Si
+
+Pregunta 7. ¿Qué dirección DNS debe permitir el DHCP? Sería la IP de localhost 127.0.0.1
+
+Pregunta 8. ¿Quiere utilizar el servicio DHCP para el servicio de FOG? Si
+
+Pregunta 9. ¿Quieres instalar paquetes adicionales de idiomas? No
+
+
+## Configuración
+* Here are the settings FOG will use:
+ * Base Linux: Debian
+ * Detected Linux Distribution: Ubuntu
+ * Interface: enp0s8
+ * Server IP Address: 192.168.40.4
+ * Server Subnet Mask: 255.255.255.0
+ * Hostname: fog
+ * Installation Type: Normal Server
+ * Internationalization: Yes
+ * Image Storage Location: /images
+ * Using FOG DHCP: Yes
+ * DHCP router Address: 192.168.40.1
+ * Send OS Name, OS Version, and FOG Version: Yes
+
+ ## Navegador
+ If you would like to backup your FOG database you can do so using MySQL Administrator or by running the following command in a terminal window (Applications->System Tools->Terminal), this will save the backup in your home directory.
+ mysqldump --allow-keywords -x -v fog > fogbackup.sql
+
+ ## Navegador usuario defecto
+ fog
+ password
+ 
