@@ -1,0 +1,7 @@
+https://www.linuxtechi.com/add-windows-host-zabbix-server-for-monitoring/
+
+
+Example:
+
+# /sbin/ifconfig eth0 up
+# /sbin/ifconfig eth0 down
