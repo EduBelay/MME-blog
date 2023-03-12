@@ -11,10 +11,11 @@ Vagrant.configure("2") do |config|
 
       subconfig.vm.provision "shell", inline: <<-SHELL
           echo "script";
-          #apt-get update
-          #sudo apt install zip -y 
-          #wget https://github.com/FOGProject/fogproject/archive/master.zip; unzip master.zip
-          #cd fogproject-master/bin
+          apt-get update
+          sudo apt install zip -y 
+          wget https://github.com/FOGProject/fogproject/archive/master.zip
+          unzip master.zip
+          cd fogproject-master/bin
           #sudo ./installfog.sh
       SHELL
     end

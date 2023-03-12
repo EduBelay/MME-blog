@@ -59,3 +59,18 @@ $acl.setOwner($conta)
 #16 - Se vamos ao Explorador de Windows, veremos que os permisos de Vicente aínda non están dados de verdade.
 #     Para iso, necesitamos empregar o método Set-Acl, pasándolle o ACL manipulado.
 Set-Acl -Path "C:\proba" -AclObject $acl
+
+#Version 2
+$arquivo = $args[0]
+$usuario = $args[1]
+$permiso = $args[2]
+$accion = $args[3]
+$cambio = $args[4]
+$acl = Get-Acl $arquivo
+$AccessRuleUser = New-Object System.Security.AccessControl.FileSystemAccessRule($usuario, $permiso, $accion)
+$acl.AddAccessRule($AccessRuleUser)
+if ($cambio) {
+   $conta = New-Object System.Security.Principal.Ntaccount($usuario)
+   $acl.setOwner($conta)
+}
+Set-Acl -Path $arquivo -AclObject $acl
