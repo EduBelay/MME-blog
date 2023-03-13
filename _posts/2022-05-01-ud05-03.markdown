@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "UD05-03:  Aplicación da pasta térmica. "
+date:   2022-05-01 00:03:00 +0200
+categories: unidade05
+tags: numeracion 
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# UD05-03  Aplicación da pasta térmica. 
+
+
+
+## Resumo 
+Nesta práctica afóndase en: 
+* Realizar o ensamblado do microprocesador e a aplicación da pasta térmica.
+* Analizar as características do microprocesador. 
+
+## Enunciado 
+[PDF]({{site.baseurl}}/unidade05/t03-pasta-termica.pdf)
+[ODT]({{site.baseurl}}unidade05/t03-pasta-termica.odt)

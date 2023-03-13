@@ -1,0 +1,16 @@
+https://phoenixnap.com/kb/linux-cpu-temp 
+> ver: 
+  * sudo apt install hddtemp lm-sensors
+  * sudo sensors-detect
+  * watch sensors 
+  * Refresca cada segundo: watch -n 1 sensors
+ 
+
+>> Bucle infinito para ver a subida de temperatura. https://www.alvarolara.com/2016/02/03/como-crear-un-bucle-infinito-en-bash/ 
+
+>> Ferramenta grafica psensor 
+sudo apt install psensor
+  * Graficas 
+
+>> hardinfo
+  sudo apt install hardinfo 

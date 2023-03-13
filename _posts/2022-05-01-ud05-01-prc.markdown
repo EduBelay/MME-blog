@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UD05-00: Exemplo práctica "
+title:  "UD05-01:  Montaxes básicos "
 date:   2022-05-01 00:01:00 +0200
 categories: unidade05
 tags: numeracion 
@@ -15,12 +15,19 @@ tags: numeracion
 {:toc}
 </details>
 
-# UD05-01: Exemplo practica 
+# UD05-01:  Montaxes básicos
 
-Nesta práctica afóndase  ....
+
 ## Resumo 
-Ver explicación da práctica neste [artigo](https://www.redeszone.net/2017/11/19/asi-puedes-ping-equipo-ip-octal-hexadecimal-e-incluso-numero-entero/)
+Nesta práctica afóndase en montaxes básicos como son:
+*  Reemplazo da fonte de alimenta
+*   Instalación da memoria RAM 
+*  Instalación das unidades ópticas.  
+*  Instalación de discos. 
+*  Instalación do ventilador da caixa.
+* Cableado do panel frontal.
+* Outras características da placa base. 
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade01/t01.pdf)
-[ODT]({{site.baseurl}}unidade01/t01.odt)
+[PDF]({{site.baseurl}}/unidade05/t01-montaxe-basicos.pdf)
+[ODT]({{site.baseurl}}unidade05/t01-montaxe-basicos.odt)

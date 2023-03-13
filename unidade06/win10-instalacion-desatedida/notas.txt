@@ -1,0 +1,18 @@
+00 - INTRODUCION
+01 - CREACIÓN DO FICHEIRO DE RESPOSTAS SINXELO. 
+02 - ANALISE DO FICHEIRO DE RESPOSTAS DA ISO DRLITE (WIN10)
+02 - CREACION DO FICHEIRO DE RESPOSTAS CON PARTICIONADO. 
+
+TAREFAS:
+> OBTER AS IMAXES EXISTENTES EN Windows SERVER 2019 E CREACIÓN DUNHA ISO desatendida. 
+> 
+
+instalación desatendida de Windows
+https://youtube.com/watch?v=PaRELYgM2qA&feature=shares
+
+Guia: https://mestreacasa.gva.es/web/pellicer_jos/13?p_p_id=101_INSTANCE_DGxT&p_p_action=0&p_p_state=maximized&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_101_INSTANCE_DGxT_struts_action=%2Ftagged_content%2Fview_content&_101_INSTANCE_DGxT_redirect=%2Fweb%2Fpellicer_jos%2F13&_101_INSTANCE_DGxT_assetId=500017731453 
+
+
+
+Xerador online de respostas
+https://todosobrewindows.com/como-crear-windows-10-usb-o-iso-desatendidos/
