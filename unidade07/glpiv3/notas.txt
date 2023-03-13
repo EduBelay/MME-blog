@@ -1,0 +1,55 @@
+php
+
+
+# configurar zona horaria
+sudo nano /etc/php/7.4/apache2/php.ini
+    date.timezone = Europe/Madrid
+
+#descargar glpi
+wget https://github.com/glpi-project/glpi/releases/download/10.0.6/glpi-10.0.6.tgz%
+
+
+## Habilitar modulos apache2
+
+$ sudo a2enmod expires rewrite
+$ sudo systemctl restart apache2
+
+$sudo nano /etc/apache2/sites-available/glpi.conf
+    Alias /glpi /var/www/glpi
+    <Directory /var/www/glpi>
+            AllowOverride all
+    </Directory>
+$ sudo a2ensite glpi.conf
+$ sudo systemctl restart apache2
+
+## Creacion BD
+
+$ sudo mysql -u root -p
+contrasional: vagrant
+
+sudo mysql -u root -p
+    create database glpi charset utf8mb4 collate utf8mb4_unicode_ci;
+    create user glpi@localhost identified by 'Password1234';
+    grant all privileges on glpi.* to glpi@localhost;
+    grant select on mysql.time_zone_name to glpi@localhost;
+
+## Configurar no navegador web 
+> Todo seguinte ata dar coas advertencias de configuración.
+
+
+###### CLIENTE WIN10
+> Cambiar teclado a español
+Set-WinUserLanguageList  -LanguageList es-ES -force
+
+> Instalacion glpi CLIENTE
+
+
+> Uso:
+https://glpi-agent.readthedocs.io/en/latest/usage.html
+glpi-agent --server http://glpi/ --daemon
+
+> Uso de envío da información de maneira autónoma:
+glpi-inventory --json > inventory.json
+glpi-injector --file inventory.json --url http://glpi/
+
+

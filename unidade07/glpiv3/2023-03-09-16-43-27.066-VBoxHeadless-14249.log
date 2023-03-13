@@ -1,0 +1,12 @@
+Log created: 2023-03-09T16:43:27.665945000Z
+Process ID:  14249 (0x37a9)
+Parent PID:  1 (0x1)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: glpiv3
+Arg[3]: --startvm
+Arg[4]: dc49d6d4-f833-493c-ada1-3eb9137aa137
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2

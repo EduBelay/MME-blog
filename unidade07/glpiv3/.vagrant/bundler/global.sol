@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"dependencies":[["log4r",[">= 0"]],["concurrent-ruby",["~> 1.0"]],["i18n",[">= 0"]],["micromachine",[">= 2","< 4"]],["vagrant-vbguest",["= 0.31.0"]]],"checksum":"3973d8ddcec0c0a63794ad908de50da0bf3e8582fc6484f99751f4f5433e0960","vagrant_version":"2.3.0"}
+=======
+{"dependencies":[["racc",["~> 1.4"]],["mini_portile2",["~> 2.7.0"]],["nokogiri",["~> 1.6"]],["rexml",[">= 0"]],["formatador",["~> 0.2"]],["excon",["~> 0.58"]],["mime-types-data",["~> 3.2015"]],["mime-types",[">= 0"]],["builder",[">= 0"]],["fog-core",["~> 2.1"]],["json",[">= 0"]],["ruby-libvirt",[">= 0.7.0"]],["fog-xml",["~> 0.1.1"]],["multi_json",["~> 1.10"]],["fog-json",[">= 0"]],["fog-libvirt",[">= 0.6.0"]],["vagrant-libvirt",["> 0"]],["rubyntlm",["~> 0.6.0",">= 0.6.3"]],["nori",["~> 2.0"]],["little-plugger",["~> 1.1"]],["logging",[">= 1.6.1","< 3.0"]],["httpclient",["~> 2.2",">= 2.2.0.2"]],["gyoku",["~> 1.0"]],["ffi",[">= 1.0.1"]],["gssapi",["~> 1.2"]],["erubi",["~> 1.8"]],["winrm",["= 2.3.6"]],["rubyzip",["~> 2.0"]],["winrm-fs",["= 1.3.5"]]],"checksum":"f4ee4b11df9592e9d03c4c4f68ead4aa7036103e63ce36cd3e5e33b159dc27eb","vagrant_version":"2.2.19"}
+>>>>>>> ab793ac (glpi)
