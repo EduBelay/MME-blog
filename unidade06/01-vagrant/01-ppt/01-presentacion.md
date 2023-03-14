@@ -32,6 +32,24 @@ Notas para a presentación
 </style>
 
 <!-- _colorPreset: dark -->
+---
+  - [Vagrant](#vagrant)
+- [Que é?](#que-é)
+- [Instalación de vagrant](#instalación-de-vagrant)
+- [Que é un box?](#que-é-un-box)
+- [Crear unha máquina virtual sinxela.](#crear-unha-máquina-virtual-sinxela)
+- [Configuración do escenario básico](#configuración-do-escenario-básico)
+- [Vagrant redirección de portos](#vagrant-redirección-de-portos)
+
+
+---
+# Que é? 
+
+ * Vagrant é unha ferramenta deseñada para configurar e compartir o entorno de traballo coa mesma configuración. 
+ * Emprega as tecnoloxías como os hipervisores de VirtualBox,VMWare, libvirt , ... 
+ * Para adaptar unha máquina (box) podemos empregar:
+   * Script shell
+   * Ferramentas como: Chef, Puppet, Ansible.
 
 ---
 # Instalación de vagrant
@@ -64,7 +82,7 @@ Notas para a presentación
    ```
 
 ---
-# Xestión sinxela dos box
+# Xestión dun box
  * **Onde se atopan por defecto os box?** No directorio do usuario:
    * Linux: /home/usuario/.vagrant.d/boxes 
    * Windows:  C:\Users\usuario\vagrant\
@@ -76,6 +94,82 @@ Notas para a presentación
   * ```bash
       vagrant.exe box remove centos
      ```
+---
+## Opcións con vagrant box 
+```bash 
+     $ vagrant box [opción]
+   ``` 
+Subcomandos dispoñibles: 
+* add
+* list
+* outdated
+* prune
+* remove
+* repackage
+* update
+---
+
+# Crear unha máquina virtual sinxela. 
+* Para cada proxecto crearemos un directorio.
+* En cada proxecto teremos un ficheiro chamado **Vagrantfile**
+ ```bash 
+$ mkdir project
+$ cd project
+
+# Creamos o ficheiro Vagrantfile co box ubuntu16.04
+$ vagrant init bento/ubuntu-16.04
+
+#Levantamos a máquina
+$ vagrant up 
+ ```
+---
+
+## Como manipular a máquina (I)? 
+* Arrincar a máquina, a primeira vez tardará algo mais ao ter que descargar o **box**
+  ```bash 
+     $ vagrant up
+  ```
+* Deter a execución da máquina
+  ```bash 
+     $ vagrant halt
+  ```
+*  Destruir os ficheiros da máquina virtual.
+   ```bash 
+     $ vagrant destroy
+   ``` 
+*  Pausar a máquina virtual.
+   ```bash 
+     $ vagrant pause
+   ``` 
+*  Reanudar a máquina virtual.
+   ```bash 
+     $ vagrant resume
+   ``` 
+---
+##  Como manipular a máquina? (II)
+
+* Conectarse por SSH 
+  ```bash 
+     $ vagrant ssh
+  ```
+* Sair da máquina virtual. **exit**
+  ```bash 
+    ubuntu@ubuntu-xenial:~$ exit
+  ```
+*  Validar unha configuración do ficheiro Vagrantfile
+   ```bash 
+     $ vagrant validate
+   ``` 
+*  Obter axuda sobre algún comando
+   ```bash 
+     $ vagrant COMMAND -h
+   ``` 
+*  Vagrant modo debug
+   ```bash 
+     $ vagrant up --debug
+   ``` 
+
+
 ---
 # Configuración do escenario básico
 Precisamos crear unha máquina virtual con Debian Bullseye 64 bits. Que pasamos debemos seguir?
@@ -140,5 +234,18 @@ end
   * Non
 
 ---
-## Configuración do escenario básico (IV) 
+## Configuración do escenario básico: Os portos (IV) 
 * Levanta a máquina e accede por ssh
+
+# Vagrant redirección de portos 
+```vagrant 
+    Vagrant::Config.run do |config|
+      # Redireciona o porta 80 do guest para a porto 4567 do host
+      config.vm.forward_port 80, 4567
+    end
+   ``` 
+* forward_port é um método que recolle dous argumentos:
+  * guest port - O porto na máquina virtual
+  * host port -  O porto na máquina local  que imos empregar para acceder. 
+* A redirección de portos aplícase durante o **vagrant up** , mais tamén podemos forzar isto unha vez lanzada con **vagrant reload**
+---
