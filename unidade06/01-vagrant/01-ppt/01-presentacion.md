@@ -208,9 +208,9 @@ Vagrant.configure("2") do |config|
     vb.cpus = 2
     vb.name = "probas"
    end
- 
 end
 ```
+**[ex02](exemplos/02/Vagrantfile)**
 ---
 ## Configuración do escenario básico (III) 
 * Levanta a máquina e accede por ssh
@@ -234,9 +234,70 @@ end
   * Non
 
 ---
-## Configuración do escenario básico: Os portos (IV) 
-* Levanta a máquina e accede por ssh
+## Configura o escenario para que arrinque a interfaz gráfica.
+* Recorda que estamos empregando de proveedor Virtualbox.
+*  ```ruby 
+    Vagrant.configure("2") do |config|
+      config.vm.box = "deb/bull"
+      config.vm.hostname ="p2"
 
+      config.vm.provider "virtualbox" do |vb|
+        vb.memory = "2048"
+        vb.cpus = 2
+        vb.name = "probas"
+        vb.gui=true
+      end
+    
+    end
+    ```
+**[ex03](exemplos/03/Vagrantfile)**
+
+---
+## Configuración do escenario básico: que instale un aplicativo.
+* Adapta o vagranfile para que instale o servidor web apache2.
+* O ficheiro de instalación debe facerse dentro do propio ficheiro Vagrantfile
+  * ```ssh
+      $ sudo apt update
+      $ sudo apt install apache2
+      $ echo "<h1>o meu servidor web</h1>" >>/var/www/index.html 
+    ```
+**[ex04](exemplos/04/Vagrantfile)**
+
+---
+### Solución
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "deb/bull"
+  config.vm.hostname ="p2"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+    vb.cpus = 2
+    vb.name = "probas"
+    vb.gui=true
+   end
+ 
+   config.vm.provision "shell", inline: <<-SHELL
+     sudo apt update
+     sudo apt install apache2 -y
+   SHELL
+end
+```
+---
+## Adapta o escenario  cun ficheiro script externo.
+* Neste caso o ficheiro externo chamarase **script.sh** 
+* O ficheiro **script.sh** ten que mostrar a seguinte mensaxe ```OLA MUNDO```
+**[ex05](exemplos/05/Vagrantfile)**
+* ```ruby
+   config.vm.provision "shell", path: "script.sh"
+  ```
+* Arquivo **script.sh**
+  ```bash
+     #/bin/bash
+    echo "ola mundo"
+  ```
+
+---
 # Vagrant redirección de portos 
 ```vagrant 
     Vagrant::Config.run do |config|
@@ -249,3 +310,58 @@ end
   * host port -  O porto na máquina local  que imos empregar para acceder. 
 * A redirección de portos aplícase durante o **vagrant up** , mais tamén podemos forzar isto unha vez lanzada con **vagrant reload**
 ---
+## Adapta o escenario facendo nat.
+* Neste caso vamos redireccionar o porto 80 do servidor web apache ao porto 8080 no anfitrión. 
+* 
+  ```ssh
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+  ```
+* **[ex06](exemplos/06/Vagrantfile)**
+---
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "deb/bull"
+  config.vm.hostname ="p2"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+    vb.cpus = 2
+    vb.name = "probas"
+   # vb.gui=true
+   end
+   #config.vm.provision "shell", path: "script.sh"
+   config.vm.provision "shell", inline: <<-SHELL
+     sudo apt update
+     sudo apt install apache2 -y
+   SHELL
+#Configuración portos
+config.vm.network "forwarded_port", guest: 80, host: 8080
+
+end
+```
+<!-- ![height:100px](img/01_apache.png) -->
+---
+## Configuración do escenario para compartir directorios. 
+* [Documentación](https://developer.hashicorp.com/vagrant/docs/v2.3.0/synced-folders/basic_usage)
+* Na máquina de referencia tes que:
+  1. Crear un directorio chamado **tmp** no directorio do proxecto vagrant.
+  2. Editar o **Vagrantfile** para que compartas o directorio creado no host dentro da máquina virtual no directorio **/tmp/src**
+  3. Levanta a máquina e accede nela para crear un ficheiro de texto chamado **oTeuNome.txt**
+  4. Sae da MV e revisa o directorio **tmp** no host. Apareceu algo novo?
+
+**[ex07](exemplos/07/Vagrantfile)**
+* `config.vm.synced_folder "tmp", "/tmp/src"`
+---
+# Discos
+* [Documentación](https://developer.hashicorp.com/vagrant/docs/disks/configuration)
+* Existen 3 tipos de discos que nos permite Vagrant, estos son: **disk**, **dvd**, **floppy**
+* Exemplo:
+  ```ruby
+  config.vm.disk :disk, name: "backup", size: "10GB"
+  config.vm.disk :dvd, name: "installer", file: "./installer.iso"
+  config.vm.disk :floppy, name: "cool_files"
+
+  ```
+
+---
+
