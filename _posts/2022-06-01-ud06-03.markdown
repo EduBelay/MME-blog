@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "UD06-01: Vagrant "
-date:   2022-06-01 00:01:00 +0200
+title:  "UD06-03: Linux desantedido "
+date:   2022-06-01 00:02:00 +0200
 categories: unidade06
 tags: numeracion 
 ---
@@ -15,14 +15,13 @@ tags: numeracion
 {:toc}
 </details>
 
-# UD06-01: Vagrant
+# UD06-03: Linux desantedido 
 
-Nesta práctica afóndase  ....
-## Vagrant 
- * [Guía rápida]({{site.baseurl}}/unidade06/01-vagrant/01-guia-rapida/00-guia-rapida.pdf) 
- * [Presentación]({{site.baseurl}}/unidade06/01-vagrant/01-ppt/presentacion.html) 
- * 
+## Presentación 
 
+ * [Introdución]({{site.baseurl}}/unidade06/02-win10-instalacion-desatedida/00_Intro.pdf) 
+
+  
 ## Enunciado 
 [PDF]({{site.baseurl}}/unidade06/01-vagrant/01-ppt/presentacion.html)
 [ODT]({{site.baseurl}}unidade01/t01.odt)

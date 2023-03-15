@@ -21,7 +21,7 @@ tags: numeracion
 ## Resumo 
 Nesta práctica afóndase en montaxes básicos como son:
 *  Reemplazo da fonte de alimenta
-*   Instalación da memoria RAM 
+*  Instalación da memoria RAM 
 *  Instalación das unidades ópticas.  
 *  Instalación de discos. 
 *  Instalación do ventilador da caixa.
