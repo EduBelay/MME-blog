@@ -29,5 +29,5 @@ Nesta práctica afóndase en montaxes básicos como son:
 * Outras características da placa base. 
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade05/t01-montaxe-basicos.pdf)
-[ODT]({{site.baseurl}}unidade05/t01-montaxe-basicos.odt)
+[PDF]({{site.baseurl}}/unidade05/01-montaxes-basicos/t01-montaxe-basicos.pdf)
+[ODT]({{site.baseurl}}unidade05/01-montaxes-basicos/t01-montaxe-basicos.odt)

@@ -25,5 +25,5 @@ Nesta práctica afóndase en:
 * Analizar as características do microprocesador. 
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade05/t03-pasta-termica.pdf)
-[ODT]({{site.baseurl}}unidade05/t03-pasta-termica.odt)
+[PDF]({{site.baseurl}}/unidade05/03-pasta-termica/t03-pasta-termica.pdf)
+[ODT]({{site.baseurl}}unidade05/03-pasta-termica/t03-pasta-termica.odt)

@@ -25,5 +25,5 @@ Nesta práctica afóndase en montaxes básicos como son:
 * Ensamblaxe dun equipo. 
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade05/t02-montaxe-equipo.pdf)
-[ODT]({{site.baseurl}}unidade05/t02-montaxe-equipo.odt)
+[PDF]({{site.baseurl}}/unidade05/02-montaxe-equipo/t02-montaxe-equipo.pdf)
+[ODT]({{site.baseurl}}unidade05/02-montaxe-equipo/t02-montaxe-equipo.odt)

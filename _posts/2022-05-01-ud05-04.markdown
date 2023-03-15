@@ -23,5 +23,5 @@ tags: numeracion
 Nesta práctica afóndase na creación de particións dende o terminal en Linux.
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade05/t04-discos-alumnado.pdf)
-[ODT]({{site.baseurl}}unidade05/t04-discos-alumnado.odt)
+[PDF]({{site.baseurl}}/unidade05/04-discos/t04-discos-alumnado.pdf)
+[ODT]({{site.baseurl}}unidade05/04-discos/t04-discos-alumnado.odt)

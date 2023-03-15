@@ -22,7 +22,7 @@ tags: numeracion
 Nesta práctica afóndase na verificación de erros nun disco.
 
 ## Enunciado 
-[PDF]({{site.baseurl}}/unidade05/t05-check-disk.pdf)
-[ODT]({{site.baseurl}}unidade05/t05-check-disk.odt)
+[PDF]({{site.baseurl}}/unidade05/05-check-disk-linux/t05-check-disk-alumno.pdf)
+[ODT]({{site.baseurl}}unidade05/05-check-disk-linux/t05-check-disk-alumno.odt)
 
 
