@@ -113,7 +113,7 @@ Abre as propiedades do  servizo SNMP. Se está detido, reiníciao e configurao c
 * Accede a ```gpedit.msc``` e logo na árbore busca:  
   * Configuración da Computadora > Políticas > Definición de Plantillas administrativas > Rede > SNMP.
 
-![height:480](img/05.png)
+![ height:480](img/05.png)
 
 ---
 
@@ -123,9 +123,20 @@ Hai tres parámetros de política SNMP posibles:
 * Especificar trap para la comunidad pública : Le permite configurar la trampa para el Protocolo simple de administración de red.
 
 ---
-# Configuración de GLPI
-* Para permitir realizar o inventariado pola rede é preciso instalar **OCS Inventory NG** para elo activaremos o MarketPlace  na sección **configuración>plugins**.
-* Buscamos  OCS Inventory NG e o instalamos. 
-* 
+# Instalación do plugin GLPI Inventory
+* Para permitir realizar o inventariado pola rede é preciso instalar **GLPI Inventory** para elo activaremos o MarketPlace  na sección **configuración>plugins**.
+* Ao finalizar a instalación recorda activalo. 
+![bg right width:800](img/06png.png) 
+
 ---
-## Instalación do plugin OCS Inventory 
+##  Configuración do rango 
+>Administración>GLP Inventory > (menú networking)>IP Ranges
+![bg right width:800](img/07.png) 
+
+---
+##  Configuración do rango 
+Incluimos o rango dos enderezos IP para realizar o autodescubrimento:
+* 192.168.56.1
+* 192.168.56.254
+Recorda seguir a guía cos pasos que aparecen no menú. 
+![bg right width:800](img/08.png) 

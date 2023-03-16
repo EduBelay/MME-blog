@@ -23,6 +23,7 @@ Nesta práctica afóndase na verificación de erros nun disco.
 
 ## Enunciado 
 [PDF]({{site.baseurl}}/unidade05/t05-check-disk.pdf)
-[ODT]({{site.baseurl}}unidade05/t05-check-disk.odt)
+[ODT]({{site.baseurl}}/unidade05/t05-check-disk.odt)
 
+ 
 
