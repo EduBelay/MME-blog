@@ -1,0 +1,40 @@
+<!--*************************************************
+Windows 10 Arquivo de respostas
+Útil para crear imaxes co sysprep
+**************************************************-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<!-- Zona Horaria -->
+            <TimeZone>Romance Standard Time</TimeZone>
+            <!-- Nome do Equipo -->
+			<ComputerName>XW10-XX</ComputerName>
+		</component>
+    </settings>
+	<settings pass="oobeSystem">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<!-- Para que non pregunte nada -->
+			<OOBE>
+				<!-- Non amosa o contrato de licencia -->
+				<HideEULAPage>true</HideEULAPage>
+				<HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+				<!-- Non nos pide crear contas de usuario online -->
+				<HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+				<!-- Non nos amosa o asistente para conectarnos á Wifi -->
+				<HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+				<!-- Na configuración da rede local escollemos como ubicación Traballo -->
+				<NetworkLocation>Work</NetworkLocation>
+				<!-- Non nos pregunta para crear un usuario -->
+				<SkipUserOOBE>true</SkipUserOOBE>
+				<!-- Non nos pregunta un nome parao o equipo -->
+				<SkipMachineOOBE>true</SkipMachineOOBE>
+				<!-- Escollemos a configuración de protección do equipo por defecto  -->
+				<ProtectYourPC>3</ProtectYourPC>
+			</OOBE>
+			
+		</component>
+    </settings>
+	
+</unattend>

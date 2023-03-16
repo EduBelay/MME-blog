@@ -44,12 +44,14 @@ Auditando el sistema con auditd
 Optimización de memoria RAM en Linux
 
 ## Vagrant
+* [Presentacion Docker]({{site.baseurl}}/unidade06/01-vagrant/01-ppt/01-presentacion.html)
 * [Introducción a Vagrant](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
 * [Intro Vagrant.Redes](https://www.josedomingo.org/pledin/2021/10/introduccion-vagrant-libvirt-redes/)
 * [Intro Vagrant.Almacenamento](https://www.josedomingo.org/pledin/2021/10/introduccion-vagrant-libvirt-almacenamiento/)
 * [Guia Rápida de vagrant](https://www.busindre.com/guia_rapida_de_vagrant)
 
-
+# Activar virtualización anidada
+````C:\Program Files\Oracle\VirtualBox>VBoxManage.exe modifyvm **ubuntu23** --nested-hw-virt on````
 
 ## Enunciado 
 [PDF]({{site.baseurl}}/unidade01/t01.pdf)
