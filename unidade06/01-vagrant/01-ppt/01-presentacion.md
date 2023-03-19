@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 paginate: true
 # header: '**Montaxe e mantemento de equipos**'
 footer: 'Pablo Belay Fernández'
@@ -91,9 +91,25 @@ Notas para a presentación
    vagrant box list
     ```
 * Como eliminamos o box creado chamado **centos** ?
-  * ```bash
+   ```bash
       vagrant.exe box remove centos
      ```
+--- 
+### Xestión dun box online
+* Podemos importar os BOX publicados en  https://app.vagrantup.com/, existen varias alternivas: 
+
+* Opción 1, empregando o terminal. 
+  ```bash 
+    vagrant init ubuntu/trusty64
+    vagrant up
+    ```
+* Opción 2, dende o vagranfile
+  ```ruby 
+   Vagrant.configure("2") do |config|
+      config.vm.box = "ubuntu/trusty64"
+    end
+ * Opción 3, descargar o box e importalo manualmente.
+
 ---
 ## Opcións con vagrant box 
 ```bash 
@@ -169,6 +185,17 @@ $ vagrant up
      $ vagrant up --debug
    ``` 
 
+
+---
+## Estado das MV
+* Comprobar o estado 
+  ```bash 
+  vagrant status
+  ```
+*  Comprobar o estado de todas as MV
+   ```bash 
+   vagrant global-status
+   ```
 
 ---
 # Configuración do escenario básico
@@ -318,6 +345,7 @@ end
   ```
 * **[ex06](exemplos/06/Vagrantfile)**
 ---
+### Solución
 ```ruby
 Vagrant.configure("2") do |config|
   config.vm.box = "deb/bull"
@@ -351,6 +379,110 @@ end
 
 **[ex07](exemplos/07/Vagrantfile)**
 * `config.vm.synced_folder "tmp", "/tmp/src"`
+
+---
+## Exercicio: Comparte o directorio web de apache.
+Na máquina de referencia tes que:
+* Crea no directorio do teu proxecto vagrant o directorio web.
+* Edita o Vagrantfile para que compartas o directorio creado no host dentro da máquina virtual no directorio **/var/www/html**
+* No directorio web inclue o ficheiro index.html co seguinte contido
+  ```html
+  <!DOCTYPE html>
+   <html>
+    <head>
+    </head>
+    <body>
+      <h1> Ola mundo!!! </h1>
+  </html> 
+  ```
+* Realiza nat do porto do servidor web para o porto 8080 no host. 
+---
+### Solución
+**[ex07-02](exemplos/07-02/Vagrantfile)**
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "deb/bull"
+  config.vm.hostname ="p2"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+    vb.cpus = 2
+    vb.name = "ex07-02-web"
+   # vb.gui=true
+   end
+   #config.vm.provision "shell", path: "script.sh"
+   config.vm.provision "shell", inline: <<-SHELL
+     sudo apt update
+     sudo apt install apache2 -y
+    SHELL
+config.vm.network "forwarded_port", guest: 80, host: 8080
+config.vm.synced_folder "web", "/var/www/html"
+end
+
+```
+---
+# Configuración rede.  
+
+* **IP estática** 
+  ```ruby
+  config.vm.network "private_network", ip: "192.168.33.10"
+  ```
+* **DHCP** 
+  ```ruby
+  config.vm.network "private_network", type: "dhcp"
+  ```
+* **Adaptador ponte** 
+  ```ruby
+  config.vm.network :public_network,:bridge=>"eth0"
+  ```
+* **Configuración nun script en liña** 
+
+  ```ruby
+   # manual ip
+  config.vm.provision "shell",
+    run: "always",
+    inline: "ifconfig eth1 192.168.0.17 netmask 255.255.255.0 up"
+    ```
+---
+
+---
+## Configuración rede.  
+ * Configura un equipo cunha IP estática como a seguinte
+**192.168."número de lista".3**.
+   * **[ex08](exemplos/08/Vagrantfile)**
+ * Configuración en ponte de rede
+   *  **[ex08-02](exemplos/08-02/Vagrantfile)**
+--- 
+## Configuración múltiples máquinas 
+ * Creamos varias máquinas que se definen como *nodo1* e *nodo2* 
+  
+ ```ruby
+    Vagrant.configure("2") do |config|
+
+      config.vm.define :nodo1 do |nodo1|
+        nodo1.vm.box = "precise32"
+        nodo1.vm.hostname = "nodo1"
+        nodo1.vm.network :private_network, ip: "10.1.1.101"
+
+      config.vm.define :nodo2 do |nodo2|
+        nodo2.vm.box = "precise32"
+        nodo2.vm.hostname = "nodo2"
+        nodo2.vm.network :private_network, ip: "10.1.1.102"
+      end
+    end
+  ```
+
+* Acceso por ssh `vagrant ssh nodo1` 
+* Deter unha MV  `vagrant halt  nodo1` 
+
+
+---
+# Xerar un box personalizado
+ * Podemos xerar un box coas nosas personalizacións para elo empregamos o subcomando **package**
+ * Recorda que debes empregar na base o mesmo nome que o da MV. 
+ * Exemplo de uso co MV do exemplo 08-02
+   * `vagrant package --base "Exemplo08-02" --output "exemplo0802.box"`
+
 ---
 # Discos
 * [Documentación](https://developer.hashicorp.com/vagrant/docs/disks/configuration)
@@ -365,3 +497,16 @@ end
 
 ---
 
+---
+# Recursos
+## Documentación
+* [Documentación oficial](https://developer.hashicorp.com/vagrant)
+## Guías de interese
+
+* [Práctica con Vagrant](https://josejuansanchez.org/iaw/practica-vagrant/index.html)
+* [Xestionando máquinas virtuais con Vagrant](https://www.josedomingo.org/pledin/2013/09/gestionando-maquinas-virtuales-con-vagrant/)
+* [Guía rápida de Vagrant](https://www.busindre.com/guia_rapida_de_vagrant)
+
+## Outros recursos para ampliar
+* [Openstack](https://www.josedomingo.org/pledin/2014/02/instalando-openstack-en-mi-portatil/)
+* [Usando OpenStack desde Vagrant](https://www.josedomingo.org/pledin/2016/01/usando-openstack-desde-vagrant/)
