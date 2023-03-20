@@ -484,6 +484,23 @@ end
    * `vagrant package --base "Exemplo08-02" --output "exemplo0802.box"`
 
 ---
+# Truco: Creación en bucle
+* [Documentación](https://developer.hashicorp.com/vagrant/docs/vagrantfile/tips)
+* ```ruby
+    (1..3).each do |i|
+      config.vm.define "node-#{i}" do |node|
+        node.vm.provision "shell",
+          inline: "echo hello from node #{i}"
+      end
+    end
+  ```
+---
+## Exercicio
+* Crea en Vagrant empregando un bucle 3 equipos coa mesma configuración.
+* Os equipos deben ter configurado unha tarxeta de rede de modo interna e con ips correlativas. 
+* Configuración 
+   *  **[ex10](exemplos/10/Vagrantfile)**
+---
 # Discos
 * [Documentación](https://developer.hashicorp.com/vagrant/docs/disks/configuration)
 * Existen 3 tipos de discos que nos permite Vagrant, estos son: **disk**, **dvd**, **floppy**
