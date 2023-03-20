@@ -1,0 +1,8 @@
+executar no terminal
+===========================
+packer build -only=virtualbox-iso debian10.json
+
+
+
+Fonte: https://github.com/eaksel/packer-Debian10
+

@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "deb/bull"
+  config.vm.hostname ="p2"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+    vb.cpus = 2
+    vb.name = "ex07-02-web"
+   # vb.gui=true
+   end
+   #config.vm.provision "shell", path: "script.sh"
+   config.vm.provision "shell", inline: <<-SHELL
+     sudo apt update
+     sudo apt install apache2 -y
+   SHELL
+#Configuración portos
+config.vm.network "forwarded_port", guest: 80, host: 8080
+#cartafois
+config.vm.synced_folder "web", "/var/www/html"
+
+
+end

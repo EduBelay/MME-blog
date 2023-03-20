@@ -1,0 +1,22 @@
+{
+    "builders": [
+        {
+            "type": "virtualbox-ovf",
+            "source_path": "$HOME/Documentos/Ubuntu.ova",
+            "ssh_username": "osboxes",
+            "ssh_password": "osboxes.org",
+            "shutdown_command": "echo 'packer' | sudo -S shutdown -P now"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": [
+                    "sudo apt-add-repository universe",
+                    "sudo apt-get install python3-pip -y",
+                    "sudo pip3 install ansible"
+            ]
+        }
+        
+    ]
+}
