@@ -1,0 +1,15 @@
+#cloud-config
+autoinstall:
+    version: 1
+    early-commands:
+    - systemctl stop ssh # otherwise packer tries to connect and exceed max attempts
+    locale: es_ES
+    keyboard:
+      layout: es
+    identity:
+      hostname: vagrant
+      password: '$6$xzsJvkg10l$/MR33d6N0hKXj23Mlb7xustF5i2TzA1iQt9gErJysQxnANBHUyeUdyc.paED1gB0tIx5XPG2Zic4BLygr1Z2a/'
+      username: vagrant
+    ssh:
+      install-server: yes
+      allow-pw: yes

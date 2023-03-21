@@ -1,0 +1,14 @@
+PASOS:
+====================
+1. Agregar no directorio iso a imaxen de ubuntu https://releases.ubuntu.com/22.04/
+2. Editar o ficheiro ubuntu.json con sha256 correspondente. 
+    certutil.exe -hashfile FICHEIRO.ISO SHA512 
+3. Exectuar packer 
+    packer.exe build .\ubuntu.json
+
+4. Xenera a imaxe en output-virtualbox
+5. O proceso de instalación neste caso precisa a interación do usuario para a configuración.
+6. Convertir json a HCL
+    https://www.virtualizationhowto.com/2022/06/convert-packer-variables-json-to-hcl2-for-automated-vsphere-builds/
+
+    packer hcl2_upgrade ubuntu.json

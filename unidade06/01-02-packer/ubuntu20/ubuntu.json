@@ -1,0 +1,62 @@
+{
+    "builders": [
+    {
+        "type": "virtualbox-iso",
+        "vboxmanage": [
+            [ "modifyvm", "{{.Name}}", "--memory", "{{ user `ram` }}" ],
+            [ "modifyvm", "{{.Name}}", "--vram", "36" ],
+            [ "modifyvm", "{{.Name}}", "--cpus", "{{ user `cpus` }}" ]
+        ],
+        "guest_os_type": "Ubuntu_64",
+        "disk_size": "{{ user `virtualbox_disk_size` }}",
+        "headless": "{{ user `headless` }}",
+        "iso_url": "{{ user `iso_url` }}",
+        "iso_checksum": "{{ user `iso_checksum` }}",
+        "vm_name": "ubuntu2204",
+        "boot_command": [
+            "<enter><enter><f6><esc><wait> ",
+            "autoinstall ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/",
+            "<enter>"
+            ],
+        "boot_wait": "5s",
+        "shutdown_command": "echo 'vagrant'|sudo -S shutdown -P now",
+        "ssh_password": "vagrant",
+        "ssh_port": 22,
+        "ssh_username": "vagrant",
+        "ssh_timeout": "10000s",
+        "ssh_handshake_attempts": "50",
+        "guest_additions_mode": "upload",
+        "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
+        "format": "ova"
+    }
+    ],
+    "provisioners": [{
+        "environment_vars": [
+            "HOME_DIR=/home/vagrant"
+        ],
+        "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E sh -eux '{{.Path}}'",
+        "expect_disconnect": true,
+        "scripts": [
+            "scripts/update.sh",
+            "scripts/sudoers.sh",
+            "scripts/virtualbox.sh",
+            "scripts/vagrant.sh",
+            "scripts/cleanup.sh"
+        ],
+        "type": "shell"
+    }],
+    "variables": {
+        "headless": "false",
+        "iso_checksum": "5e38b55d57d94ff029719342357325ed3bda38fa80054f9330dc789cd2d43931",
+        "iso_url": "iso/ubuntu-22.04.2-live-server-amd64.iso",
+        "version": "0",
+        "ram": "1024",
+        "cpus": "2",
+        "virtualbox_disk_size": "12288"
+    },
+    "post-processors": [{
+        "type": "vagrant",
+        "compression_level": "8",
+        "output": "output/ubuntu-20.04-{{.Provider}}.box"
+    }]
+  }
