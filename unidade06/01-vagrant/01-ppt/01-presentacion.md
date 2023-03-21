@@ -238,6 +238,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 **[ex02](exemplos/02/Vagrantfile)**
+
 ---
 ## Configuración do escenario básico (III) 
 * Levanta a máquina e accede por ssh
@@ -496,7 +497,7 @@ end
   ```
 ---
 ## Exercicio
-* Crea en Vagrant empregando un bucle 3 equipos coa mesma configuración.
+* Crea en Vagrant  un bucle con 3 equipos coa mesma configuración.
 * Os equipos deben ter configurado unha tarxeta de rede de modo interna e con ips correlativas. 
 * Configuración 
    *  **[ex10](exemplos/10/Vagrantfile)**
