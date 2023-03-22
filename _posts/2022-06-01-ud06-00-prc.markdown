@@ -17,6 +17,8 @@ tags:
 
 # UD06-01: Contidos 
 
+## Linux
+- [Folla resumo dos comandos Linux](https://cheatography.com/davechild/cheat-sheets/linux-command-line/)
 ## Xerar un USB Booteable. 
 * [Burn ISO to USB from Linux command line](https://linuxconfig.org/burning-cds-over-the-internet-with-or-without-iso-image)
 
