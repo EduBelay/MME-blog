@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>00-guia-rapida.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<ul>
+<li><a href="#gu%C3%ADa-r%C3%A1pida-de-vagrant">Guía rápida de Vagrant</a>
+<ul>
+<li><a href="#comandos-de-administraci%C3%B3n-de-vms-boxes">Comandos de administración de VMs (Boxes)</a></li>
+<li><a href="#actualizaciones-de-boxes-en-vagrant">Actualizaciones de Boxes en Vagrant</a></li>
+<li><a href="#notas-sobre-el-uso-de-snapshots-en-vagrant">Notas sobre el uso de Snapshots en Vagrant</a></li>
+<li><a href="#notas-sobre-la-eliminaci%C3%B3n-de-vms-en-vagrant">Notas sobre la eliminación de VMs en Vagrant.</a></li>
+</ul>
+</li>
+<li><a href="#configuraci%C3%B3n-y-tipos-de-red-en-vagrant">Configuración y tipos de red en Vagrant</a>
+<ul>
+<li><a href="#nat">NAT</a></li>
+<li><a href="#red-interna">Red interna</a></li>
+<li><a href="#puente">Puente</a></li>
+<li><a href="#p%C3%BAblica">Pública</a></li>
+<li><a href="#solo-anfitri%C3%B3n">Solo anfitrión</a></li>
+<li><a href="#puerta-enlace">Puerta enlace</a></li>
+</ul>
+</li>
+<li><a href="#configuraci%C3%B3n-m%C3%ADnima-de-un-archivo-de-configuraci%C3%B3n-vagrantfile">Configuración mínima de un archivo de configuración Vagrantfile</a></li>
+<li><a href="#crear-entornos-con-m%C3%BAltiples-vms-en-vagrant-mediante-vagrantfile">Crear entornos con múltiples VMs en Vagrant mediante Vagrantfile</a></li>
+<li><a href="#llaves-ssh-en-vagrant">Llaves SSH en Vagrant</a></li>
+<li><a href="#vagrant-ssh">Vagrant ssh</a>
+<ul>
+<li><a href="#acceder-a-root-directamente-en-m%C3%A1quinas-vagrant">Acceder a root directamente en máquinas Vagrant</a></li>
+<li><a href="#configurar-ram-y-cpus">Configurar RAM y CPUs</a></li>
+<li><a href="#compartir-directorios--sincronizaci%C3%B3n-de-carpetas-entre-la-vm-y-el-host">Compartir directorios / Sincronización de carpetas entre la VM y el Host</a></li>
+<li><a href="#directorios-de-vms-en-vagrant-y-virtualbox">Directorios de VMs en Vagrant y VirtualBox</a></li>
+<li><a href="#cambiar-la-limitaci%C3%B3n-de-rangos-de-ip-v%C3%A1lidos-al-usar-vagrant-con-vbox">Cambiar la limitación de rangos de IP válidos al usar vagrant con VBox</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="gu%C3%ADa-r%C3%A1pida-de-vagrant">Guía rápida de Vagrant</h1>
+<p>Vagrant es una herramienta para la creación y configuración de entornos de desarrollo virtualizados. Originalmente se desarrolló para VirtualBox y sistemas de aprovisionamiento de configuración tales como Chef, Salt o Puppet.</p>
+<p>Sin embargo desde la versión 1.1 Vagrant es capaz de trabajar con múltiples proveedores, como VMware, Amazon EC2, LXC, DigitalOcean, etc. Tiene una documentación muy buena y es fácil de utilizar​, permitiendo crear entornos y máquinas virtuales de prueba rápidamente.</p>
+<p>Aunque Vagrant se ha desarrollado en Ruby se puede usar en multitud de proyectos escritos en otros lenguajes, tales como PHP, Python, Java, C# y JavaScript.</p>
+<p><strong>Vagrant Documentación</strong>: https://www.vagrantup.com/docs/</p>
+<p><strong>Vagrant VMs</strong>: https://app.vagrantup.com/boxes/search / http://www.vagrantbox.es/</p>
+<p><strong>Recomendación</strong>: Descargar / Usar imágenes oficiales o crearlas nosotros mismos.</p>
+<h2 id="comandos-de-administraci%C3%B3n-de-vms-boxes">Comandos de administración de VMs (Boxes)</h2>
+<pre class="hljs"><code><div> 
+vagrant init   <span class="hljs-comment"># Inicializa Vagrant creando un directorio .vagrant y el fichero "Vagrantfile" (plantilla de configuración).</span>
+vagrant init ubuntu/trust   <span class="hljs-comment"># Inicializa Vagrant e instala una VM ubuntu/trusty64 (Se puede instalar con otros comandos también).</span>
+
+vagrant up          <span class="hljs-comment"># Arranca una VM, si es la primera ver la aprovisionará.</span>
+vagrant resume      <span class="hljs-comment"># Activa una VM suspendia previamente, también se puede hacer con "vagrant up".</span>
+vagrant provision   <span class="hljs-comment"># Aprovisiona de nuevo una VM según la configuración.</span>
+vagrant reload      <span class="hljs-comment"># Reinicia (cargando el fichero Vagrantfile). Agregar --provision para provisionar.</span>
+
+vagrant ssh		<span class="hljs-comment"># Conecta mediante ssh (se debe estar dentro del mismo directorio).</span>
+vagrant ssh &lt;boxname&gt;   <span class="hljs-comment"># Conecta mediante ssh a la VM seleccionada.</span>
+vagrant ssh -c <span class="hljs-string">"sudo systemctl restart docker"</span> &lt;boxname&gt;  <span class="hljs-comment"># Ejecuta un comando por medio de ssh sobre la VM.</span>
+
+vagrant halt      <span class="hljs-comment"># Apaga una VM.</span>
+vagrant <span class="hljs-built_in">suspend</span>   <span class="hljs-comment"># Suspende una VM recordando su estado.</span>
+
+vagrant box list               <span class="hljs-comment"># Listar VMs gestionadas con Vagrant. Conocer  todas las versiones de una VM https://vagrantcloud.com/$USER/$BOX (ej. https://vagrantcloud.com/centos/7)</span>
+vagrant global-status --prune  <span class="hljs-comment"># Lista las VM y muestra sus IDs.</span>
+
+vagrant box add &lt;name&gt; &lt;url&gt;   <span class="hljs-comment"># Descargar una VM e instalarla.</span>
+vagrant box outdated           <span class="hljs-comment"># Comprueba si hay actualizaciones de la VM</span>
+vagrant box update             <span class="hljs-comment"># Actualiza la VM pero no elimina ni vuelve a generar la VM.</span>
+
+<span class="hljs-comment"># Actualizar una VM y borrar las anteriores Versiones.</span>
+vagrant box update
+vagrant box prune
+vagrant up
+
+vagrant destroy                <span class="hljs-comment"># Para la VM y suprime todos los cambios realizados durante el proceso de creación de la VM. No la elimina. Para que no pida confirmación -f.</span>
+vagrant box remove &lt;name&gt;      <span class="hljs-comment"># Elimina una VM del Vagrant. Agregar "--box-version XXX" si se quiere especificar una versión o bien --all para todas las versiones. Útil cuando vagrant destroy no pudo eliminar la VM.</span>
+vagrant destroy &amp;&amp; vagrant up  <span class="hljs-comment"># Devuelve una VM a su estado original.</span>
+
+
+vagrant package                <span class="hljs-comment"># Empaquete una VM de VirtualBox o Hyper-V en formato Vagrant (Boxes). Es usado por probeedores de Boxes.</span>
+
+<span class="hljs-comment">## Snapshots                       </span>
+vagrant snapshot list   <span class="hljs-comment"># Lista las snapshots guardadas.</span>
+vagrant snapshot push   <span class="hljs-comment"># Crea una snapshot de la VM.</span>
+vagrant snapshot pop    <span class="hljs-comment"># Restaura y elimina la snapshot. Para conservar --no-delete y/o provisionar --[no-]provision.</span>
+
+vagrant snapshot save nombre      <span class="hljs-comment"># Crea una snapshot.</span>
+vagrant snapshot restore nombre   <span class="hljs-comment"># Restaura una snapshot (No se elimina)</span>
+vagrant snapshot delete nombre    <span class="hljs-comment"># Usa únicamente con snapshots guardadas con "save", nunca con push.</span>
+
+vagrant port            <span class="hljs-comment"># Muestra los los puertos mapeados de las diferentes máquinas virtuales.  </span>
+vagrant status          <span class="hljs-comment"># Muestra el estado de la VM.</span>
+vagrant global-status   <span class="hljs-comment"># Lista todas las VM, su estado y carpeta (entorno).</span>
+</div></code></pre>
+<h2 id="actualizaciones-de-boxes-en-vagrant">Actualizaciones de Boxes en Vagrant</h2>
+<p>Cada vez que se actualiza una Box, esta tendrá otra versión (semántica X.Y.Z) y se mantendrá la anterior en disco, por lo que conviene echar un vistazo de vez en cuando e ir eliminando versiones antiguas. Vagrant siempre utiliza de manera predeterminada la última actualización de una box, al no ser que se especifique una versión en concreto en Vagrantfile.</p>
+<p>Actualizaciones dentro de una misma versión de una box (ej. 3.2.0 &gt; 3.4.5) no suelen ser problemáticas. Grandes actualizaciones (1.Y.Z &gt; 2.Y.Z) pueden llegar a ocasionar problemas importantes de funcionamiento en el software que se esté corriendo en las boxes.</p>
+<h2 id="notas-sobre-el-uso-de-snapshots-en-vagrant">Notas sobre el uso de Snapshots en Vagrant</h2>
+<p>Las snapshot creadas con &quot;vagrant snapshot push&quot; deben ser eliminadas con &quot;vagrant snapshot pop&quot;. No mezclar los comandos &quot;save&quot; y &quot;restore&quot; con &quot;push&quot; y &quot;pop&quot;.  La diferencia de uso es que push y pop están orientadas a snapshots de corta duración, donde pop restaura siempre de la última a la primera snapshot realizada, de manera anidada. Al utilizar save y restore podemos restaurar diferentes estados en el orden que se quiera. Estás snapshots estarían orientadas a permanecer más tiempo en el sistema y no para probar algo puntual como podría ser un uso de push y pop.</p>
+<h2 id="notas-sobre-la-eliminaci%C3%B3n-de-vms-en-vagrant">Notas sobre la eliminación de VMs en Vagrant.</h2>
+<p>&quot;<strong>vagrant remove</strong>&quot; o &quot;<strong>vagrant destroy</strong>&quot; no eliminan el directorio .vagrant/ y el fichero Vagrantfile. Para volver una VM a su estado original, estos dos comandos serían suficiente:</p>
+<pre class="hljs"><code><div>vagrant destroy &amp;&amp; vagrant up
+</div></code></pre>
+<h1 id="configuraci%C3%B3n-y-tipos-de-red-en-vagrant">Configuración y tipos de red en Vagrant</h1>
+<h2 id="nat">NAT</h2>
+<p><strong>NAT</strong>: La VM tiene una configuración de NAT donde queda aislada de las demás VMs y solo es accesible a través de un mapeo de puertos con el anfitrión. Siempre estará activada en vagrant aunque configuremos otros tipos de redes, es requerido para su correcto funcionamiento. Se utiliza para tener acceso a la máquina virtual mediante &quot;ssh 127.0.0.1 -p 2222&quot;. Si se han arrancado más máquinas habrá otros puertos en uso. Lógicamente esta configuración no sirve si se quieren tener varias VM en funcionamiento y que puedan contacta entre si.</p>
+<h2 id="red-interna">Red interna</h2>
+<p><strong>Red Interna</strong>: En este modo se crea una red virtual visible entre las máquinas virtuales, pero invisible a máquinas de la red que no son el propio anfitrión. Se puede configurar por DHCP o de manera estática.</p>
+<pre class="hljs"><code><div>config.vm.network <span class="hljs-string">"private_network"</span>, <span class="hljs-symbol">type:</span> <span class="hljs-string">"dhcp"</span>
+config.vm.network <span class="hljs-string">"private_network"</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"192.168.50.4"</span>
+</div></code></pre>
+<h2 id="puente">Puente</h2>
+<p><strong>Adaptador puente (Bridge)</strong>: No compatible con la version 2 de los Vagrantfile! La máquina virtual actúa como un host más de la red interna. Obligatorio DHCP.</p>
+<pre class="hljs"><code><div>config.vm.network <span class="hljs-string">"bridged"</span>
+</div></code></pre>
+<h2 id="p%C3%BAblica">Pública</h2>
+<p><strong>Red pública</strong>: Lo mismo que el adaptador puente pero con posibilidad de definir IPs fijas.</p>
+<pre class="hljs"><code><div>config.vm.network <span class="hljs-string">"public_network"</span>, <span class="hljs-symbol">type:</span> <span class="hljs-string">"dhcp"</span>
+config.vm.network <span class="hljs-string">"public_network"</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"192.168.1.44"</span>
+</div></code></pre>
+<h2 id="solo-anfitri%C3%B3n">Solo anfitrión</h2>
+<p><strong>Adaptador sólo-anfitrión</strong>: Crea una red privada entre la VM y el anfitrión, quedando aisladas de otras VM o sistemas de la red pero con todos sus  puertos completamente accesible desde el anfitrión.
+<code ruby>config.vm.network &quot;hostonly&quot;, &quot;192.168.33.10&quot;</code></p>
+<h2 id="puerta-enlace">Puerta enlace</h2>
+<p><strong>Puerta de enlace predeterminada</strong>.</p>
+<p>La interfaz eth0 siempre estará conectada por NAT, ya que es un requisito indispensable para Vagrant, independientemente de que se tengan después las redes privadas en modo puente que se necesiten. Además de manera predeterminada es la interfaz que se usará como ruta por defecto ([[https://www.vagrantup.com/docs/networking/public_network.html|Leer]]).</p>
+<p>Para eliminar la ruta por defecto que usa NAT y agregar una ruta por defecto que use una interfaz en modo puente y el gateway normal de la red como puerta de enlace predeterminada, se puede configurar de la siguiente manera el fichero Vagrant.</p>
+<pre class="hljs"><code><div>  config.vm.provision <span class="hljs-string">"shell"</span>,
+    <span class="hljs-symbol">run:</span> <span class="hljs-string">"always"</span>,                                                                  
+    <span class="hljs-symbol">inline:</span> <span class="hljs-string">"ip route del default &amp;&amp; ip route add default via 192.168.178.1"</span>
+</div></code></pre>
+<h1 id="configuraci%C3%B3n-m%C3%ADnima-de-un-archivo-de-configuraci%C3%B3n-vagrantfile">Configuración mínima de un archivo de configuración Vagrantfile</h1>
+<p>Crear un directorio, por ejemplo Vagrant/, dentro creamos carpetas para los distintos sistemas o entornos que se requieran. Por ejemplo &quot;Vagrant/ubuntu&quot;. Vagrant se basa en ficheros de configuración Vagrantfile, por lo que es necesario ir a la carpeta que lo contiene antes de ejecutar los comandos.</p>
+<p>Una vez dentro del directorio se ejecutará el comando &quot;vagrant init&quot;, el cual genera un archivo Vagrantfile y un directorio oculto .vagrant.</p>
+<p>Editar el fichero de configuración Vagrantfile para agregar una VM con Centos7.</p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+   config.vm.box = <span class="hljs-string">"centos/7"</span>
+   config.vm.define <span class="hljs-string">"Centos_7"</span>  <span class="hljs-comment"># No obligatoria pero recomendable, por defecto el nombre sería "default".</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Arrancamos la máquina.</p>
+<pre class="hljs"><code><div>vagrant up
+</div></code></pre>
+<p>Se puede usar este comando para no tener que editar el fichero, pero el nombre será &quot;default&quot;.
+<code bash>vagrant init centos/7</code></p>
+<h1 id="crear-entornos-con-m%C3%BAltiples-vms-en-vagrant-mediante-vagrantfile">Crear entornos con múltiples VMs en Vagrant mediante Vagrantfile</h1>
+<p>Fichero Vagrantfile: Instala / arranca un Ubuntu y un Debian.</p>
+<pre class="hljs"><code><div># Múltiples VMs (Opciones de red privada comentadas).
+ Vagrant.configure(&quot;2&quot;) do |config|
+    config.vm.define &quot;ubuntu&quot; do |ubuntu|
+       ubuntu.vm.box = &quot;bento/ubuntu-16.04&quot;
+#       config.vm.network &quot;private_network&quot;, ip: &quot;192.168.50.4&quot;
+    end
+    config.vm.define &quot;debian&quot; do |debian|
+       debian.vm.box = &quot;debian/jessie64&quot;
+#       config.vm.network &quot;private_network&quot;, ip: &quot;192.168.50.5&quot;
+    end
+end
+</div></code></pre>
+<p>Fichero Vagrantfile: Instala / arranca dos nodos (nodo1 y nodo2) de una misma distribución, por ejemplo centos/7.</p>
+<pre class="hljs"><code><div>Vagrant.configure(&quot;2&quot;) do |config|
+  config.vm.define &quot;nodo1&quot; do |nodo1|
+    nodo1.vm.box = &quot;centos/7&quot;
+    nodo1.vm.hostname = 'nodo1'
+    nodo1.vm.network &quot;public_network&quot;, ip: &quot;192.168.1.24&quot;
+  end
+
+  config.vm.define &quot;nodo2&quot; do |nodo2|
+    nodo2.vm.box = &quot;centos/7&quot;
+    nodo2.vm.hostname = 'nodo2'
+    nodo2.vm.network &quot;public_network&quot;, ip: &quot;192.168.1.25&quot;
+   
+  end
+end
+</div></code></pre>
+<p><strong>Sobrescribir las locales desde el fichero Vagrantfile</strong>.</p>
+<pre class="hljs"><code><div>ENV[<span class="hljs-string">"LC_ALL"</span>] = <span class="hljs-string">"en_US.UTF-8"</span>
+
+Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+  <span class="hljs-comment"># ...</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<p><strong>Redireccionar puerto de la vm al anfitrión</strong>: Si ya está ocupado el puerto usará alguno en el rango 2200 - 2250.</p>
+<pre class="hljs"><code><div>Vagrant.configure(&quot;2&quot;) do |config|
+  config.vm.network &quot;forwarded_port&quot;, guest: 80, host: 8080
+end
+</div></code></pre>
+<h1 id="llaves-ssh-en-vagrant">Llaves SSH en Vagrant</h1>
+<p>Listar la configuración.</p>
+<pre class="hljs"><code><div>vagrant ssh-config 
+Host default
+  HostName <span class="hljs-number">127.0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">1</span>
+  User vagrant
+  Port <span class="hljs-number">2200</span>
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /home/XXX/Vagrant/centos7/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+</div></code></pre>
+<h1 id="vagrant-ssh">Vagrant ssh</h1>
+<p>Acceder por ssh sin usar &quot;vagrant ssh&quot; desde el anfitrión usando NAT (Puerto 2200).</p>
+<pre class="hljs"><code><div>ssh -i /home/XXX/Vagrant/centos7/.vagrant/machines/default/virtualbox/private_key -o PasswordAuthentication=no vagrant@127.<span class="hljs-number">0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">1</span> -p <span class="hljs-number">2200</span>
+
+<span class="hljs-comment"># NOTA: Si centos7 no fuera la imagen predeterminada, la ruta sería de la siguiente manera:</span>
+<span class="hljs-comment"># /home/XXX/Vagrant/centos7/.vagrant/machines/centos7/virtualbox/private_key</span>
+</div></code></pre>
+<p>Usando scp desde el anfitrión usando NAT.</p>
+<pre class="hljs"><code><div>scp -P 2200 -i /home/XXX/Vagrant/centos7/.vagrant/machines/default/virtualbox/private_key -o PasswordAuthentication=no vagrant@127.0.0.1:/home/vagrant/passivedns/src/passivedns .
+</div></code></pre>
+<p>NOTA: La opción &quot;//-o PasswordAuthentication=no//&quot; es lógicamente optativa.</p>
+<h2 id="acceder-a-root-directamente-en-m%C3%A1quinas-vagrant">Acceder a root directamente en máquinas Vagrant</h2>
+<p>Cada VM en Vagrant tiene un creador diferente y por lo tanto una configuración de ssh también distinta. Por norma el uso de root está denegado de manera predeterminada. Cuando se quiere entrar directamente como root desde ssh, en algunas VMs de Vagrant es únicamente necesario que el usuario root tenga su fichero &quot;authorized_key&quot; correspondiente. En otras ocasiones es necesario habilitar el uso de root dentro de /etc/ssh/sshd_config. Si se desea ingresar mediante contraseña se debe establecer una previamente, ya que el uso de sudo no necesita de ninguna password de root.</p>
+<p>A continuación se verán las opciones básicas más comunes para habilitar el uso de root desde VMs Vagrant, el cual viene de manera predeterminada desactivado, pero que en determinados entornos de pruebas puede ser interesante activarlo. Por ejemplo a la hora de querer trabajar en entornos de prueba con herramientas tipo Ansible.</p>
+<p><strong>Acceso a root en Vagrant mediante llave SSH</strong>.</p>
+<p>Copiar la carpeta .ssh del usuario Vagrant a root.</p>
+<pre class="hljs"><code><div>cp -r /home/vagrant/.ssh/ /root/
+chown -R root.root /root/.ssh/
+</div></code></pre>
+<p>Fichero de configuración sshd: /etc/ssh/sshd_config.</p>
+<pre class="hljs"><code><div>PermitRootLogin without-password   <span class="hljs-comment"># Si no se quiere permitir el uso de contraseñas.</span>
+PasswordAuthentication yes         <span class="hljs-comment"># Permite el uso de contraseñas si hay problemas con la llave SSH y esta no puede ser utilizada.</span>
+</div></code></pre>
+<p><strong>Acceso a root en Vagrant mediante contraseña</strong>.</p>
+<pre class="hljs"><code><div>PermitRootLogin yes
+PasswordAuthentication yes
+</div></code></pre>
+<p>En el fichero Vagrantfile se puede usar la directiva para cambiar el usuario predeterminado que usa vagrant para conectar mediante ssh. Estos parámetros son de conexión a la hora de ejecutar &quot;vagrant ssh&quot;, no configuran la VM a la hora de hacer el aprovisionamiento de la VM. Por lo tanto la configuración del servicio sshd debe previamente configurado para permitir esas credenciales.</p>
+<pre class="hljs"><code><div>  config.ssh.username = <span class="hljs-string">"root"</span>
+<span class="hljs-comment"># config.ssh.password = 'vagrant'</span>
+</div></code></pre>
+<p>Opiciones de SSH en Vagrant: [[https://www.vagrantup.com/docs/vagrantfile/ssh_settings.html]]</p>
+<p><strong>Ansible / vagrant VM mit sudo</strong> (Cuando sudo siempre password).
+Se especifica el uso de sudo y la password vagrant.</p>
+<pre class="hljs"><code><div>ansible -vv all -m command -a <span class="hljs-string">"id"</span> -u vagrant --private-key /home/XX/Vagrant/centos7/.vagrant/machines/default/virtualbox/private_key  -b --become-method sudo -e  <span class="hljs-string">"ansible_become_pass=vagrant"</span>
+</div></code></pre>
+<p><strong>Ansible / vagrant VM mit sudo</strong> (Cuand sudo nunca pide password).
+Se especifica el uso de sudo y la password vagrant.</p>
+<pre class="hljs"><code><div>ansible -vv all -m command -a <span class="hljs-string">"id"</span> -u vagrant --private-key /home/XX/Vagrant/centos7/.vagrant/machines/default/virtualbox/private_key  -b --become-method sudo
+</div></code></pre>
+<h2 id="configurar-ram-y-cpus">Configurar RAM y CPUs</h2>
+<p>Ejemplo con 2 CPUS y 1024M de memoria RAM.</p>
+<pre class="hljs"><code><div>    config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|v|</span>
+        v.memory = <span class="hljs-number">1024</span>
+        v.cpus = <span class="hljs-number">2</span>
+    <span class="hljs-keyword">end</span>
+</div></code></pre>
+<h2 id="compartir-directorios--sincronizaci%C3%B3n-de-carpetas-entre-la-vm-y-el-host">Compartir directorios / Sincronización de carpetas entre la VM y el Host</h2>
+<p>Vagrant por defecto intenta asignar el tipo de carpeta compartida de forma automática. Es posible que en algunos casos no lo haga bien, en el caso de CentOS7 es habitualmente que use rsync. Este modo solo permite hacer cambios desde el host anfitrión y no desde la VM. Para que tanto el anfitrión como la máquina virtual puedan escribir en el directorio, usando VirtualBox se debe usar la siguiente configuración en &quot;Vagrantfile&quot;.</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># https://developer.hashicorp.com/vagrant/docs/synced-folders/virtualbox</span>
+config.vm.synced_folder <span class="hljs-string">"."</span>, <span class="hljs-string">"/vagrant"</span>, <span class="hljs-built_in">type</span>: <span class="hljs-string">"virtualbox"</span>
+</div></code></pre>
+<h2 id="directorios-de-vms-en-vagrant-y-virtualbox">Directorios de VMs en Vagrant y VirtualBox</h2>
+<p>Vagrant descarga y almacena las imágenes limpias en su directorio home, que normalmente es &quot;~/.vagrant.d&quot;. Luego en VirtualBox lo que se realizan son clones enlazados (también llamados clones vinculados) a esas imágenes (que siempre están limpias). Esos clones se encuentran normalmente en ~/VirtualBox\ VMS.</p>
+<h2 id="cambiar-la-limitaci%C3%B3n-de-rangos-de-ip-v%C3%A1lidos-al-usar-vagrant-con-vbox">Cambiar la limitación de rangos de IP válidos al usar vagrant con VBox</h2>
+<p>A partir de Diciembre del 2021 es posible encontrar este mensahe de error a la hora de arrancar VMs mediante Vagrant.</p>
+<pre class="hljs"><code><div>The IP address configured <span class="hljs-keyword">for</span> the host-only network is <span class="hljs-keyword">not</span> within the
+allowed ranges. Please update the address used to be within the allowed
+ranges <span class="hljs-keyword">and</span> run the command again.
+
+  <span class="hljs-symbol">Address:</span> X.X.X.X
+  <span class="hljs-symbol">Ranges:</span> <span class="hljs-number">192.168</span>.<span class="hljs-number">56.0</span>/<span class="hljs-number">21</span>
+
+Valid ranges can be modified <span class="hljs-keyword">in</span> the /etc/vbox/networks.conf file. For
+more information including valid format <span class="hljs-symbol">see:</span>
+
+  <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/www.virtualbox.org/manual</span><span class="hljs-regexp">/ch06.html#network_hostonly
+</span></div></code></pre>
+<p>Si se quiere poder usar cualquier red, simplemente se debe aplicar dicha configuración al fichero /etc/vbox/networks.conf</p>
+<pre class="hljs"><code><div>* <span class="hljs-number">0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">0</span>/<span class="hljs-number">0</span> <span class="hljs-symbol">:</span><span class="hljs-symbol">:/</span><span class="hljs-number">0</span>
+</div></code></pre>
+
+</body>
+</html>
