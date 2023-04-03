@@ -1,0 +1,40 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+#FLAG-experimental-disk-vagrant 
+
+ENV['VAGRANT_EXPERIMENTAL'] = "disks"
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define "open-media-vault" do |omv|
+    omv.vm.box = "rreye/omv6"
+    omv.vm.hostname = "open-media-vault"
+    omv.vm.network "private_network", ip: "192.168.50.10"
+    omv.vm.network "forwarded_port", guest: 80, host: 8080
+    omv.vm.disk :disk, size: "2GB", name: "extra_storage1"
+    omv.vm.disk :disk, size: "1GB", name: "extra_storage2"
+    omv.vm.disk :disk, name: "backup", size: "10GB"
+
+    omv.vm.provider :virtualbox do |vb1|
+      vb1.name = "open-media-vault"
+      vb1.cpus= "4"
+   end
+  end 
+  
+   
+
+#-----------------------------------------
+# Configuracion cliente WINDOWS
+#-----------------------------------------
+config.vm.define "win-omv" do |subconfig|
+  subconfig.vm.box = "gusztavvargadr/windows-10-21h2-enterprise-ltsc"
+  subconfig.vm.hostname = "win-omv"
+  subconfig.vm.network "private_network", ip: "192.168.50.20"
+  subconfig.vm.provider :virtualbox do |vb2|
+    vb2.name = "win-omv"
+    vb2.cpus= "2"
+  end
+end 
+
+end
