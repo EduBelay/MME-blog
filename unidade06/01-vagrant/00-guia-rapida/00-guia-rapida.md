@@ -23,7 +23,9 @@
 
 # Guía rápida de Vagrant 
 
-Vagrant es una herramienta para la creación y configuración de entornos de desarrollo virtualizados. Originalmente se desarrolló para VirtualBox y sistemas de aprovisionamiento de configuración tales como Chef, Salt o Puppet. Sin embargo desde la versión 1.1 Vagrant es capaz de trabajar con múltiples proveedores, como VMware, Amazon EC2, LXC, DigitalOcean, etc. Tiene una documentación muy buena y es fácil de utilizar​, permitiendo crear entornos y máquinas virtuales de prueba rápidamente.
+Vagrant es una herramienta para la creación y configuración de entornos de desarrollo virtualizados. Originalmente se desarrolló para VirtualBox y sistemas de aprovisionamiento de configuración tales como Chef, Salt o Puppet. 
+
+Sin embargo desde la versión 1.1 Vagrant es capaz de trabajar con múltiples proveedores, como VMware, Amazon EC2, LXC, DigitalOcean, etc. Tiene una documentación muy buena y es fácil de utilizar​, permitiendo crear entornos y máquinas virtuales de prueba rápidamente.
 
 Aunque Vagrant se ha desarrollado en Ruby se puede usar en multitud de proyectos escritos en otros lenguajes, tales como PHP, Python, Java, C# y JavaScript.
 

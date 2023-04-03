@@ -1,0 +1,12 @@
+#VAGRANT_EXPERIMENTAL="disks"
+ENV['VAGRANT_EXPERIMENTAL'] = "disks"
+
+Vagrant.configure("2") do |config|
+    config.vm.define "hashicorp" do |h|
+      h.vm.box = "hashicorp/bionic64"
+      h.vm.provider :virtualbox
+      h.vm.disk :disk, name: "backup", size: "10GB"
+      h.vm.disk :disk, size: "5GB", name: "disco-2"
+    end
+  end
+  

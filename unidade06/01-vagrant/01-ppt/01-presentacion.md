@@ -504,6 +504,7 @@ end
 ---
 # Discos
 * [Documentación](https://developer.hashicorp.com/vagrant/docs/disks/configuration)
+  * Funcionalidade experimental, é preciso indicalo no ficheiro coa seguinte liña `ENV['VAGRANT_EXPERIMENTAL'] = "disks"`
 * Existen 3 tipos de discos que nos permite Vagrant, estos son: **disk**, **dvd**, **floppy**
 * Exemplo:
   ```ruby
@@ -512,9 +513,53 @@ end
   config.vm.disk :floppy, name: "cool_files"
 
   ```
+---
+## Discos - Exemplo de configuración
+
+```ruby
+#Activamos o FLAG 
+ENV['VAGRANT_EXPERIMENTAL'] = "disks"
+
+
+Vagrant.configure("2") do |config|
+
+#Configuración da MV
+  config.vm.define "open-media-vault" do |omv|
+    omv.vm.box = "rreye/omv6"
+    omv.vm.hostname = "open-media-vault"
+    omv.vm.network "private_network", ip: "192.168.50.10"
+    omv.vm.network "forwarded_port", guest: 80, host: 8080
+    omv.vm.disk :disk, size: "2GB", name: "extra_storage1"
+    omv.vm.disk :disk, size: "1GB", name: "extra_storage2"
+    omv.vm.disk :disk, name: "backup", size: "10GB"
+
+    omv.vm.provider :virtualbox do |vb1|
+      vb1.name = "open-media-vault"
+      vb1.cpus= "4"
+   end
+  end 
+```
 
 ---
+## Discos - Exemplo de configuración en bucle
+```ruby
+#VAGRANT_EXPERIMENTAL="disks"
+ENV['VAGRANT_EXPERIMENTAL'] = "disks"
 
+Vagrant.configure("2") do |config|
+    config.vm.define "hashicorp" do |h|
+      h.vm.box = "hashicorp/bionic64"
+      h.vm.provider :virtualbox
+      h.vm.disk :disk, name: "backup", size: "10GB"
+
+      (0..3).each do |i|
+        h.vm.disk :disk, size: "5GB", name: "disk-#{i}"
+        
+      end
+    end
+end
+  
+```
 ---
 # Recursos
 ## Documentación
