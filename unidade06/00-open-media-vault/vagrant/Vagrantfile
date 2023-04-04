@@ -12,9 +12,12 @@ Vagrant.configure("2") do |config|
     omv.vm.hostname = "open-media-vault"
     omv.vm.network "private_network", ip: "192.168.50.10"
     omv.vm.network "forwarded_port", guest: 80, host: 8080
-    omv.vm.disk :disk, size: "2GB", name: "extra_storage1"
+    omv.vm.disk :disk, size: "1GB", name: "extra_storage1"
     omv.vm.disk :disk, size: "1GB", name: "extra_storage2"
-    omv.vm.disk :disk, name: "backup", size: "10GB"
+    omv.vm.disk :disk, size: "1GB", name: "extra_storage3"
+    omv.vm.disk :disk, size: "1GB", name: "extra_storage4"
+
+    #omv.vm.disk :disk, name: "backup", size: "10GB"
 
     omv.vm.provider :virtualbox do |vb1|
       vb1.name = "open-media-vault"

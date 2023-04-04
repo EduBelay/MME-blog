@@ -484,6 +484,9 @@ end
  * Exemplo de uso co MV do exemplo 08-02
    * `vagrant package --base "Exemplo08-02" --output "exemplo0802.box"`
 
+
+ *  Windows PowerShell: `Get-FileHash FICHEIRO -Algorithm MD5`
+    *  [Documentación](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.3)
 ---
 # Truco: Creación en bucle
 * [Documentación](https://developer.hashicorp.com/vagrant/docs/vagrantfile/tips)
