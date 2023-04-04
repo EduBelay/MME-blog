@@ -1,0 +1,44 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+ 
+ENV['VAGRANT_EXPERIMENTAL'] = "disks"
+  
+  config.vm.define "omv" do |omv|
+    omv.vm.box = "belay/omv"
+    omv.vm.box_version = "1.1"
+    omv.vm.hostname = "open-media-vault"
+    omv.vm.network "private_network", ip: "192.168.50.10"
+    omv.vm.network "forwarded_port", guest: 80, host: 8080
+    omv.vm.disk :disk, size: "1GB", name: "extra_storage1"
+    omv.ssh.forward_agent = true
+
+    #omv.vm.disk :disk, name: "backup", size: "10GB"
+
+    omv.vm.provider :virtualbox do |vb1|
+      vb1.name = "omv"
+      vb1.cpus= "4"
+      vb1.memory = "4000"
+   end
+  end 
+
+
+  config.vm.define "w-omv" do |subconfig|
+    subconfig.vm.box = "gusztavvargadr/windows-10-21h2-enterprise-ltsc"
+    subconfig.vm.hostname = "w-omv"
+    subconfig.vm.network "private_network", ip: "192.168.50.20"
+    subconfig.vm.provider :virtualbox do |vb2|
+      vb2.name = "w-omv"
+      vb2.cpus= "2"
+    end
+  end 
+
+
+
+
+end
