@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+Vagrant.configure("2") do |config|
+    config.vm.box = "kalilinux/rolling"
+    config.vm.hostname ="EX-Pressed"
+  
+    config.vm.provider "virtualbox" do |vb|
+      vb.memory = "4048"
+      vb.cpus = "4"
+      vb.name = "EX-Pressed"
+     # vb.gui=true
+     end
+     #config.vm.provision "shell", path: "script.sh"
+     config.vm.provision "shell", inline: <<-SHELL
+       sudo apt update
+       sudo apt install xorriso -y
+     SHELL
+  #cartafois
+  config.vm.synced_folder "isos", "/home/vagrant/isos"
+  
+  
+  end
+  
