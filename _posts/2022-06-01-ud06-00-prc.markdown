@@ -21,6 +21,7 @@ tags:
 
 * [Guía rápida]({{site.baseurl}}/unidade06/01-vagrant/00-guia-rapida/00-guia-rapida.html)
 * [Presentacion con exemplos]({{site.baseurl}}/unidade06/01-vagrant/01-ppt/01-presentacion.html)
+* [Chuleta Vagrant](https://cheatography.com/1101trash/cheat-sheets/vagrant/pdf/)
 
 00-guia-rapida.html
 # Ampliacion
