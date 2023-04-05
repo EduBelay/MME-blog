@@ -17,6 +17,13 @@ tags:
 
 # UD06-01: Contidos 
 
+## Vagrant
+
+* [Guía rápida]({{site.baseurl}}/unidade06/01-vagrant/00-guia-rapida/00-guia-rapida.html)
+* [Presentacion con exemplos]({{site.baseurl}}/unidade06/01-vagrant/01-ppt/01-presentacion.html)
+
+00-guia-rapida.html
+# Ampliacion
 ## Linux
 - [Folla resumo dos comandos Linux](https://cheatography.com/davechild/cheat-sheets/linux-command-line/)
 ## Xerar un USB Booteable. 
