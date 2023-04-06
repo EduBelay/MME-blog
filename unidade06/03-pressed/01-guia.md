@@ -22,10 +22,8 @@
 ## 1. Entorno
 Neste caso precisaremos:
 * MV con Xubuntu con 4GB de RAM e 4 CPUS.
-* Directorio compartido na MV cun cartafolo coa ISO de Debian
+* Directorio compartido na MV cun cartafol coa ISO de Debian
 * Precisamos instalar os seguintes aplicativos: `genisoimage` e `xorriso`
-
- 
 
     ```bash
     sudo apt install genisoimage -y
