@@ -10,8 +10,10 @@ footer: 'Pablo Belay Fernández'
 <!--
 Notas para a presentación
 -->
-# Xestión de discos en Powershell
+<h1> Xestión de discos en Powershell</h1>
+
  ![](https://i.imgur.com/QIwMinq.png)  
+
 <style>
   :root{
      --color-background: #101010;
@@ -30,21 +32,28 @@ Notas para a presentación
 }
 </style>
 
-<!-- _colorPreset: dark -->
+
+
+ ---
+# Administración do disco en PowerShell
+Recorda sempre abrir o terminal como administrador (tes que facer co botón dereito sobre a icona e picar en *executar como Administrador*). Os comandos máis habituais:
+* Get-Disk
+* Get-PhysicalDisk 
+* Get-StoragePool
+* Initialize-Disk
+* Format-Volume 
+  * Format-Volume -DriveLetter D-FileSystem NTFS -NewFileSystemLabel DATA 
+* Optimize-Volume 
+  * Optimize-Volume -DriveLetter C -ReTrim -Verbose
+  * Optimize-Volume -DriveLetter C -Defrag -Verbose
+* Resize-VirtualDisk
+
 ---
-- [Xestión de discos en Powershell](#xestión-de-discos-en-powershell)
-- [Get-Disk](#get-disk)
-  - [Exemplos: Get-Disk](#exemplos-get-disk)
-  - [Exemplos: Get-Disk](#exemplos-get-disk-1)
-  - [Exemplos: Get-Disk](#exemplos-get-disk-2)
-  - [Exemplos: Get-Disk](#exemplos-get-disk-3)
-  - [Exemplos: Get-PhysicalDisk](#exemplos-get-physicaldisk)
-- [Get-Partition](#get-partition)
-- [Get-Volume](#get-volume)
-  - [Get-Volume](#get-volume-1)
-
- 
-
+# Administración do disco en PowerShell
+Para coñecer tódalas alternativas en PowerShell para a xestión do almacenamento podes empregar o comando  
+```Powershell
+Get-Command -Module Storage 
+```
 
 ---
 # Get-Disk
@@ -104,7 +113,22 @@ Notas para a presentación
 
 
 ---
+# Initialize-Disk
+* Inicializa un disco novo cando é agregado a primeira vez é decir crealle unha táboa de particións.  
+* Por exemplo agrega un novo disco e verifica con `Get-Disk` que este ten a primeira vez unha táboa de particións de tipo **RAW**, a continuación inicializa o disco.
+* Exemplos de inicialización:
+
+```powershell 
+# Inicializa o disco número 1 e por defecto se non lle indicamos nada será de tipo GPT
+Initialize-Disk -Number 1
+
+# Inicializa o disco 1 cunha táboa de tipo MBR
+Initialize-Disk -Number 1 -PartitionStyle MBR
+
+```
+---
 # Get-PhysicalDisk
+
 * [Documentación de Microsoft.](https://learn.microsoft.com/en-us/powershell/module/storage/get-physicaldisk?view=windowsserver2022-ps)
 * Obtén unha lista de todos os obxectos de PhysicalDisk visibles. 
 
@@ -125,15 +149,31 @@ help Get-PhysicalDisk
 * ```powershell
     Get-PhysicalDisk | Where-Object model -like SAMSUNG
   ``` 
+
+--- 
+# Format-Volume 
+* [Documentación](https://learn.microsoft.com/en-us/powershell/module/storage/format-volume?view=windowsserver2022-ps) .
+  * `help format-volume`
+* Tipos de sist. de ficheiros válidos `FAT, FAT32, exFAT, NTFS, ReFS`
+```powershell 
+# Formato rápido
+Format-Volume -DriveLetter D
+# Formato FAT32 
+Format-Volume -DriveLetter D -FileSystem FAT32 -Full -Force
+# Formato NTFS con tamaño de cluster 8192 
+Format-Volume -DriveLetter D -FileSystem NTFS -AllocationUnitSize 8192
+
+```
+
 ---
 # Get-Partition
-* Obtén unha lista de todas as particións
-* [Documentación](https://learn.microsoft.com/en-us/powershell/module/storage/get-partition?view=windowsserver2022-ps)
+ * [Documentación](https://learn.microsoft.com/en-us/powershell/module/storage/get-partition?view=windowsserver2022-ps)
+   * `help Get-Partition`
 
 * Obtén toda a información das particións do sistema
-* ```powershell
-    Get-Partition
-  ``` 
+  ```powershell
+      Get-Partition
+    ``` 
 --- 
 ## Get-Partition
 * Obtén toda a información das particións do sistema do disco número 1
@@ -151,7 +191,23 @@ help Get-PhysicalDisk
 * ```powershell
     Get-Partition -DiskNumber 1,2
   ``` 
-* 
+
+---
+## New-Partition e  Remove-Partition
+* Crea unha nova partición 
+    ```Powershell
+    # Crea unha nova partición no disco 1 do máximo do espazo dispoñible  
+    New-Partition -DiskNumber 0 -UseMaximumSize -DriveLetter T
+
+    # Elimina a partición polo súa letra 
+    Remove-Partition -DriveLetter T
+
+    # Crea  unha partición de 500MB 
+    New-Partition -DiskNumber 0 -Size 500MB
+
+    # Elimina o disco por medio do nº de disco e nº de partición 
+    Remove-Partition -DiskNumber 0 -PartitionNumber 1
+    ```
 --- 
 # Get-Volume 
 
@@ -174,4 +230,18 @@ help Get-PhysicalDisk
 * Obtén unha lista dos volumes cuxa sistema de ficheiros  é **NTFS**
 * ```powershell
     get-volume | Where-Object FileSystem -eq NTFS 
+  ``` 
+---
+#  Optimize-Volume
+* Optimiza o volumen con operacións como a desfragmentación, consolidación ,... 
+  * [Documentación](https://learn.microsoft.com/en-us/powershell/module/storage/optimize-volume?view=windowsserver2022-ps)
+* ```powershell
+    #Analiza o volumen
+    Optimize-Volume -DriveLetter H -Analyze -Verbose
+
+    # Desfragmenta
+    Optimize-Volume -DriveLetter H -Defrag -Verbose
+
+    #  realizar la optimización TRIM
+    Optimize-Volume -DriveLetter H -ReTrim -Verbose
   ``` 
