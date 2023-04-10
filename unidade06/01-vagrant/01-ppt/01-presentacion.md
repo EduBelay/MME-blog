@@ -69,7 +69,13 @@ Notas para a presentación
     winget install --id=Hashicorp.Vagrant  -e
    ```
 ---
+# Comproba a versión de Vagrant 
+* Unha vez instalado comproba a versión instalada con `vagrant -v`, actualmente a última versión é a **2**. 
+* Este paso é importante xa que hai elementos que dependen da versión da API de Vagrant.
+* Tamén no ficheiro de configuración indicamos a versión de API coa que operamos  ` Vagrant.configure(2) do |config| `
+`
 
+---
 # Que é un box? 
  * Un box é unha máquina virtual "empaquetada", podemos velo como un modelo que vamos clonar ou replicar.
 * Podemos consultar e usar Boxes publicados en https://app.vagrantup.com/boxes/search 
@@ -91,8 +97,8 @@ Notas para a presentación
    vagrant box list
     ```
 * Como eliminamos o box creado chamado **centos** ?
-   ```bash
-      vagrant.exe box remove centos
+     ```bash
+      vagrant box remove centos
      ```
 --- 
 ### Xestión dun box online
@@ -108,6 +114,14 @@ Notas para a presentación
    Vagrant.configure("2") do |config|
       config.vm.box = "ubuntu/trusty64"
     end
+  ```
+  Equivale ao seguinte:
+   ```ruby 
+   VAGRANTFILE_API_VERSION = "2"
+   Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+      config.vm.box = "ubuntu/trusty64"
+    end
+  ```
  * Opción 3, descargar o box e importalo manualmente.
 
 ---
@@ -133,7 +147,7 @@ $ mkdir project
 $ cd project
 
 # Creamos o ficheiro Vagrantfile co box ubuntu16.04
-$ vagrant init bento/ubuntu-16.04
+$ vagrant init ubuntu/trusty64
 
 #Levantamos a máquina
 $ vagrant up 
@@ -449,13 +463,13 @@ end
 ---
 ## Configuración rede.  
  * Configura un equipo cunha IP estática como a seguinte
-**192.168."número de lista".3**.
+**192.168.0."número de lista".3**.
    * **[ex08](exemplos/08/Vagrantfile)**
  * Configuración en ponte de rede
    *  **[ex08-02](exemplos/08-02/Vagrantfile)**
 --- 
 ## Configuración múltiples máquinas 
- * Creamos varias máquinas que se definen como *nodo1* e *nodo2* 
+ * Creamos varias máquinas que se definen como *nodo1* e *nodo2* cadansúa empregan o mesmo box e con nomes diferentes e IPS correlativas. 
   
  ```ruby
     Vagrant.configure("2") do |config|
@@ -564,6 +578,110 @@ end
   
 ```
 ---
+# Plugins en Vagrant
+* Vagrant permite instalar complementos (plugins) para mellorar algunhas funcionalidades. Para elo temos os seguintes subcomandos de `vagrant plugin`:
+  *  expunge
+  *  install
+  *   license
+  *   list
+  *   repair
+  *   uninstall
+  *   update
+---
+## Exemplo guiado de plugins en Vagrant
+1. Instalaación dun plugin 
+    ```bash 
+    $ vagrant plugin install [plugin_name] 
+    $ vagrant plugin install vbinfo
+
+    ```
+2. Uso do plugin instalado
+    ```bash
+    $ vagrant vbinfo
+    ```
+3. Lista de plugins instalados
+    ```
+    $  vagrant plugin list
+    ```  
+---
+## Exemplo guiado de plugins en Vagrant 
+
+4. Actualización do plugin
+    ```
+    $  vagrant plugin update [nome_plugin]
+    ```  
+5. No suposto de ter erros co plugin e precismoes reparalo
+    ```
+    $  vagrant plugin repair [nome_plugin]
+    ```  
+6. Para borrar o plugin
+    ```
+    $  vagrant plugin uninstall  [nome_plugin]
+    ``` 
+7. Para borrar todos os plugins
+    ```
+    $  vagrant plugin expunge
+    ```   
+---
+## Plugins de interese
+* vagrant-vbguest
+  * Instala automáticamente os *vbguest*  no sistema 
+  * `vagrant plugin install vagrant-vbguest`
+* vagrant-winnfsd
+  * Habilita a compatibilidade con NFS.
+  * `vagrant plugin install vagrant-winnfsd`
+* vagrant-netinfo
+  * Para amosar os portos reenviados do invitado ao host.
+  * `vagrant plugin install vagrant-netinfo`
+* vagrant-hostmanager
+  * Para configuracións de varias máquinas. 
+  * `vagrant plugin install vagrant-hostmanager
+`
+---
+# Vagrant diferentes proveedores
+* Vagrant soporta que se implemente en diferentes aplicativos de virtualización como pode ser: **Virtualbox**, **Hyper-V** ou **Vmware**.
+*  Podemos indicar o proveedor dende a liña de comandos do seguinte modo:
+    ```bash 
+    $  vagrant up --provider=vmware_fusion
+    $  vagrant up --provider=virtualbox
+    ```
+*  Normalmente non é preciso indicar o proveedor xa que o obtén da variable de entorno  `VAGRANT_DEFAULT_PROVIDER` 
+
+
+---
+## Vagrant diferentes proveedores: ficheiro Vagrantfile.
+* Outra estratexia é indicarlle a preferencia do proveedor no ficheiro **Vagrantfile** para elo é preciso definir `config.vm.provider`. No seguinte exemplo ten preferencia sobre vmware e se non é posible escollería virtualbox.
+  ```ruby
+  Vagrant.configure("2") do |config|
+    # ... datos de configuración....
+
+    # Ten prioridade VMware Fusion sobre VirtualBox
+    config.vm.provider "vmware_fusion"
+    config.vm.provider "virtualbox"
+  end
+  ```
+*  [Documentación](https://developer.hashicorp.com/vagrant/docs/providers)
+---
+
+---
+# Chuleta
+* [Chuleta de comandos habituais](02-chuleta.md)
+* [PDF Vagrant Cheat Sheet](https://cheatography.com/1101trash/cheat-sheets/vagrant/pdf/)
+
+# Amplicación
+## Vagrant empregando o proveedor docker
+ ```ruby
+  Vagrant.configure("2") do |config|
+  config.vm.provider "docker" do |d|
+    d.image = "ubuntu/lunar64"
+  end
+end
+  ```
+  Terminal:
+  ```bash 
+  $ vagrant up --provider=docker
+  ```
+  ---
 # Recursos
 ## Documentación
 * [Documentación oficial](https://developer.hashicorp.com/vagrant)
@@ -572,7 +690,8 @@ end
 * [Práctica con Vagrant](https://josejuansanchez.org/iaw/practica-vagrant/index.html)
 * [Xestionando máquinas virtuais con Vagrant](https://www.josedomingo.org/pledin/2013/09/gestionando-maquinas-virtuales-con-vagrant/)
 * [Guía rápida de Vagrant](https://www.busindre.com/guia_rapida_de_vagrant)
-
+---
 ## Outros recursos para ampliar
 * [Openstack](https://www.josedomingo.org/pledin/2014/02/instalando-openstack-en-mi-portatil/)
 * [Usando OpenStack desde Vagrant](https://www.josedomingo.org/pledin/2016/01/usando-openstack-desde-vagrant/)
+* [How to use Vagrant plugins](https://brain2life.hashnode.dev/how-to-use-vagrant-plugins)
