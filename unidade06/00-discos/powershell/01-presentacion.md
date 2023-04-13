@@ -65,13 +65,13 @@ Get-Command -Module Storage
 ## Exemplos: Get-Disk
 
 * Mostrar información sobre os discos, para elo teremos información como estado de “saúde” tipo de táboa de particións, nome, nº de disco.
-* ```powershell
-    Get-disk
-  ``` 
+  * ```powershell
+      Get-disk
+    ``` 
 * A información anterior podemos mostrala en formato lista realizando unha tubería con “fl” (Formato Lista) .
-* ```powershell
-    Get-disk | fl 
-  ``` 
+  * ```powershell
+      Get-disk | fl 
+    ``` 
 ---
 ## Exemplos: Get-Disk
 
@@ -177,20 +177,18 @@ Format-Volume -DriveLetter D -FileSystem NTFS -AllocationUnitSize 8192
 --- 
 ## Get-Partition
 * Obtén toda a información das particións do sistema do disco número 1
-* ```powershell
-    Get-Partition -DiskNumber 5
-  ``` 
+  * ```powershell
+    Get-Partition -DiskNumber 1
+     ``` 
 
 * Obtén toda a información das particións do sistema do disco  con letra C
-* ```powershell
-    Get-Partition -DriveLetter C
-  ``` 
---- 
-## Get-Partition
+  * ```powershell
+     Get-Partition -DriveLetter C
+    ``` 
 * Obtén toda a información das particións do sistema do disco número 1 e 2 (a vez)
-* ```powershell
-    Get-Partition -DiskNumber 1,2
-  ``` 
+  * ```powershell
+      Get-Partition -DiskNumber 1,2
+    ``` 
 
 ---
 ## New-Partition e  Remove-Partition
@@ -212,21 +210,21 @@ Format-Volume -DriveLetter D -FileSystem NTFS -AllocationUnitSize 8192
 # Get-Volume 
 
 * Obtén unha lista dos volumes do sistema.
-* ```powershell
-    get-volume
-  ``` 
+  * ```powershell
+      get-volume
+    ``` 
 
 * Obtén unha lista dos volumes do sistema que teña asignada a letra “C”
-* ```powershell
-    Get-Volume -DriveLetter C
-  ``` 
-
+  * ```powershell
+      Get-Volume -DriveLetter C
+    ``` 
+* Obtén unha lista dos volumes cuxa saúde e **Healthy**
+  * ```powershell
+      get-volume | Where-Object HealthStatus -eq Healthy
+    ``` 
 --- 
 ## Get-Volume 
-* Obtén unha lista dos volumes cuxa saúde e **Healthy**
-* ```powershell
-    get-volume | Where-Object HealthStatus -eq Healthy
-  ``` 
+
 * Obtén unha lista dos volumes cuxa sistema de ficheiros  é **NTFS**
 * ```powershell
     get-volume | Where-Object FileSystem -eq NTFS 
