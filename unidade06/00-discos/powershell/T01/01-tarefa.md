@@ -102,7 +102,7 @@ Para cada un dos discos aplícallle o seguinte sistema de ficheiros:
 
 20. Obtén toda a información das particións do sistema do disco número 1
   ```powershell
-     Get-Partition -DiskNumber 5
+     Get-Partition -DiskNumber 1
    ```  
 21. Obtén toda a información das particións do sistema do disco  con letra C
   ```powershell
@@ -149,31 +149,30 @@ Para cada un dos discos aplícallle o seguinte sistema de ficheiros:
   ```powershell
      get-volume
   ```  
-1.  Obtén unha lista dos volumes do sistema que teña asignada a letra “C”
+30.  Obtén unha lista dos volumes do sistema que teña asignada a letra “D”
   ```powershell
-     Get-Volume -DriveLetter C
+     Get-Volume -DriveLetter D
   ```  
-1.  x
+31.  Obtén unha lista dos volumes cuxa saúde e Healthy
   ```powershell
-
+  get-volume | Where-Object HealthStatus -eq Healthy
   ```  
-
-1.  x
+32.  Obtén unha lista dos volumes cuxa sistema de ficheiros é NTFS
   ```powershell
-
-  ```  
-
-1.  x
-  ```powershell
-
+  get-volume | Where-Object FileSystem -eq NTFS 
   ```  
 
-1.  x
+33.  Obtén todos os volumenes con tamaño maior a 600MB
   ```powershell
-
+   get-volume | where-object Size -gt 600MB
   ```  
 
-1.  x
+34.   Obtén todos os volumenes co sistema de ficheiros NTFS
+  ```powershell
+  get-volume | where-object FileSystem -eq "NTFS"
+  ```  
+## Format-Volume
+35.  x
   ```powershell
 
   ```  

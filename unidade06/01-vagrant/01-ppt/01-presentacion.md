@@ -68,6 +68,14 @@ Notas para a presentación
   ```ps
     winget install --id=Hashicorp.Vagrant  -e
    ```
+
+
+---
+# Fluxo de traballo
+
+ 
+![](img/fluxo_traballo.png)
+
 ---
 # Comproba a versión de Vagrant 
 * Unha vez instalado comproba a versión instalada con `vagrant -v`, actualmente a última versión é a **2**. 
