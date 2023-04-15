@@ -171,38 +171,128 @@ Para cada un dos discos aplícallle o seguinte sistema de ficheiros:
   ```powershell
   get-volume | where-object FileSystem -eq "NTFS"
   ```  
+
+Chegado a este punto terás que agregar a MV un disco de 150 GB e realizar as seguintes operacións 
+
+35.  Obtén un listado  dos discos sen táboa de particións en formato lista 
+  ```powershell
+    Get-Disk | where-object PartitionStyle -eq RAW | fl 
+  ```  
+
+36.   Obtén un listado  dos discos con táboa de particións en formato táboa 
+  ```powershell
+    Get-Disk | where-object PartitionStyle -ne RAW | ft 
+  ```  
+
+37.  Inicializa o disco  agregado indicando o seu número de identificación e cunha táboa de partición  *MBR* 
+  ```powershell
+   Initialize-Disk -Number 1 -PartitionStyle MBR
+  ```  
+
+38.  Recorda que se queremos mudar a táboa de particións teremos que empregar *Set-Disk -Number 1 -PartitionStyle GPT* ,verifica que se pode realizar o cambio de táboa de particóns. Poderaimos realizar o cambio ao tipo RAW? 
+  ```powershell
+    Set-Disk -Number 1 -PartitionStyle MBR
+  ```  
+39.  Crea unha nova partición indicando o nº do disco creado previamente e con tamaño do disco de 500MB
+  ```powershell
+  New-Partition -DiskNumber 1 -Size 500MB 
+  ```  
+
+40.  Obtén un listado de todas as particións dispoñibles no disco que empregamos anteriormente. 
+  ```powershell
+    Get-Partition -DiskNumber 1
+  ```  
+41.  Obtén un listado das particións con tamaño igual a 500MB. Fíxate no número da partición para o seguinte suposto. 
+  ```powershell
+    Get-Partition -DiskNumber 1 | where-object Size -eq 500MB
+  ```  
+
+
+
 ## Format-Volume
-35.  x
+
+Agrega un disco de 150 GB a MV e realiza os seguintes supostos. 
+
+
+42.  Obtén todas as particións que non teñan táboa de particións.
   ```powershell
+   get-disk | where-object PartitionStyle -eq "RAW"
 
   ```  
 
-1.  x
+43.  Obtén todas as particións que teñan táboa de particións.
   ```powershell
+   get-disk | where-object PartitionStyle -ne "RAW"
 
   ```  
-
-1.  x
+44.  Inicializa a táboa de particións cun tipo MBR
   ```powershell
-
+    Initialize-Disk -Number 1 -PartitionStyle MBR
   ```  
 
-1.  x
+45.  Muda a táboa de particións ao tipo GPT, recorda que a inicialización só se pode realizar unha vez nas seguintes terás que empregar Set-Disk
   ```powershell
+    set-disk -number 1 -partitionStyle GPT  
+    ```  
 
+46.  Crea unha nova partición no disco anterior e que teña un tamaño de 400MB e tamén coa letra de volumen P
+  ```powershell
+     New-Partition -DiskNumber 1 -Size 400MB  -DriveLetter P
+    ```  
+47.  Crea unha nova partición no disco anterior e que  ocupe todo o espazo dispoñible  e teña a letra de volumen Q
+  ```powershell
+     New-Partition -DiskNumber 1 -UseMaximumSize  -DriveLetter Q
+    ```  
+
+48.  Obtén todos os volumenes que teña un sistema de arquivos descoñecido (Unknown)
+  ```powershell
+      get-volume | where-object FileSystemType -eq "Unknown"
+    ```  
+49.  Obtén todos os volumenes que teña un sistema de arquivos descoñecido (Unknown) e a vez teñan como driver calquera que sexa distinto de "CD-ROM"
+    ```powershell
+      get-volume | where-object FileSystemType -eq "Unknown"  | where-object DriveType -ne "CD-ROM"
+    ```  
+
+50. Formatea o volume Q empregando a súa letra identificativa cun sistema de ficheiros NTFS e que teña como etiqueta identificativa "PROBAS". 
+
+ ```powershell
+      Format-Volume -DriveLetter Q -FileSystem NTFS -NewFileSystemLabel "PROBAS"
   ```  
 
-1.  x
-  ```powershell
 
-  ```  
+51. Muda a etiqueta do volume por Backup 
 
-1.  x
-  ```powershell
+ ```powershell
+       set-volume -FileSystemLabel "PROBAS"  -NewFileSystemLabel "Backup"
+ ```  
 
-  ```  
 
-1.  x
-  ```powershell
+52. Formatea o volume Q de "Backup" en NTFS. 
 
-  ```  
+ ```powershell
+       Format-Volume -DriveLetter Q -FileSystem NTFS -Full -Force 
+ ```  
+53. Busca se existen erros no volume Q 
+
+ ```powershell
+       Repair-Volume -DriveLetter Q -Scan
+ ```  
+
+54. Busca se existen erros no volume coa etiqueta "Backup"
+
+ ```powershell
+        Repair-Volume -FileSystemLabel "Backup" -scan
+ ```  
+
+
+55. Elimina o disco P  empregando a súa letra como identificador. 
+
+ ```powershell
+       Remove-Partition -DriveLetter P
+ ```  
+
+56. Elimina o disco Q  empregando o nº de disco e nº de partición para o seu borrado. 
+
+ ```powershell
+        Remove-Partition -DiskNumber 1 -PartitionNumber 2
+ ```  

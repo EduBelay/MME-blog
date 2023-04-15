@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 paginate: true
 # header: '**Montaxe e mantemento de equipos**'
 footer: 'Pablo Belay Fernández'
@@ -302,6 +302,7 @@ end
     ```
 **[ex03](exemplos/03/Vagrantfile)**
 
+
 ---
 ## Configuración do escenario básico: que instale un aplicativo.
 * Adapta o vagranfile para que instale o servidor web apache2.
@@ -526,6 +527,43 @@ end
 * Os equipos deben ter configurado unha tarxeta de rede de modo interna e con ips correlativas. 
 * Configuración 
    *  **[ex10](exemplos/10/Vagrantfile)**
+
+---
+
+## Truco: Agrupar máquinas
+* Podemos agrupar as máquinas dun escenario  coa propiedade *customize* para elo podemos configuralo como neste exemplo: 
+```
+          vb.customize ["modifyvm", :id, "--groups", "/grupoMaquinas"]
+```
+O resultado en virtualbox é semellante ao seguinte: 
+
+![](img/grupo_maquinas.png)
+
+--- 
+## Agrupado en virtualbox
+```ruby
+IMAGE_NAME = "ubuntu/bionic64"
+N = 3
+Vagrant.configure("2") do |config|
+    
+    (1..N).each do |i|
+        config.vm.define "node-#{i}" do |node|
+                node.vm.box = IMAGE_NAME
+                node.vm.hostname = "node-#{i}"
+                node.vm.network :private_network, ip: "192.168.56.#{10+i}"                
+                node.vm.provider "virtualbox" do |v|
+                        v.memory = 1024
+                        v.customize ["modifyvm", :id, "--groups", "/grupoMaquinas"]
+                end
+        end
+    end
+end
+```
+
+   *  **[ex10-2](exemplos/10-2//Vagrantfile)**
+
+
+
 ---
 # Discos
 * [Documentación](https://developer.hashicorp.com/vagrant/docs/disks/configuration)
@@ -676,7 +714,8 @@ end
 * [Chuleta de comandos habituais](02-chuleta.md)
 * [PDF Vagrant Cheat Sheet](https://cheatography.com/1101trash/cheat-sheets/vagrant/pdf/)
 
-# Amplicación
+--- 
+# Ampliación
 ## Vagrant empregando o proveedor docker
  ```ruby
   Vagrant.configure("2") do |config|

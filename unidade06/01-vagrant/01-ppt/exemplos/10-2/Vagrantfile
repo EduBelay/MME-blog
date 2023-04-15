@@ -1,0 +1,20 @@
+IMAGE_NAME = "ubuntu/bionic64"
+N = 3
+Vagrant.configure("2") do |config|
+    
+    (1..N).each do |i|
+        config.vm.define "node-#{i}" do |node|
+                node.vm.box = IMAGE_NAME
+                node.vm.hostname = "node-#{i}"
+                node.vm.network :private_network, ip: "192.168.56.#{10+i}"
+                
+                node.vm.provider "virtualbox" do |v|
+                        v.memory = 1024
+                        v.customize ["modifyvm", :id, "--groups", "/grupoMaquinas"]
+                end
+        end
+    end
+end
+
+
+  
