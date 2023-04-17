@@ -193,6 +193,12 @@ Vagrant.configure("2") do |config|
 ![height:300px ](img/16_axente.png)  
 
 ---
+## Servizo web
+Se o axente executase como un servizo, a súa interface web debería estar accesible en http://localhost:62354. 
+
+![](img/15-2-servizo-web.png)
+
+---
 ## Configuración do axente. 
 * Consultar a documentación en función do Sistema operativo.
   * [Web](https://glpi-agent.readthedocs.io/en/latest/installation/)
@@ -368,6 +374,16 @@ Inventory task specific options:
 * Podes subir o ficheiro de inventario a web de GLPI.
 * A opción atópase en: Administración>Inventario na pestana "Import from file"
 ![height:380px ](img/18_inventario_web.png)  
+
+--- 
+## Resumo
+
+```powershell
+glpi-inventory --json > inventory.json
+glpi-injector --file inventory.json --url http://my.first.glpi/
+glpi-injector --file inventory.json --url http://my.second.glpi/
+
+```
 ---
  # Tarefas:
  ## T1 - Cliente Windows 10

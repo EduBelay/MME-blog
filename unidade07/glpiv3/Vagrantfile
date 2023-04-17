@@ -1,6 +1,8 @@
 #-----------------------------------------
 # Configuracion servidor GLPI
 #-----------------------------------------
+
+
 Vagrant.configure("2") do |config|
     config.vm.define "glpiv3" do |subconfig|
       subconfig.vm.box = "ubuntu/lunar64"
@@ -10,7 +12,8 @@ Vagrant.configure("2") do |config|
       subconfig.vm.network "forwarded_port", guest: 80, host: 8080
       subconfig.vm.provider :virtualbox do |vb1|
           vb1.name = "glpiv3"
-            vb1.cpus= "2"
+          vb1.cpus= "2"
+          vb1.customize ["modifyvm", :id, "--groups", "/glpi-demo"]
       end
 
       subconfig.vm.provision "shell", inline: <<-SHELL
@@ -78,6 +81,7 @@ Vagrant.configure("2") do |config|
       subconfig.vm.provider :virtualbox do |vb2|
         vb2.name = "win-glpi-v3"
         vb2.cpus= "2"
+        vb2.customize ["modifyvm", :id, "--groups", "/glpi-demo"]
       end
     end
  
@@ -87,6 +91,7 @@ Vagrant.configure("2") do |config|
       subconfig.vm.provider :virtualbox do |vb3|
         vb3.name = "android-glpi-v3"
         vb3.cpus= "2"
+        vb3.customize ["modifyvm", :id, "--groups", "/glpi-demo"]
       end
     end
   end
