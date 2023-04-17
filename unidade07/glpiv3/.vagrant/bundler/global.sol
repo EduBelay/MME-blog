@@ -1,1 +1,1 @@
-{"dependencies":[["log4r",[">= 0"]],["concurrent-ruby",["~> 1.0"]],["i18n",[">= 0"]],["micromachine",[">= 2","< 4"]],["vagrant-vbguest",["= 0.31.0"]]],"checksum":"3973d8ddcec0c0a63794ad908de50da0bf3e8582fc6484f99751f4f5433e0960","vagrant_version":"2.3.0"}
+{"dependencies":[["vagrant-netinfo",["= 0.0.4"]],["log4r",[">= 0"]],["concurrent-ruby",["~> 1.0"]],["i18n",[">= 0"]],["micromachine",[">= 2","< 4"]],["vagrant-vbguest",["= 0.31.0"]]],"checksum":"143c3e8d3a4e984fa92cbe7b9c543c51cb259e70c117b67b1721ab849886dc50","vagrant_version":"2.3.4"}

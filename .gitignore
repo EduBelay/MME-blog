@@ -6,3 +6,14 @@ vendor
 .Rproj.user
 .vagrant
 *.vagrant\
+unidade07/glpiv3/.vagrant/bundler/global.sol
+unidade07/glpiv3/.vagrant/bundler/global.sol
+unidade07/glpiv3/.vagrant/machines/android/virtualbox/index_uuid
+unidade07/glpiv3/.vagrant/*
+unidade07/glpiv3/.vagrant/machines/win-03-glpi/virtualbox/synced_folders
+unidade07/glpiv3/.vagrant/machines/win-03-glpi/virtualbox/index_uuid
+unidade07/glpiv3/.vagrant/machines/win-03-glpi/virtualbox/id
+unidade07/glpiv3/.vagrant/machines/win-03-glpi/virtualbox/action_set_name
+unidade07/glpiv3/.vagrant/machines/win-03-glpi/virtualbox/action_provision
+.gitignore
+unidade07/glpiv3/.vagrant/machines/glpiv3/virtualbox/index_uuid
