@@ -1,5 +1,5 @@
 # Exercicio 1 
-Na máquina virtual proporcionada agrega 5 discos cos seguintes tamaños dous discos de 1GB, un disco de  2GB, un disco de 3GB e un disco de 1GB 4GB. 
+Na máquina virtual proporcionada agrega 5 discos cos seguintes tamaños dous discos de 1GB, un disco de  2GB, un disco de 3GB e un disco de  4GB. 
 Para cada un dos discos aplícallle o seguinte sistema de ficheiros:
 * Cos dous discos de 1GB crea un RAID espello. 
 * Disco 2GB , táboa MBR con un disco que ocupe todo o espazo dispoñible co sistema de ficheiros FAT32
@@ -220,10 +220,10 @@ Agrega un disco de 150 GB a MV e realiza os seguintes supostos.
 
   ```  
 
-43.  Obtén todas as particións que teñan táboa de particións.
+1.   Obtén todos os discos que teñan táboa de particións.
   ```powershell
    get-disk | where-object PartitionStyle -ne "RAW"
-
+    #outra solución sería facer un OR e preguntar por GPT e MBR
   ```  
 44.  Inicializa a táboa de particións cun tipo MBR
   ```powershell
@@ -231,47 +231,48 @@ Agrega un disco de 150 GB a MV e realiza os seguintes supostos.
   ```  
 
 45.  Muda a táboa de particións ao tipo GPT, recorda que a inicialización só se pode realizar unha vez nas seguintes terás que empregar Set-Disk
-  ```powershell
-    set-disk -number 1 -partitionStyle GPT  
-    ```  
+```powershell
+set-disk -number 1 -partitionStyle GPT  
+```  
 
 46.  Crea unha nova partición no disco anterior e que teña un tamaño de 400MB e tamén coa letra de volumen P
-  ```powershell
-     New-Partition -DiskNumber 1 -Size 400MB  -DriveLetter P
-    ```  
+```powershell
+New-Partition -DiskNumber 1 -Size 400MB  -DriveLetter P
+```  
 47.  Crea unha nova partición no disco anterior e que  ocupe todo o espazo dispoñible  e teña a letra de volumen Q
-  ```powershell
-     New-Partition -DiskNumber 1 -UseMaximumSize  -DriveLetter Q
-    ```  
+```powershell
+New-Partition -DiskNumber 1 -UseMaximumSize  -DriveLetter Q
+```  
 
 48.  Obtén todos os volumenes que teña un sistema de arquivos descoñecido (Unknown)
-  ```powershell
-      get-volume | where-object FileSystemType -eq "Unknown"
-    ```  
+```powershell
+get-volume | where-object FileSystemType -eq "Unknown"
+```  
+
 49.  Obtén todos os volumenes que teña un sistema de arquivos descoñecido (Unknown) e a vez teñan como driver calquera que sexa distinto de "CD-ROM"
-    ```powershell
-      get-volume | where-object FileSystemType -eq "Unknown"  | where-object DriveType -ne "CD-ROM"
-    ```  
+```powershell
+get-volume | where-object FileSystemType -eq "Unknown"  | where-object DriveType -ne "CD-ROM"
+```  
 
 50. Formatea o volume Q empregando a súa letra identificativa cun sistema de ficheiros NTFS e que teña como etiqueta identificativa "PROBAS". 
 
- ```powershell
-      Format-Volume -DriveLetter Q -FileSystem NTFS -NewFileSystemLabel "PROBAS"
-  ```  
+```powershell
+Format-Volume -DriveLetter Q -FileSystem NTFS -NewFileSystemLabel "PROBAS"
+```  
 
 
 51. Muda a etiqueta do volume por Backup 
 
- ```powershell
-       set-volume -FileSystemLabel "PROBAS"  -NewFileSystemLabel "Backup"
- ```  
+```powershell
+set-volume -FileSystemLabel "PROBAS"  -NewFileSystemLabel "Backup"
+```  
 
 
 52. Formatea o volume Q de "Backup" en NTFS. 
 
- ```powershell
-       Format-Volume -DriveLetter Q -FileSystem NTFS -Full -Force 
- ```  
+```powershell
+Format-Volume -DriveLetter Q -FileSystem NTFS -Full -Force 
+```  
 53. Busca se existen erros no volume Q 
 
  ```powershell
