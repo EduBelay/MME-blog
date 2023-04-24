@@ -366,7 +366,7 @@ code {
     });
   </script>
 <h1 id="exercicio-1">Exercicio 1</h1>
-<p>Na máquina virtual proporcionada agrega 5 discos cos seguintes tamaños dous discos de 1GB, un disco de  2GB, un disco de 3GB e un disco de  4GB.
+<p>Na máquina virtual proporcionada agrega 5 discos cos seguintes tamaños dous discos de 1GB, un disco de  2GB, un disco de 3GB e un disco de  4GB.<br>
 Para cada un dos discos aplícallle o seguinte sistema de ficheiros:</p>
 <ul>
 <li>Cos dous discos de 1GB crea un RAID espello.</li>
@@ -423,7 +423,7 @@ Para cada un dos discos aplícallle o seguinte sistema de ficheiros:</p>
 </li>
 <li>
 <p>Como podes obter unha lista dos discos que teñen  tres particións e teñan un tamaño superior a 52GB.</p>
-<pre class="hljs"><code><div><span class="hljs-built_in">get-disk</span> | <span class="hljs-built_in">Where-Object</span> {(<span class="hljs-variable">$_</span>.NumberOfPartitions <span class="hljs-operator">-eq</span> <span class="hljs-number">3</span>) <span class="hljs-operator">-or</span> (<span class="hljs-variable">$_</span>.Size <span class="hljs-operator">-gt</span> <span class="hljs-number">52</span>GB)}
+<pre class="hljs"><code><div><span class="hljs-built_in">get-disk</span> | <span class="hljs-built_in">Where-Object</span> {(<span class="hljs-variable">$_</span>.NumberOfPartitions <span class="hljs-operator">-eq</span> <span class="hljs-number">3</span>) <span class="hljs-operator">-and</span> (<span class="hljs-variable">$_</span>.Size <span class="hljs-operator">-gt</span> <span class="hljs-number">52</span>GB)}
 </div></code></pre>
 </li>
 <li>
