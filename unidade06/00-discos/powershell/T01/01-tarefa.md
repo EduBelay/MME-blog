@@ -48,7 +48,7 @@ Para cada un dos discos aplícallle o seguinte sistema de ficheiros:
     ```  
  10. Como podes obter unha lista dos discos que teñen  tres particións e teñan un tamaño superior a 52GB. 
         ```powershell
-        get-disk | Where-Object {($_.NumberOfPartitions -eq 3) -or ($_.Size -gt 52GB)}
+        get-disk | Where-Object {($_.NumberOfPartitions -eq 3) -and ($_.Size -gt 52GB)}
         ```  
  11. Obter información dun único disco sabendo o seu número e sen empregar `where-object` 
         ```powershell
