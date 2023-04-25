@@ -1,0 +1,48 @@
+Vagrant.configure("2") do |config|
+    config.vm.define "checkmk" do |subconfig|
+      subconfig.vm.box = "ubuntu/lunar64"
+      subconfig.vm.hostname = "checkmk"
+      #subconfig.vm.network "private_network", ip: "192.168.30.4",  virtualbox__intnet: true, name: "rede01"
+      subconfig.vm.network "private_network", ip: "192.168.56.4"
+      subconfig.vm.network "forwarded_port", guest: 80, host: 8080
+      subconfig.vm.provider :virtualbox do |vb1|
+          vb1.name = "checkmk"
+          vb1.cpus= "2"
+          vb1.customize ["modifyvm", :id, "--groups", "/checkmk-demo"]
+
+      end
+
+      subconfig.vm.provision "shell", inline: <<-SHELL
+          RED='\033[0;31m'
+          NC='\033[0m' # No Color
+          echo  -e "***************** ${RED}GLPI${NC}*******************";
+          sudo apt-get update
+          sudo wget https://download.checkmk.com/checkmk/2.2.0b4/check-mk-raw-2.2.0b4_0.kinetic_amd64.deb
+          sudo apt install ./check-mk-raw-2.2.0b4_0.kinetic_amd64.deb
+          omd version
+          sudo omd create monitoring
+          sudo omd start monitoring
+
+      SHELL
+    end
+  
+#    config.vm.define "win01" do |subconfig|
+#      subconfig.vm.box = "gusztavvargadr/windows-10-21h2-enterprise-ltsc"
+#      subconfig.vm.hostname = "win-01-glpi"
+#      #subconfig.vm.network "private_network", ip: "192.168.30.5",  virtualbox__intnet: true, name: "rede01"
+#      subconfig.vm.network "private_network", ip: "192.168.56.5"
+#      subconfig.vm.provider :virtualbox do |vb2|
+#        vb2.name = "win-glpi"
+#        vb2.cpus= "2"
+#      end
+#    end
+#
+
+
+   # config.vm.define "node2" do |subconfig|
+   #   subconfig.vm.box = "bento/ubuntu-16.04"
+   # end
+  end
+  
+  
+  
