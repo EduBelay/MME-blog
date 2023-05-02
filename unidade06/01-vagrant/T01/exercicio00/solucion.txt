@@ -1,0 +1,46 @@
+Neste exercicio vamos revisar os comandos básicos de Vagrant. Debes contestar no apartado reservado para cada caso:
+
+    Comando que nos permite comprobar o listado de box dispoñibles en local?
+
+    $ vagrant box list
+
+    Comando que nos permite comprobar se existe unha actualización dalgún box?
+
+    $ vagrant box update
+
+    Comando que nos permite comprobar o estado dunha MV en vagrant?
+
+    $ vagrant status
+
+    Comando que nos permite comprobar o estado global das MV en vagrant?
+
+    $ vagrant global-status
+
+    Comando Vagrant que nos permite deter e destruir unha MV?
+
+    $ vagrant destroy
+
+    Comando Vagrant que nos permite verificar os portos abertos?
+
+    $ vagrant port
+
+    Comando para obter a versión de Vagrant?
+
+    $ vagrant --version
+
+    Comando que nos crea un ficheiro de configuración Vagrantfile?
+
+    $ vagrant init
+
+    Comando para eliminar o box con identificador redhat?
+
+    $ vagrant box remove redhat
+
+    Comando para eliminar todos os boxes ?
+
+    $ vagrant box prune
+
+    Comando para obter a lista de plugins instalados ?
+
+    $ vagrant plugin list
+
