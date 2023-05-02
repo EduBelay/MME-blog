@@ -1,0 +1,1 @@
+O nome de host non pode ter espazos.

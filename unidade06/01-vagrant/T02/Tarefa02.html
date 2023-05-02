@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tarefa02.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="indicaci%C3%B3ns-xerais">Indicacións xerais</h1>
+<p>Para cada un dos exercicios a realizar terás que crear un directorio co nome do exercicio é decir algo semellante a isto:.</p>
+<pre class="hljs"><code><div>├───exercicio00
+├───exercicio01
+├───exercicio02
+├───exercicio03
+├───exercicio04
+├───exercicio05
+└───exercicio06
+</div></code></pre>
+<h1 id="exercicio-00">Exercicio 00</h1>
+<p>Nesta tarefa tes que resolver os erros que existen no ficheiro Vagrantfile. Recorda que para resolver os erros empregamos o subcomando <strong>validate</strong>.</p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+   cofig.vm.box = <span class="hljs-string">"debian"</span>
+   cofig.vm.define <span class="hljs-string">"tarefa02-exercicio00"</span>  
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Nesta tarefa tes que entregar o Vagrantfile sen erros un ficheiro chamado <strong>exercicio00.txt</strong> cun pequeno comentario como resolviches o erro.</p>
+<h1 id="exercicio-1">Exercicio 1</h1>
+<p>Nesta tarefa tes que resolver os erros que existen no ficheiro Vagrantfile. Recorda que para resolver os erros empregamos o subcomando <strong>validate</strong>.</p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+    config.vm.define <span class="hljs-string">"nodo1"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|nodo1|</span>
+      nodo1.vm.box = <span class="hljs-string">"debian"</span>
+      nodo1.vm.hostname = <span class="hljs-string">'nodo1'</span>
+     
+   
+    config.vm.define <span class="hljs-string">"nodo2"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|nodo2|</span>
+      nodo2.vm.box = <span class="hljs-string">"debian"</span>
+      nodo2.vm.hostname = <span class="hljs-string">'nodo2'</span>
+    
+    
+  <span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Nesta tarefa tes que entregar o Vagrantfile sen erros un ficheiro chamado <strong>exercicio01.txt</strong> cun pequeno comentario como resolviches o erro.</p>
+<h1 id="exercicio-2">Exercicio 2</h1>
+<p>Nesta tarefa tes que resolver os erros que existen no ficheiro Vagrantfile. Recorda que para resolver os erros empregamos o subcomando <strong>validate</strong>.</p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+   config.vm.box = <span class="hljs-string">"debian"</span>
+   config.vm.define <span class="hljs-string">"tarefa02-exercicio00"</span>  
+   config.vm.provision <span class="hljs-string">"shell"</span>, <span class="hljs-symbol">inline:</span> &lt;&lt;-SHELL
+      apt-get update
+      apt-get install -y apache2
+  
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Nesta tarefa tes que entregar o Vagrantfile sen erros un ficheiro chamado <strong>exercicio00.txt</strong> cun pequeno comentario como resolviches o erro.</p>
+<h1 id="exercicio-3">Exercicio 3</h1>
+<p>Nesta tarefa tes adaptar o exercicio anterior para que o script non se defina en liña é dicir que sexa nun ficheiro externo. O script externo tense que chamar <strong>webserver.sh</strong> .  Nesta tarefa tes que <strong>entregar</strong>:</p>
+<ul>
+<li>Ficheiro <strong>Vagrantfile</strong> coa configuración indicada.</li>
+<li>Ficheiro <strong>script</strong> webserver.sh e cos comandos precisos para instalar o servidor web.</li>
+</ul>
+<h1 id="exercicio-4">Exercicio 4</h1>
+<p>Arranxa os erros do seguinte <strong>Vagrantfile</strong>:</p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+    config.vm.hostname = <span class="hljs-string">"servidor web"</span>
+    config.vm.box = <span class="hljs-string">"debian"</span>
+    config.vm.define <span class="hljs-string">"tarefa02-ex04"</span>  
+    config.vm.provision <span class="hljs-string">"shell"</span>, <span class="hljs-symbol">inline:</span> <span class="hljs-string">&lt;&lt;-SHELL
+       apt-get update
+       apt-get install -y apache2
+   SHELL</span>
+ <span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Nesta tarefa tes que <strong>entregar</strong>:</p>
+<ul>
+<li>Ficheiro <strong>Vagrantfile</strong> sen os erros.</li>
+<li>Ficheiro <strong>exercicio04.txt</strong> coa xustificación do cambio ou cambios precisos.</li>
+</ul>
+<h1 id="exercicio-5">Exercicio 5</h1>
+<p>Arranxa os erros do seguinte <strong>Vagrantfile</strong>:</p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span> 
+  config.vm.box = <span class="hljs-string">"debian"</span>
+
+  config.vm.network <span class="hljs-string">"forwarded_port"</span>, <span class="hljs-symbol">guest:</span> <span class="hljs-number">80</span>, <span class="hljs-symbol">host:</span> <span class="hljs-number">8080</span>
+  config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb|</span>
+      vb.mem = <span class="hljs-string">"2048"</span>
+      vb.nane = <span class="hljs-string">"new vm"</span>
+      vb.cpu=<span class="hljs-number">2</span>
+  <span class="hljs-keyword">end</span>
+ <span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Nesta tarefa tes que <strong>entregar</strong>:</p>
+<ul>
+<li>Ficheiro <strong>Vagrantfile</strong> coa configuración indicada.</li>
+<li>Ficheiro <strong>exercicio05</strong> explicando os erros e como se solucionan.</li>
+</ul>
+<h1 id="exercicio-6">Exercicio 6</h1>
+<p>Se ao validar un vagrantfile temos o seguinte erro:</p>
+<pre class="hljs"><code><div>vm:
+* The host path of the shared folder is missing: compartida
+</div></code></pre>
+<ol>
+<li>Cal é o motivo?</li>
+<li>Como o podemos resolver?</li>
+</ol>
+
+</body>
+</html>

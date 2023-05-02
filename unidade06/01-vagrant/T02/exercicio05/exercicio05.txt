@@ -1,0 +1,11 @@
+  OS erros están nas seguintes liñas:
+
+> vb.mem = "2048"
+    a memoria definese en vb.memory
+
+ > vb.nane = "new vm"
+     o nome da vm definse en vb.name 
+
+> vb.cpu=2
+    o numero de cpus definese como vb.cpus 
+

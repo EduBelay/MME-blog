@@ -1,0 +1,9 @@
+Vagrant.configure("2") do |config|
+    config.vm.box = "debian"
+    config.vm.define "tarefa02-exercicio04"  
+    config.vm.hostname = "servidorweb"
+    config.vm.provision "shell", inline: <<-SHELL
+       apt-get update
+       apt-get install -y apache2
+   SHELL
+ end
