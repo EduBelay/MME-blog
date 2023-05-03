@@ -487,6 +487,7 @@ end
         nodo1.vm.box = "precise32"
         nodo1.vm.hostname = "nodo1"
         nodo1.vm.network :private_network, ip: "10.1.1.101"
+      end
 
       config.vm.define :nodo2 do |nodo2|
         nodo2.vm.box = "precise32"

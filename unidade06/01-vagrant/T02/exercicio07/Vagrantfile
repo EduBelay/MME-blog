@@ -1,0 +1,7 @@
+ENV['VAGRANT_EXPERIMENTAL'] = "disks"
+Vagrant.configure("2") do |config|
+    config.vm.hostname = "Exercicio07"
+    config.vm.box = "debian"
+    config.vm.define "tarefa02-ex07"  
+    config.vm.disk :disk, name: "oTeuNome", size: "4GB"
+ end

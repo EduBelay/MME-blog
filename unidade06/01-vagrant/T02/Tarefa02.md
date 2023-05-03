@@ -112,3 +112,26 @@ vm:
 1. Cal é o motivo? 
 2. Como o podemos resolver? 
 
+
+# Exercicio 7
+Incorpora no seguinte exemplo un disco adicional de 4GB e recorda que esta funcionalidade é experimental en Vagrant. O disco tense que chamar **OteuNome**. 
+```ruby
+Vagrant.configure("2") do |config|
+    config.vm.hostname = "Exercicio07"
+    config.vm.box = "debian"
+    config.vm.define "tarefa02-ex07"  
+ end
+```
+
+ Nesta tarefa tes que **entregar**:
+* Ficheiro **Vagrantfile** coa configuración indicada.
+* Ficheiro **exercicio07** explicando os cambios precisos. 
+
+
+# Exercicio 8
+Tendo en conta o **Exercicio 1** sen erros realizado previamente adapta o Vagrantfile para que permita amosar as máquinas agrupadas en Virtualbox co nome de GrupoOteuNome. 
+
+ Nesta tarefa tes que **entregar**:
+* Ficheiro **Vagrantfile** coa configuración indicada.
+* Ficheiro **exercicio08** explicando os cambios precisos. 
+* 
