@@ -17,8 +17,8 @@ https://github.com/fusioninventory/fusioninventory-agent/releases/download/2.6/f
 ](
 https://github.com/fusioninventory/fusioninventory-agent/releases/download/2.6/fusioninventory-agent_windows-x86_2.6.exe
 )
-2. Procede a instalación e a sigue os pasos indicados. 
-  
+2. Procede a instalación do axente seguindo os pasos que se indican a continuación.
+     
 <style>
   :root{
      --color-background: #101010;
@@ -86,7 +86,13 @@ https://github.com/fusioninventory/fusioninventory-agent/releases/download/2.6/f
 ---
 # Forzar o envió de información.
 Este paso pode tardar uns minutos mentras non se reflexa no servidor de glpi. 
-![](img/15.png)
+![](img/15-01.png)
+
+---
+Voltamos atrás e veremos a planificación da seguinte execución. 
+
+![](img/15-03.png)
+
 
 ---
 # Comprobamos que o axente envía os datos ao GLPI
