@@ -40,11 +40,11 @@ https://github.com/fusioninventory/fusioninventory-agent/releases/download/2.6/f
 <!-- _colorPreset: dark -->
 
 ---
-![](img/01.png)
+* O primeiro paso da instalación é a configuración do idioma do instalador.  
 
----
+![ left w:200](img/01.png)
+![ right w:400](img/02.png)
 
-![](img/02.png)
 
 ---
 ![](img/03.png)
@@ -57,9 +57,12 @@ https://github.com/fusioninventory/fusioninventory-agent/releases/download/2.6/f
 ![](img/05.png)
 
 ---
+* URL para o envío da información: https://10.65.65.247/plugins/fusioninventory/
+
 ![](img/06.png)
 
 ---
+
 ![](img/07.png)
 
 ---
@@ -102,4 +105,4 @@ Voltamos atrás e veremos a planificación da seguinte execución.
 ---
 # Asignar localización
 Asignamos o equipo ou conxunto de equipos a unha localización. 
-![](img/17.png)
+![w:800](img/17.png)
