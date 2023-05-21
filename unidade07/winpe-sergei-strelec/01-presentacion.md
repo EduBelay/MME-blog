@@ -43,7 +43,6 @@ Notas para a presentación
   - [Dos-Menu: Symantec Ghost](#dos-menu-symantec-ghost)
 - [WinPE Sergei Strelec.](#winpe-sergei-strelec-1)
   - [WinPE Sergei Strelec. BurnIn Test](#winpe-sergei-strelec-burnin-test)
-  - [](#)
   - [WinPE Sergei Strelec. BurnIn Test](#winpe-sergei-strelec-burnin-test-1)
   - [WinPE Sergei Strelec. Outras ferramentas de diagnóstico.](#winpe-sergei-strelec-outras-ferramentas-de-diagnóstico)
   - [WinPE Sergei Strelec. Outras ferramentas de diagnóstico.](#winpe-sergei-strelec-outras-ferramentas-de-diagnóstico-1)
@@ -122,6 +121,7 @@ Notas para a presentación
 * Proporciona ate 11 tests diferentes que se poden configurar por separado ou nunha combinación deles. 
 * 
 ![w:100px](img/07-burning-test-menu.png)
+
 ---
 ## WinPE Sergei Strelec. BurnIn Test 
 ![](img/07-burnin-test.png)
@@ -158,6 +158,7 @@ Notas para a presentación
     * Veritas
     * Symatec Ghost
 
+--- 
 ## WinPE Sergei Strelec. Ferramentas destacadas:
 * Recuperación de datos:
   * Data recovery > EaseUS Data Recovery ou O&O Disk

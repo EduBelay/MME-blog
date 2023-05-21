@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Curso21_22</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Curso21_22/UD07</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Curso21_22/UD07/UD07-Choco</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 92116  -->
+  <question type="truefalse">
+    <name>
+      <text>01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  instalar  Speedtest by Ookla?</p>
+<p><strong>choco install speedtest</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco install speedtest-by-ookla </strong></p>
+<p> </p>
+<p><strong>PS C:\tempo&gt; choco list Speedtest</strong><br />Chocolatey v1.0.0<br />Using the list command with remote sources is deprecated and will be made<br />to only list locally installed packages in v2.0.0. Use the search, or find,<br />command to find packages on remote sources (such as the Chocolatey Community<br />Repository).<br />speedtest 1.1.1.1 [Approved] Downloads cached for licensed users<br />speedtest-by-ookla 1.10.163.001 [Approved] Downloads cached for licensed users</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92117  -->
+  <question type="truefalse">
+    <name>
+      <text>02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  instalar  Speedtest ?</p>
+<p><strong>choco install speedtest</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text><![CDATA[<p>choco install speedtest</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92118  -->
+  <question type="truefalse">
+    <name>
+      <text>03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  instalar  Speedtest by Ookla?</p>
+<p><strong>choco install speedtest-by-ookla</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco install speedtest-by-ookla </strong></p>
+<p> </p>
+<p><strong>PS C:\tempo&gt; choco list Speedtest</strong><br />Chocolatey v1.0.0<br />Using the list command with remote sources is deprecated and will be made<br />to only list locally installed packages in v2.0.0. Use the search, or find,<br />command to find packages on remote sources (such as the Chocolatey Community<br />Repository).<br />speedtest 1.1.1.1 [Approved] Downloads cached for licensed users<br />speedtest-by-ookla 1.10.163.001 [Approved] Downloads cached for licensed users</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92119  -->
+  <question type="truefalse">
+    <name>
+      <text>04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter todas as versión dun paquete que se chama <strong>librespeed</strong></p>
+<p><strong>choco list librespeed --all</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco list librespeed --all</strong></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92120  -->
+  <question type="truefalse">
+    <name>
+      <text>05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter todas as versión dun paquete que se chama <strong>librespeed</strong></p>
+<p><strong>choco list librespeed -a</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco list librespeed -a</strong></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92121  -->
+  <question type="truefalse">
+    <name>
+      <text>06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter todas as versión dun paquete que se chama <strong>librespeed</strong></p>
+<p><strong>choco list librespeed --a</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco list librespeed -a</strong></p>
+<p><strong>Ollo na versión corta só se emprega un "-"</strong></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92122  -->
+  <question type="truefalse">
+    <name>
+      <text>07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter  información detallada  dun paquete que se chama <strong>librespeed-cli</strong></p>
+<p><strong>choco list librespeed-cli</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>choco info librespeed-cli</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92123  -->
+  <question type="truefalse">
+    <name>
+      <text>08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter  información detallada  dun paquete que se chama <strong>librespeed-cli</strong></p>
+<p><strong>choco search librespeed-cli</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>choco info librespeed-cli</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92124  -->
+  <question type="truefalse">
+    <name>
+      <text>09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter  información detallada  dun paquete que se chama <strong>librespeed-cli</strong></p>
+<p><strong>choco info librespeed-cli</strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>choco info librespeed-cli</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92125  -->
+  <question type="truefalse">
+    <name>
+      <text>10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter  información dos paquetes instaladas nun sistema operativo? </p>
+<p><strong>choco list </strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco list --localonly</strong></p>
+<p>outra alternativa </p>
+<p><strong>choco list -lo</strong></p>
+<p><strong>IMPORTANTE:  choco list , realiza unha listaxe dos paquetes no servidor. </strong></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92126  -->
+  <question type="truefalse">
+    <name>
+      <text>11</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter  información dos paquetes instaladas nun sistema operativo? </p>
+<p><strong>choco list -lo</strong></p>
+<p> </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco list --localonly</strong></p>
+<p>outra alternativa </p>
+<p><strong>choco list -lo</strong></p>
+<p><strong>IMPORTANTE:  choco list , realiza unha listaxe dos paquetes no servidor. </strong></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92127  -->
+  <question type="truefalse">
+    <name>
+      <text>12</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  obter  información dos paquetes instaladas nun sistema operativo? </p>
+<p><strong>choco list --localonly</strong></p>
+<p> </p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><strong>choco list --localonly</strong></p>
+<p>outra alternativa </p>
+<p><strong>choco list -lo</strong></p>
+<p><strong>IMPORTANTE:  choco list , realiza unha listaxe dos paquetes no servidor. </strong></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92128  -->
+  <question type="truefalse">
+    <name>
+      <text>13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  actualizar os paquetes instaladas nun sistema operativo? </p>
+<p><strong>choco list --localonly</strong></p>
+<p> </p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<div><strong>choco upgrade all -y</strong></div>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92129  -->
+  <question type="truefalse">
+    <name>
+      <text>14</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  actualizar os paquetes instaladas nun sistema operativo? </p>
+<p><strong><span style="font-size: 1rem;">choco update all -y </span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<div><strong>choco upgrade all -y</strong></div>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92130  -->
+  <question type="truefalse">
+    <name>
+      <text>15</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  actualizar os paquetes instaladas nun sistema operativo? </p>
+<p><strong><span style="font-size: 1rem;">choco upgrade</span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<div><strong>choco upgrade all -y</strong></div>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92131  -->
+  <question type="truefalse">
+    <name>
+      <text>16</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  actualizar os paquetes instaladas nun sistema operativo? </p>
+<p><strong><span style="font-size: 1rem;">choco upgrade -a</span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<div><strong>choco upgrade all -y</strong></div>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92132  -->
+  <question type="truefalse">
+    <name>
+      <text>17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  actualizar os paquetes instaladas nun sistema operativo? </p>
+<p><strong><span style="font-size: 1rem;">choco upgrade -y</span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<div><strong>choco upgrade all -y</strong></div>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92133  -->
+  <question type="truefalse">
+    <name>
+      <text>18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Se realizamos unha exportación dos programas instaladas con chocolatey o ficheiro será de tipo JSON. </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>O ficheiro é de tipo XML como este</p>
+<div>
+<div> </div>
+<div><span>&lt;?</span><span>xml</span><span> version</span>=<span>"1.0"</span><span> encoding</span>=<span>"utf-8"</span><span>?&gt;</span></div>
+<div><span>&lt;</span><span>packages</span><span>&gt;</span></div>
+<div><span>&lt;</span><span>package</span> <span>id</span>=<span>"chocolatey"</span> <span>/&gt;</span></div>
+<div><span>&lt;</span><span>package</span> <span>id</span>=<span>"hugo"</span> <span>/&gt;</span></div>
+<div><span>&lt;</span><span>package</span> <span>id</span>=<span>"winrar"</span> <span>/&gt;</span></div>
+<div><span>&lt;/</span><span>packages</span><span>&gt;</span></div>
+<div> </div>
+</div>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92134  -->
+  <question type="truefalse">
+    <name>
+      <text>19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Se realizamos unha exportación dos programas instaladas con chocolatey o ficheiro será de tipo XML. </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>O ficheiro é de tipo XML como este</p>
+<div>
+<div> </div>
+<div><span>&lt;?</span><span>xml</span><span> version</span>=<span>"1.0"</span><span> encoding</span>=<span>"utf-8"</span><span>?&gt;</span></div>
+<div><span>&lt;</span><span>packages</span><span>&gt;</span></div>
+<div><span>&lt;</span><span>package</span> <span>id</span>=<span>"chocolatey"</span> <span>/&gt;</span></div>
+<div><span>&lt;</span><span>package</span> <span>id</span>=<span>"hugo"</span> <span>/&gt;</span></div>
+<div><span>&lt;</span><span>package</span> <span>id</span>=<span>"winrar"</span> <span>/&gt;</span></div>
+<div><span>&lt;/</span><span>packages</span><span>&gt;</span></div>
+<div> </div>
+</div>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92135  -->
+  <question type="truefalse">
+    <name>
+      <text>20</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  desinstalar un paquete con identificador <strong>googlechrome</strong>?   </p>
+<p><strong><span style="font-size: 1rem;">choco uninstall  googlechrome <br /></span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span>choco uninstall  googlechrome<br /></span></p>
+<p><span> </span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92136  -->
+  <question type="truefalse">
+    <name>
+      <text>21</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  desinstalar un paquete con identificador <strong>googlechrome</strong>?   </p>
+<p><strong><span style="font-size: 1rem;">choco remove  googlechrome <br /></span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span>choco uninstall  googlechrome<br /></span></p>
+<p><span> </span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92137  -->
+  <question type="truefalse">
+    <name>
+      <text>22</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  desinstalar un paquete con identificador <strong>googlechrome</strong>?   </p>
+<p><strong><span style="font-size: 1rem;">choco delete  googlechrome <br /></span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span>choco uninstall  googlechrome<br /></span></p>
+<p><span> </span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 92138  -->
+  <question type="truefalse">
+    <name>
+      <text>23</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Empregando Chocolatey que  comando é preciso executar para  desinstalar un paquete con identificador <strong>googlechrome</strong>?   </p>
+<p><strong><span style="font-size: 1rem;">choco purge  googlechrome <br /></span></strong></p>
+<p><span style="font-size: 1rem;"> </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span>choco uninstall  googlechrome<br /></span></p>
+<p><span> </span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
