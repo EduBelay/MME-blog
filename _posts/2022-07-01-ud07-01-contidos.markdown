@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UD07-01:  Contidos "
+title:  "UD07-01:  Winget, Chocolatey, Scoop, apt  e Ansible "
 date:   2022-07-01 00:01:01 +0200
 categories: unidade07
 tags: numeracion 
@@ -15,7 +15,7 @@ tags: numeracion
 {:toc}
 </details>
 
-# UD07-01: Instalación en entornos Windows
+# UD07-01: Winget, Chocolatey, Scoop, apt  e Ansible
 ## Chocolatey
 1. [Web do proxecto](https://chocolatey.org/)
 2. [Que es chocolatey](https://www.softzone.es/programas/sistema/chocolatey/)
@@ -44,7 +44,3 @@ tags: numeracion
 1. [Que é ansible](https://keepcoding.io/blog/que-es-ansible/)
 2. [ 9 Ejemplo de Playbooks de Ansible para la administración de Windows ](https://geekflare.com/es/ansible-playbook-windows-example/)
 
-
-## Enunciado 
-[PDF]({{site.baseurl}}/unidade01/t01.pdf)
-[ODT]({{site.baseurl}}unidade01/t01.odt)
