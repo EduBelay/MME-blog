@@ -140,3 +140,48 @@ Incluimos o rango dos enderezos IP para realizar o autodescubrimento:
 * 192.168.56.254
 Recorda seguir a guía cos pasos que aparecen no menú. 
 ![bg right width:800](img/08.png) 
+
+---
+## Lanzamento do discover dende o cliente
+
+```sh
+Usage:
+    glpi-netdiscovery [options] --first <address> --last <address>
+
+      Options:
+        --host <ADDRESS>       Host IP address to scan or IP range first address
+        --first <ADDRESS>      IP range first address
+        --last <ADDRESS>       IP range last address
+        --port <PORT[,PORT2]>  SNMP port (161)
+        --protocol <PROT[,P2]> SNMP protocol/domain (udp/ipv4)
+        --community <STRING>   SNMP community string (public)
+        --credentials <STRING> SNMP credentials (version:1,community:public)
+        --timeout <TIME        SNMP timeout, in seconds (1)
+        --entity <ENTITY>      GLPI entity
+        --threads <COUNT>      number of discovery threads (1)
+        --control              output control messages
+        --file <FILE>          snmpwalk input file
+        -i --inventory         chain with netinventory task for discovered devices
+        -s --save <FOLDER>     base folder where to save discovery and inventory xmls
+                                - netdiscovery xmls will go in <FOLDER>/netdiscovery
+                                - netinventory xmls will go in <FOLDER>/netinventory
+        --debug                debug output
+        -h --help              print this message and exit
+        --version              print the task version and ex
+```
+
+---
+## Exemplos: Lanzamento do discover dende o cliente
+
+```sh
+## Lanzamento do discover dende o cliente
+glpi-netdiscovery.bat --first 192.168.0.1 --last 192.168.0.255 --threads 20 -save .
+
+## SNMP
+glpi-netdiscovery --first 192.168.0.1 --last 192.168.0.254 \
+--credentials version:2c,community:public \
+--credentials version:3,username:admin,authpassword:s3cr3t,privpassword:s3cr3t
+
+## Entity> entity: address, phone numbers, email…
+
+```
