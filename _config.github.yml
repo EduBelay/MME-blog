@@ -44,7 +44,7 @@ plugins:
 # their entries' file path in the `include:` list.
 #
  exclude:
-   - unidade06/
+#   - unidade06/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
