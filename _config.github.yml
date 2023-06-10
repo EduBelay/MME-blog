@@ -43,7 +43,8 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+ exclude:
+   - unidade06/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -59,3 +60,4 @@ back_to_top: true
 back_to_top_text: Inicio
 
 footer_content: "Esta documentación ten unha licenza <a href=\"#/LICENSE\">GNU General Public License v2.0</a>"
+
