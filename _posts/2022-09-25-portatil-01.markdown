@@ -48,3 +48,4 @@ Ten en conta para realizar as diferentes tarefas o manual de usuario e * [Guia d
 ## Fotografías
 
  * [Fotografías]({{site.baseurl}}/taller/portatil/01/fotos/fotos.pdf)
+

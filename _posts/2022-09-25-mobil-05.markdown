@@ -53,4 +53,4 @@ categories: mobil
 
 ## Fotografías
 
- * [Fotografías]({{site.baseurl}}/taller/mobil/05/fotos/fotos.pdf)
+ * [Fotografías]({{site.baseurl}}/taller/mobiles/05/fotos/fotos.pdf)

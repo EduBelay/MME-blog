@@ -30,4 +30,4 @@ categories: mobil
 
 ## Fotografías
 
- * [Fotografías]({{site.baseurl}}/taller/mobil/01/fotos/fotos.pdf)
+ * [Fotografías]({{site.baseurl}}/taller/mobiles/01/fotos/fotos.pdf)
