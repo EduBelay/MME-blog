@@ -1,0 +1,87 @@
+#-----------------------------------------
+# Configuracion servidor GLPI
+#-----------------------------------------
+
+
+Vagrant.configure("2") do |config|
+    config.vm.define "limesurvey" do |subconfig|
+      subconfig.vm.box = "ubuntu/lunar64"
+      subconfig.vm.hostname = "limesurvey"
+      #subconfig.vm.network "private_network", ip: "192.168.30.4",  virtualbox__intnet: true, name: "rede01"
+      subconfig.vm.network "private_network", ip: "192.168.56.4"
+      subconfig.vm.network "forwarded_port", guest: 80, host: 8080
+      subconfig.vm.provider :virtualbox do |vb1|
+          vb1.name = "limesurvey"
+          vb1.cpus= "2"
+          vb1.customize ["modifyvm", :id, "--groups", "/glpi-demo"]
+      end
+
+      subconfig.vm.provision "shell", inline: <<-SHELL
+          RED='\033[0;31m'
+          NC='\033[0m' # No Color
+          echo  -e "***************** ${RED}limesurvey${NC}*******************";
+          sudo apt-get update
+          sudo apt install zip -y 
+          sudo apt install -y apache2 libapache2-mod-php php-mysql mariadb-server php-mbstring php-curl php-gd php-xml php-intl php-ldap php-apcu php-xmlrpc php-cas php-zip php-bz2
+          sudo apt-get install php-imap -y 
+
+          sudo echo "date.timezone = Europe/Madrid" >> /etc/php/8.1/apache2/php.ini
+          cd /var/www/html
+          wget https://download.limesurvey.org/latest-master/limesurvey6.1.5+230626.zip
+          sudo unzip limesurvey6.1.5+230626.zip
+          sudo chown www-data:www-data . -R
+          cd limesurvey
+          sudo chown www-data:www-data . -R
+
+          #Habilitar os modulos77
+          sudo a2enmod expires rewrite
+          sudo systemctl restart apache2
+
+          #Configuracion BD
+          echo  -e "***************** ${RED}Configuracion BD ${NC}*******************";
+
+          #sudo systemctl stop mysql.service
+          #sudo systemctl set-environment MYSQLD_OPTS="--skip-networking --skip-grant-tables"
+          #sudo systemctl start mysql.service
+          #          sudo mysql -u root
+
+          sudo mysqladmin --user=root password ""
+
+          #Creacion BD GLPI
+          echo  -e "***************** ${RED}Creacion BD para LimeSuvery ${NC}*******************";
+          sudo mysql -u root -e "create database survey charset utf8mb4 collate utf8mb4_unicode_ci;"          
+          sudo mysql -u root -e "create user survey@localhost identified by 'Password1234';"          
+          sudo mysql -u root -e "grant all privileges on survey.* to survey@localhost;"
+          sudo mysql -u root -e "grant select on mysql.time_zone_name to survey@localhost;" 
+
+
+          echo  -e "${RED}***************************************************** ${NC}";
+          echo  -e "Para finalizar a instalación accede a:"
+          echo  -e "\t http://localhost:8080/glpi/install/install.php"
+          echo  -e "Base de datos:"
+          echo  -e "\t survey"
+          echo  -e "Usuario da dase de datos:"
+          echo  -e "\t survey"
+          echo  -e "Contrasinal do usuario da dase de datos:"
+          echo  -e "\t Password1234"
+
+          #>verificacion mysql
+          #showdatabases 
+          #>Verificar usuarios creados
+          # SELECT user FROM mysql.user; 
+
+          #Portal web usuario por defectvo admin / password
+
+      SHELL
+    end
+ 
+    #-----------------------------------------
+    # Configuracion cliente WINDOWS
+    #-----------------------------------------
+   
+ 
+   
+  end
+  
+  
+  

@@ -1,0 +1,1 @@
+https://developer.mozilla.org/es/docs/Learn/Server-side/Django/development_environment#instalaci%C3%B3n_de_python_3

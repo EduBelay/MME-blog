@@ -77,6 +77,27 @@ crontab -e
 * * * * * 1,3,5         /backupbd/script.sh
 
 ```
+---
+#  Restaurar entorno
+```sh
+#!/bin/bash
+#Declaración de variables para ás credenciais de bases de datos
+
+#Nome de Usuario
+dbUser="glpi"
+#Contrasinal de Usuario
+dbPass="Password1234"
+#Nome da BD
+dbName="glpi"
+
+#Nome do ficheiro
+$ficheiro="glpi-2023-07-06_14-59-49"
+#Descomrpimri ficheiro
+sudo gzip -dv $ficheiro.sql.gz
+
+mysql  --user=$dbUser --password=$dbPass $dbName < $backupDir/$ficheiro
+
+```
 
 ---
 # Configuración rsync
