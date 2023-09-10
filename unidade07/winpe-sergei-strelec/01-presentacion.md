@@ -49,6 +49,25 @@ Notas para a presentación
   - [WinPE Sergei Strelec.](#winpe-sergei-strelec-2)
   - [Backup e restauración.](#backup-e-restauración)
   - [WinPE Sergei Strelec. Ferramentas destacadas:](#winpe-sergei-strelec-ferramentas-destacadas)
+
+---
+- [WinPE Sergei Strelec](#winpe-sergei-strelec)
+- [Que é?](#que-é)
+- [Primeiros pasos](#primeiros-pasos)
+- [Dos-Menu](#dos-menu)
+  - [Dos-Menu: HDD Regenerator](#dos-menu-hdd-regenerator)
+  - [Dos-Menu: HDD Regenerator](#dos-menu-hdd-regenerator-1)
+  - [Dos-Menu: HDAT21](#dos-menu-hdat21)
+  - [Dos-Menu: Memtest86](#dos-menu-memtest86)
+  - [Dos-Menu: Symantec Ghost](#dos-menu-symantec-ghost)
+- [WinPE Sergei Strelec.](#winpe-sergei-strelec-1)
+  - [WinPE Sergei Strelec. BurnIn Test](#winpe-sergei-strelec-burnin-test)
+  - [WinPE Sergei Strelec. BurnIn Test](#winpe-sergei-strelec-burnin-test-1)
+  - [WinPE Sergei Strelec. Outras ferramentas de diagnóstico.](#winpe-sergei-strelec-outras-ferramentas-de-diagnóstico)
+  - [WinPE Sergei Strelec. Outras ferramentas de diagnóstico.](#winpe-sergei-strelec-outras-ferramentas-de-diagnóstico-1)
+  - [WinPE Sergei Strelec.](#winpe-sergei-strelec-2)
+  - [Backup e restauración.](#backup-e-restauración)
+  - [WinPE Sergei Strelec. Ferramentas destacadas:](#winpe-sergei-strelec-ferramentas-destacadas)
   
  
 
