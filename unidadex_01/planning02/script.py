@@ -21,9 +21,9 @@ def xerar_planificador(pdf, mes, ano):
 
     dias_mes = calendar.monthrange(ano, mes)[1]  # Obter o número de días do mes
 
-    cell_width = 210 / 7  # Ancho da páxina A4 dividido por 7 días
+    cell_width = 297 / 7  # Ancho da páxina A4 apaisado dividido por 7 días
     header_height = 10  # Altura axustada ao texto para os días da semana
-    cell_height = (297 - 65 - header_height) / 6
+    cell_height = (210 - 65 - header_height) / 6  # Alto da páxina A4 apaisado menos espazo para encabezado e pé
 
     # Encabezado dos días en galego (RAG)
     dias = ["Luns", "Martes", "Mércores", "Xoves", "Venres", "Sábado", "Domingo"]
@@ -38,7 +38,7 @@ def xerar_planificador(pdf, mes, ano):
             pdf.ln()
 
 if __name__ == "__main__":
-    pdf = PDF()
+    pdf = PDF(orientation='L')  # Establecer a orientación a apaisado
     for ano in [2023, 2024]:
         for mes in range(1, 13):
             if ano == 2023 and mes < 9:
