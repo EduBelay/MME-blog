@@ -1,2 +1,2 @@
 pip install fpdf2
- 
+ pip install reportlab
