@@ -1,6 +1,13 @@
 from fpdf import FPDF, XPos, YPos
 import calendar
 
+dias_festivos = {
+    1: [1, 6],    # 1 de Enero y 6 de Enero
+    10: [12],    # 12 de Octubre
+    11: [1]      # 1 de Noviembre
+    # ... Puedes agregar más días festivos de acuerdo a tus necesidades
+}
+
 # Nombres de los días da semana en galego (RAG)
 nombres_dias_gallego = ["Luns", "Martes", "Mércores", "Xoves", "Venres", "Sábado", "Domingo"]
 
@@ -48,16 +55,16 @@ def efemerides_informatica(pdf, mes):
     pdf.ln(20)  # Engadir un salto de liña adicional
     pdf.set_font('Helvetica', 'B', 12)
     pdf.cell(0, 10, 'Efemérides Informáticas', 0, new_x=XPos.LMARGIN, new_y=YPos.NEXT, align='C')
-    pdf.set_font('Helvetica', '', 12)
+    pdf.set_font('Helvetica', '', 10)
     col_width = 297 / 2
     current_col = 0
 
     for efemeride in efemerides.get(mes, []):
         date, event = efemeride.split(": ")
-        pdf.set_font('Helvetica', 'B', 12)
+        pdf.set_font('Helvetica', 'B', 10)
         pdf.cell(15, 10, date + ": ", 0, align='L')
-        pdf.set_font('Helvetica', '', 12)
-        pdf.cell(col_width - 15, 10, event, 0, align='L')
+        pdf.set_font('Helvetica', '', 10)
+        pdf.cell(col_width - 15, 7, event, 0, align='L')
 
         if current_col == 0:
             pdf.set_x(col_width)
@@ -67,33 +74,49 @@ def efemerides_informatica(pdf, mes):
             pdf.set_x(0)
             current_col = 0
 
+            
 def xerar_planificador(pdf, mes, ano):
     mes_galego = meses_galego[calendar.month_name[mes]]
+    festivos_del_mes = dias_festivos.get(mes, [])
 
-    pdf.mes_ano = f"{mes_galego} {ano}"  # Definir o atributo 'mes_ano' para o encabezado
+    pdf.mes_ano = f"{mes_galego} {ano}"  # Definir o atributo 'mes_ano' para el encabezado
     pdf.add_page()
-    pdf.set_auto_page_break(auto=True, margin=35)  # Aumentar o margen para non solapar co logotipo
+    pdf.set_auto_page_break(auto=True, margin=35)  # Aumentar el margen para no solapar con el logotipo
     pdf.set_font('Helvetica', size=12)
 
-    dias_mes = calendar.monthrange(ano, mes)[1]  # Obter o número de días do mes
+    dias_mes = calendar.monthrange(ano, mes)[1]  # Obtener el número de días del mes
 
-    cell_width = 297 / 7  # Ancho da páxina A4 apaisado dividido por 7 días
-    header_height = 10  # Altura axustada ao texto para os días da semana
-    cell_height = (210 - 65 - header_height) / 6  # Reducir o espazo para os días para non solapar co logotipo
+    cell_width = 297 / 7  # Ancho de la página A4 apaisado dividido por 7 días
+    header_height = 10  # Altura ajustada al texto para los días de la semana
+    cell_height = (210 - 65 - header_height) / 6  # Reducir el espacio para los días para no solapar con el logotipo
 
-    # Encabezado dos días
+    # Encabezado de los días
     dias = [nombres_dias_gallego[dia] for dia in range(7)]
     for dia in dias:
         pdf.cell(cell_width, header_height, dia, 1)
     pdf.ln()
 
-    # Encher os días do mes
+    # Aquí determinamos en qué día de la semana comienza el mes (0 = Lunes, 1 = Martes, ..., 6 = Domingo)
+    dia_inicio_mes = calendar.monthrange(ano, mes)[0]
+
+    # Rellenar las celdas vacías hasta el inicio del mes
+    for i in range(dia_inicio_mes):
+        pdf.cell(cell_width, cell_height, "", 1)
+
+    # Llenar los días del mes
     for i in range(1, dias_mes + 1):
-        pdf.cell(cell_width, cell_height, str(i), 1)
-        if i % 7 == 0:  # Se é domingo, ir á seguinte liña
+        # Si el día es festivo, establece el color de relleno a gris
+        if i in festivos_del_mes:
+            pdf.set_fill_color(200, 200, 200)  # Color gris
+            pdf.cell(cell_width, cell_height, str(i), 1, fill=True)
+        else:
+            pdf.cell(cell_width, cell_height, str(i), 1)
+        if (i + dia_inicio_mes) % 7 == 0:  # Si es domingo, ir a la siguiente línea
             pdf.ln()
 
     efemerides_informatica(pdf, mes)
+
+
 
 if __name__ == "__main__":
     pdf = PDF(orientation='L')  # Establecer a orientación apaisado
