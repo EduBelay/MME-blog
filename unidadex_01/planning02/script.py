@@ -2,11 +2,19 @@ from fpdf import FPDF, XPos, YPos
 import calendar
 
 dias_festivos = {
-    1: [1, 6],    # 1 de Enero y 6 de Enero
-    10: [12],    # 12 de Octubre
-    11: [1]      # 1 de Noviembre
-    # ... Puedes agregar más días festivos de acuerdo a tus necesidades
-}
+    1:  [1,2,3,4,5, 6,7,13,14,20,21,27,28], 
+    2:  [12,13,14,3,4,10,11,17,18,24,25],   
+    3:  [25,26,27,28,29,30,31,2,3,9,10,16,17,23,24],  
+    4:  [1,6,7,13,14,20,21,27,28],    
+    5:  [1,17,20,4,5,11,12,18,19,25,26], 
+    6:  [1,2,8,9,15,16,22,23,29,30], 
+    9:  [2,3,9,10,16,17,23,24,30],     
+    10: [12,13,1,7,8,14,15,21,22,28,29],    
+    11: [1,4,5,11,12,18,19,25,26]     ,
+    12: [6,7,8,22,23,24,25,26,27,28,29,30,31,2,3,9,10,16,17]     
+ }
+
+
 
 # Nombres de los días da semana en galego (RAG)
 nombres_dias_gallego = ["Luns", "Martes", "Mércores", "Xoves", "Venres", "Sábado", "Domingo"]
@@ -88,7 +96,7 @@ def xerar_planificador(pdf, mes, ano):
 
     cell_width = 297 / 7  # Ancho de la página A4 apaisado dividido por 7 días
     header_height = 10  # Altura ajustada al texto para los días de la semana
-    cell_height = (210 - 65 - header_height) / 6  # Reducir el espacio para los días para no solapar con el logotipo
+    cell_height = 25 # Reducir el espacio para los días para no solapar con el logotipo
 
     # Encabezado de los días
     dias = [nombres_dias_gallego[dia] for dia in range(7)]
@@ -114,7 +122,7 @@ def xerar_planificador(pdf, mes, ano):
         if (i + dia_inicio_mes) % 7 == 0:  # Si es domingo, ir a la siguiente línea
             pdf.ln()
 
-    efemerides_informatica(pdf, mes)
+    #efemerides_informatica(pdf, mes)
 
 
 
