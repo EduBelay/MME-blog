@@ -49,7 +49,7 @@ def efemerides_informatica(pdf, mes):
     efemerides = {
         1: ["8: Aniversario do CES 1967", "24: Creación de Macintosh 1984", "27: Nacemento de Ada Lovelace 1815", "30: Lanzamento de Windows Vista 2007"],
         2: ["15: Creación de YouTube 2005", "28: Lanzamento de Raspberry Pi 2012", "12: Nacemento de Radia Perlman 1951", "20: Lanzamento de Steam 2003"],
-     #   3: ["12: Aniversario de World Wide Web 1989", "14: Pi Day", "26: Nacemento de Elaine Weyuker", "31: Lanzamento de GNOME 1.0 1999"],
+        #3: ["12: Aniversario de World Wide Web 1989", "14: Pi Day", "26: Nacemento de Elaine Weyuker", "31: Lanzamento de GNOME 1.0 1999"],
         4: ["1: Día da broma de April Fools", "4: Aniversario de Gmail 2004", "12: Nacemento de Robert E. Kahn 1938", "26: Nacemento de Joan Clarke 1917"],
         5: ["22: Aniversario de Sinclair ZX Spectrum 1982", "31: Aniversario de Windows 3.1 1992", "5: Nacemento de Mary Lou Jepsen", "24: Lanzamento de Windows 3.0 1990"],
       #  6: ["5: Aniversario de Apple I 1977", "18: Aniversario de Oracle 1979", "10: Nacemento de Grace Hopper 1906", "26: Lanzamento de IBM 1620 1959"],
