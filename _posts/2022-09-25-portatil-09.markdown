@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Portátil 09:  Compaq Presario V6000 (PDTE)"
+date:   2022-09-29 12:49:00 +0200
+categories: portatiles
+---
+
+<details open markdown="block">
+  <summary>
+    Táboa de contidos
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+En progreso
+{: .label .label-red }
+
+# Portátil 09:    Compaq Presario V6000 (PDTE)
+
+## Tarefas
+
+Guía de  instalación de compoñentes no  [manual de usuario]({{site.baseurl}}/taller/portatil/07/amilo.pdf) (páxina 73)
+
+1. Revisión inicial de danos externos que figurarán na folla de entrega ao cliente. 
+2. Identificación de todos os conectores de entrada e saída.
+3. ~~Traduce ao galego o esquema da páxina 50 do **Manual de servicio**~~
+4. Elabora un esquema dos diferentes parafusos. 
+5. Verificación do fonde de alimentación. 
+6. Reemplazo e verificación da batería
+7. Reemplazo do disco duro.  (páxina 75)
+   1. Extraeo o disco duro e comproba o seu funcionamento montando nunha caixa externa.
+8. Reemplazo da memoria RAM.   (páxina 75)
+9. Verificación da pila da BIOS. (páxina 81)
+10. Cambio da pasta térmica do procesador e limpeza dos ventiladores. 
+11. Montaxe de desmontaxe da pantalla.
+
+
+## Documentos
+* [Data Sheet-PDF]({{site.baseurl}}/taller/portatil/07/AMILO A1650G.pdf)
+* [Manual de usuario]({{site.baseurl}}/taller/portatil/08/amilo.pdf)
+* [Guía de servizo]({{site.baseurl}}/taller/portatil/08/fujitsu_siemens_amilo_service_guide.pdf)
+
+
+
+## Fotografías
+
+ * [Fotografías]({{site.baseurl}}/taller/portatil/08/fotos/fotos.pdf)
+
+## Recursos
+  - [Vídeo: Como desarmar e limpiar](https://www.youtube.com/watch?v=GzO5SXYIWWA&ab_channel=Laptopdisassembly)
+
+
