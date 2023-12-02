@@ -282,7 +282,17 @@ end
     ```
 * Eliminase o ficheiro Vagrantfile? 
   * Non
+---
+# Configuración de clons vinculados
+* Empregar ``v.linked_clone = true`` permítenos aforrar espazo e tempo.
+* Os clons vinculados só crean un disco coas diferencias coa imaxe base. 
 
+```ruby
+   config.vm.provider "virtualbox" do |vb|
+     vb.name = "ligera"
+     vb.linked_clone = true
+   end
+```
 ---
 ## Configura o escenario para que arrinque a interfaz gráfica.
 * Recorda que estamos empregando de proveedor Virtualbox.
@@ -511,6 +521,40 @@ end
 
  *  Windows PowerShell: `Get-FileHash FICHEIRO -Algorithm MD5`
     *  [Documentación](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.3)
+---
+# Xerar un box dende unha OVA
+* [Documéntase o proceso en GitHub](https://gist.github.com/aondio/66a79be10982f051116bc18f1a5d07dc)
+1. List your VMs to find the VM id you want to convert:
+
+```
+$ VBoxManage list vms
+"testing" {a3f59eed-b9c5-4a5f-9977-187f8eb8c4d4}
+```
+
+2. You can now package the .ova VM as Vagrant box:
+
+```
+$ vagrant package --base a3f59eed-b9c5-4a5f-9977-187f8eb8c4d4 --output name-of-your-box.box
+
+```
+
+the command `vagrant package` runs for quite some time before it can creates a Vagrant box. Be faithful and wait.
+
+---
+3. Add the new box to the list of local Vagrant boxes:
+
+```
+$ vagrant box add new-box-name name-of-your-box.box
+```
+
+4. Init, up, ssh and start usign your Vagrant box:
+```
+$ vagrant init #Init the new box with a Vagrantfile
+$ vagrant up
+$ vagrant ssh
+```
+And enjoy!
+  
 ---
 # Truco: Creación en bucle
 * [Documentación](https://developer.hashicorp.com/vagrant/docs/vagrantfile/tips)
