@@ -469,6 +469,36 @@ end
   ```ruby
   config.vm.network :public_network,:bridge=>"eth0"
   ```
+  ---
+  ## Configuración en adaptador ponte
+  ```ruby
+  Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/focal64"
+  config.vm.provider "virtualbox" do |vb|
+     vb.memory = "1024"
+     vb.linked_clone = true
+  end
+  config.vm.network "public_network"
+  end
+  ```
+  ---
+  ## Exemplo configuración rede multimáquina
+  ```ruby
+  Vagrant.configure("2") do |config|
+   config.vm.define "maquina1" do |m1|
+     m1.vm.box = "ubuntu/trusty64"
+     m1.vm.hostname="web"
+     m1.vm.network "public_network", bridge: "wlan0"
+     m1.vm.network "private_network", ip: "10.0.100.101"
+   end
+   config.vm.define "maquina2" do |m2|
+     m2.vm.box = "ubuntu/trusty64"
+     m2.vm.hostname="db"
+     m2.vm.network "private_network", ip: "10.0.100.102"
+   end
+  end
+  ```
+  ---
 * **Configuración nun script en liña** 
 
   ```ruby
