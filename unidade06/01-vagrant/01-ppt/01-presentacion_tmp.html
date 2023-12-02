@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>01-presentacion.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!--
+Notas para a presentación
+-->
+<h1 id="vagrant">Vagrant</h1>
+<p><img src="file:///e:/Documentos/edubelay/MME-blog/unidade06/01-vagrant/01-ppt/img/00_logo.png" alt="height:450px "></p>
+<style>
+  :root{
+     --color-background: #101010;
+     --color-foreground: #fff;
+  }
+  h1{
+    color:#73a832;
+  }
+
+  h2{
+    color:#32a883;
+  }
+
+  .anotacion {
+  font-size: 10px;
+}
+</style>
+<h2 id="colorpreset-dark"><!-- _colorPreset: dark --></h2>
+<ul>
+<li><a href="#vagrant">Vagrant</a></li>
+<li><a href="#que-%C3%A9">Que é?</a></li>
+<li><a href="#instalaci%C3%B3n-de-vagrant">Instalación de vagrant</a></li>
+<li><a href="#que-%C3%A9-un-box">Que é un box?</a></li>
+<li><a href="#crear-unha-m%C3%A1quina-virtual-sinxela">Crear unha máquina virtual sinxela.</a></li>
+<li><a href="#configuraci%C3%B3n-do-escenario-b%C3%A1sico">Configuración do escenario básico</a></li>
+<li><a href="#vagrant-redirecci%C3%B3n-de-portos">Vagrant redirección de portos</a></li>
+</ul>
+<hr>
+<h1 id="que-%C3%A9">Que é?</h1>
+<ul>
+<li>Vagrant é unha ferramenta deseñada para configurar e compartir o entorno de traballo coa mesma configuración.</li>
+<li>Emprega as tecnoloxías como os hipervisores de VirtualBox,VMWare, libvirt , ...</li>
+<li>Para adaptar unha máquina (box) podemos empregar:
+<ul>
+<li>Script shell</li>
+<li>Ferramentas como: Chef, Puppet, Ansible.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="instalaci%C3%B3n-de-vagrant">Instalación de vagrant</h1>
+<ul>
+<li><a href="https://developer.hashicorp.com/vagrant/downloads">Documentación</a></li>
+<li>Linux<pre class="hljs"><code><div> wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+
+ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /
+ etc/apt/sources.list.d/hashicorp.list
+
+ sudo apt update &amp;&amp; sudo apt install vagrant
+</div></code></pre>
+</li>
+<li>Windows<pre class="hljs"><code><div>  winget install -<span class="hljs-literal">-id</span>=Hashicorp.Vagrant  <span class="hljs-literal">-e</span>
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h1 id="fluxo-de-traballo">Fluxo de traballo</h1>
+<p><img src="file:///e:/Documentos/edubelay/MME-blog/unidade06/01-vagrant/01-ppt/img/fluxo_traballo.png" alt=""></p>
+<hr>
+<h1 id="comproba-a-versi%C3%B3n-de-vagrant">Comproba a versión de Vagrant</h1>
+<ul>
+<li>Unha vez instalado comproba a versión instalada con <code>vagrant -v</code>, actualmente a última versión é a <strong>2</strong>.</li>
+<li>Este paso é importante xa que hai elementos que dependen da versión da API de Vagrant.</li>
+<li>Tamén no ficheiro de configuración indicamos a versión de API coa que operamos  <code>Vagrant.configure(2) do |config|</code>
+`</li>
+</ul>
+<hr>
+<h1 id="que-%C3%A9-un-box">Que é un box?</h1>
+<ul>
+<li>Un box é unha máquina virtual &quot;empaquetada&quot;, podemos velo como un modelo que vamos clonar ou replicar.</li>
+<li>Podemos consultar e usar Boxes publicados en https://app.vagrantup.com/boxes/search</li>
+<li><strong>Como podemos empregalos?</strong><pre class="hljs"><code><div>vagrant box add {title} {url}
+<span class="hljs-meta">
+#</span><span class="bash">Exemplo 01</span>
+vagrant.exe box add centos https://app.vagrantup.com/centos/boxes/7/versions/2004.01/providers/virtualbox.box
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h1 id="xesti%C3%B3n-dun-box">Xestión dun box</h1>
+<ul>
+<li><strong>Onde se atopan por defecto os box?</strong> No directorio do usuario:
+<ul>
+<li>Linux: /home/usuario/.vagrant.d/boxes</li>
+<li>Windows:  C:\Users\usuario\vagrant\</li>
+</ul>
+</li>
+<li>Como consultamos os box existentes?<pre class="hljs"><code><div>vagrant box list
+</div></code></pre>
+</li>
+<li>Como eliminamos o box creado chamado <strong>centos</strong> ?<pre class="hljs"><code><div> vagrant box remove centos
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="xesti%C3%B3n-dun-box-online">Xestión dun box online</h3>
+<ul>
+<li>
+<p>Podemos importar os BOX publicados en  https://app.vagrantup.com/, existen varias alternivas:</p>
+</li>
+<li>
+<p>Opción 1, empregando o terminal.</p>
+<pre class="hljs"><code><div>  vagrant init ubuntu/trusty64
+  vagrant up
+</div></code></pre>
+</li>
+<li>
+<p>Opción 2, dende o vagranfile</p>
+<pre class="hljs"><code><div> Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+    config.vm.box = <span class="hljs-string">"ubuntu/trusty64"</span>
+  <span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Equivale ao seguinte:</p>
+<pre class="hljs"><code><div>VAGRANTFILE_API_VERSION = <span class="hljs-string">"2"</span>
+Vagrant.configure(VAGRANTFILE_API_VERSION) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+   config.vm.box = <span class="hljs-string">"ubuntu/trusty64"</span>
+ <span class="hljs-keyword">end</span>
+</div></code></pre>
+</li>
+<li>
+<p>Opción 3, descargar o box e importalo manualmente.</p>
+</li>
+</ul>
+<hr>
+<h2 id="opci%C3%B3ns-con-vagrant-box">Opcións con vagrant box</h2>
+<pre class="hljs"><code><div>     $ vagrant box [opción]
+</div></code></pre>
+<p>Subcomandos dispoñibles:</p>
+<ul>
+<li>add</li>
+<li>list</li>
+<li>outdated</li>
+<li>prune</li>
+<li>remove</li>
+<li>repackage</li>
+<li>update</li>
+</ul>
+<hr>
+<h1 id="crear-unha-m%C3%A1quina-virtual-sinxela">Crear unha máquina virtual sinxela.</h1>
+<ul>
+<li>Para cada proxecto crearemos un directorio.</li>
+<li>En cada proxecto teremos un ficheiro chamado <strong>Vagrantfile</strong></li>
+</ul>
+<pre class="hljs"><code><div>$ mkdir project
+$ <span class="hljs-built_in">cd</span> project
+
+<span class="hljs-comment"># Creamos o ficheiro Vagrantfile co box ubuntu16.04</span>
+$ vagrant init ubuntu/trusty64
+
+<span class="hljs-comment">#Levantamos a máquina</span>
+$ vagrant up 
+</div></code></pre>
+<hr>
+<h2 id="como-manipular-a-m%C3%A1quina-i">Como manipular a máquina (I)?</h2>
+<ul>
+<li>Arrincar a máquina, a primeira vez tardará algo mais ao ter que descargar o <strong>box</strong><pre class="hljs"><code><div>   $ vagrant up
+</div></code></pre>
+</li>
+<li>Deter a execución da máquina<pre class="hljs"><code><div>   $ vagrant halt
+</div></code></pre>
+</li>
+<li>Destruir os ficheiros da máquina virtual.<pre class="hljs"><code><div>  $ vagrant destroy
+</div></code></pre>
+</li>
+<li>Pausar a máquina virtual.<pre class="hljs"><code><div>  $ vagrant pause
+</div></code></pre>
+</li>
+<li>Reanudar a máquina virtual.<pre class="hljs"><code><div>  $ vagrant resume
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="como-manipular-a-m%C3%A1quina-ii">Como manipular a máquina? (II)</h2>
+<ul>
+<li>Conectarse por SSH<pre class="hljs"><code><div>   $ vagrant ssh
+</div></code></pre>
+</li>
+<li>Sair da máquina virtual. <strong>exit</strong><pre class="hljs"><code><div>  ubuntu@ubuntu-xenial:~$ <span class="hljs-built_in">exit</span>
+</div></code></pre>
+</li>
+<li>Validar unha configuración do ficheiro Vagrantfile<pre class="hljs"><code><div>  $ vagrant validate
+</div></code></pre>
+</li>
+<li>Obter axuda sobre algún comando<pre class="hljs"><code><div>  $ vagrant COMMAND -h
+</div></code></pre>
+</li>
+<li>Vagrant modo debug<pre class="hljs"><code><div>  $ vagrant up --debug
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="estado-das-mv">Estado das MV</h2>
+<ul>
+<li>Comprobar o estado<pre class="hljs"><code><div>vagrant status
+</div></code></pre>
+</li>
+<li>Comprobar o estado de todas as MV<pre class="hljs"><code><div>vagrant global-status
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h1 id="configuraci%C3%B3n-do-escenario-b%C3%A1sico">Configuración do escenario básico</h1>
+<p>Precisamos crear unha máquina virtual con Debian Bullseye 64 bits. Que pasamos debemos seguir?</p>
+<pre class="hljs"><code><div><span class="hljs-comment">#1 Crear o directorio do escenario</span>
+mkdir escenario-debian
+<span class="hljs-built_in">cd</span> escenario-debian
+<span class="hljs-comment">#2- Baixar o box </span>
+vagrant box add <span class="hljs-string">"deb/bull"</span> 
+https://app.vagrantup.com/debian/boxes/bullseye64/versions/11.20221219.1/providers/virtualbox.box 
+<span class="hljs-comment">#3- Crear o Vagrantfile plantilla </span>
+vagrant init deb/bull 
+
+<span class="hljs-comment"># Revisa o ficheiro **Vagrantfile** creado</span>
+cat Vagrantfile
+</div></code></pre>
+<hr>
+<h2 id="configuraci%C3%B3n-do-escenario-b%C3%A1sico-ii">Configuración do escenario básico (II)</h2>
+<p>Precisamos as seguintes características:</p>
+<ul>
+<li>Proveedor de virtualización <strong>virtualbox</strong></li>
+<li>Nome da MV: &quot;probas&quot;</li>
+<li>Nº de CPUS: 2</li>
+<li>RAM : 2GiB</li>
+<li>Hostname: p2</li>
+</ul>
+<hr>
+<h2 id="configuraci%C3%B3n-do-escenario-b%C3%A1sico-ii">Configuración do escenario básico (II)</h2>
+<p>Solución:</p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+  config.vm.box = <span class="hljs-string">"deb/bull"</span>
+  config.vm.hostname =<span class="hljs-string">"p2"</span>
+
+  config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb|</span>
+    vb.memory = <span class="hljs-string">"2048"</span>
+    vb.cpus = <span class="hljs-number">2</span>
+    vb.name = <span class="hljs-string">"probas"</span>
+   <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<p><strong><a href="exemplos/02/Vagrantfile">ex02</a></strong></p>
+<hr>
+<h2 id="configuraci%C3%B3n-do-escenario-b%C3%A1sico-iii">Configuración do escenario básico (III)</h2>
+<ul>
+<li>Levanta a máquina e accede por ssh
+<ul>
+<li>
+<pre class="hljs"><code><div>  vagrant up
+  vagrant ssh
+</div></code></pre>
+</li>
+</ul>
+</li>
+<li>Como comprobamos os portos empregados entre a MV e o host?
+<ul>
+<li>
+<pre class="hljs"><code><div>  vagrant port
+</div></code></pre>
+</li>
+</ul>
+</li>
+<li>Como paramos a máquina virtual?
+<ul>
+<li>
+<pre class="hljs"><code><div>  vagrant halt
+</div></code></pre>
+</li>
+</ul>
+</li>
+<li>Como eliminamos a MV?
+<ul>
+<li>
+<pre class="hljs"><code><div>  vagrant destroy
+</div></code></pre>
+</li>
+</ul>
+</li>
+<li>Eliminase o ficheiro Vagrantfile?
+<ul>
+<li>Non</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="configuraci%C3%B3n-de-clons-vinculados">Configuración de clons vinculados</h1>
+<ul>
+<li>Empregar <code>v.linked_clone = true</code> permítenos aforrar espazo e tempo.</li>
+<li>Os clons vinculados só crean un disco coas diferencias coa imaxe base.</li>
+</ul>
+<pre class="hljs"><code><div>   config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb|</span>
+     vb.name = <span class="hljs-string">"ligera"</span>
+     vb.linked_clone = <span class="hljs-literal">true</span>
+   <span class="hljs-keyword">end</span>
+</div></code></pre>
+<hr>
+<h2 id="configura-o-escenario-para-que-arrinque-a-interfaz-gr%C3%A1fica">Configura o escenario para que arrinque a interfaz gráfica.</h2>
+<ul>
+<li>Recorda que estamos empregando de proveedor Virtualbox.</li>
+<li>
+<pre class="hljs"><code><div> Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+   config.vm.box = <span class="hljs-string">"deb/bull"</span>
+   config.vm.hostname =<span class="hljs-string">"p2"</span>
+
+   config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb|</span>
+     vb.memory = <span class="hljs-string">"2048"</span>
+     vb.cpus = <span class="hljs-number">2</span>
+     vb.name = <span class="hljs-string">"probas"</span>
+     vb.gui=<span class="hljs-literal">true</span>
+   <span class="hljs-keyword">end</span>
+ 
+ <span class="hljs-keyword">end</span>
+</div></code></pre>
+</li>
+</ul>
+<p><strong><a href="exemplos/03/Vagrantfile">ex03</a></strong></p>
+<hr>
+<h2 id="configuraci%C3%B3n-do-escenario-b%C3%A1sico-que-instale-un-aplicativo">Configuración do escenario básico: que instale un aplicativo.</h2>
+<ul>
+<li>Adapta o vagranfile para que instale o servidor web apache2.</li>
+<li>O ficheiro de instalación debe facerse dentro do propio ficheiro Vagrantfile
+<ul>
+<li>
+<pre class="hljs"><code><div>  $ sudo apt update
+  $ sudo apt install apache2
+  $ echo &quot;&lt;h1&gt;o meu servidor web&lt;/h1&gt;&quot; &gt;&gt;/var/www/index.html 
+</div></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong><a href="exemplos/04/Vagrantfile">ex04</a></strong></p>
+<hr>
+<h3 id="soluci%C3%B3n">Solución</h3>
+<pre class="hljs"><code><div>Vagrant.configure(&quot;2&quot;) do |config|
+  config.vm.box = &quot;deb/bull&quot;
+  config.vm.hostname =&quot;p2&quot;
+
+  config.vm.provider &quot;virtualbox&quot; do |vb|
+    vb.memory = &quot;2048&quot;
+    vb.cpus = 2
+    vb.name = &quot;probas&quot;
+    vb.gui=true
+   end
+ 
+   config.vm.provision &quot;shell&quot;, inline: &lt;&lt;-SHELL
+     sudo apt update
+     sudo apt install apache2 -y
+   SHELL
+end
+</div></code></pre>
+<hr>
+<h2 id="adapta-o-escenario-cun-ficheiro-script-externo">Adapta o escenario  cun ficheiro script externo.</h2>
+<ul>
+<li>Neste caso o ficheiro externo chamarase <strong>script.sh</strong></li>
+<li>O ficheiro <strong>script.sh</strong> ten que mostrar a seguinte mensaxe <code>OLA MUNDO</code>
+<strong><a href="exemplos/05/Vagrantfile">ex05</a></strong></li>
+<li>
+<pre class="hljs"><code><div> config.vm.provision <span class="hljs-string">"shell"</span>, <span class="hljs-symbol">path:</span> <span class="hljs-string">"script.sh"</span>
+</div></code></pre>
+</li>
+<li>Arquivo <strong>script.sh</strong><pre class="hljs"><code><div>   <span class="hljs-comment">#/bin/bash</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">"ola mundo"</span>
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h1 id="vagrant-redirecci%C3%B3n-de-portos">Vagrant redirección de portos</h1>
+<pre class="hljs"><code><div>    Vagrant::Config.run do |config|
+      # Redireciona o porta 80 do guest para a porto 4567 do host
+      config.vm.forward_port 80, 4567
+    end
+</div></code></pre>
+<ul>
+<li>forward_port é um método que recolle dous argumentos:
+<ul>
+<li>guest port - O porto na máquina virtual</li>
+<li>host port -  O porto na máquina local  que imos empregar para acceder.</li>
+</ul>
+</li>
+<li>A redirección de portos aplícase durante o <strong>vagrant up</strong> , mais tamén podemos forzar isto unha vez lanzada con <strong>vagrant reload</strong></li>
+</ul>
+<hr>
+<h2 id="adapta-o-escenario-facendo-nat">Adapta o escenario facendo nat.</h2>
+<ul>
+<li>Neste caso vamos redireccionar o porto 80 do servidor web apache ao porto 8080 no anfitrión.</li>
+<li>
+<pre class="hljs"><code><div>  config.vm.network &quot;forwarded_port&quot;, guest: 80, host: 8080
+</div></code></pre>
+</li>
+<li><strong><a href="exemplos/06/Vagrantfile">ex06</a></strong></li>
+</ul>
+<hr>
+<h3 id="soluci%C3%B3n">Solución</h3>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+  config.vm.box = <span class="hljs-string">"deb/bull"</span>
+  config.vm.hostname =<span class="hljs-string">"p2"</span>
+
+  config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb|</span>
+    vb.memory = <span class="hljs-string">"2048"</span>
+    vb.cpus = <span class="hljs-number">2</span>
+    vb.name = <span class="hljs-string">"probas"</span>
+   <span class="hljs-comment"># vb.gui=true</span>
+   <span class="hljs-keyword">end</span>
+   <span class="hljs-comment">#config.vm.provision "shell", path: "script.sh"</span>
+   config.vm.provision <span class="hljs-string">"shell"</span>, <span class="hljs-symbol">inline:</span> <span class="hljs-string">&lt;&lt;-SHELL
+     sudo apt update
+     sudo apt install apache2 -y
+   SHELL</span>
+<span class="hljs-comment">#Configuración portos</span>
+config.vm.network <span class="hljs-string">"forwarded_port"</span>, <span class="hljs-symbol">guest:</span> <span class="hljs-number">80</span>, <span class="hljs-symbol">host:</span> <span class="hljs-number">8080</span>
+
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<h2 id="height100pximg01apachepng"><!-- ![height:100px](img/01_apache.png) --></h2>
+<h2 id="configuraci%C3%B3n-do-escenario-para-compartir-directorios">Configuración do escenario para compartir directorios.</h2>
+<ul>
+<li><a href="https://developer.hashicorp.com/vagrant/docs/v2.3.0/synced-folders/basic_usage">Documentación</a></li>
+<li>Na máquina de referencia tes que:
+<ol>
+<li>Crear un directorio chamado <strong>tmp</strong> no directorio do proxecto vagrant.</li>
+<li>Editar o <strong>Vagrantfile</strong> para que compartas o directorio creado no host dentro da máquina virtual no directorio <strong>/tmp/src</strong></li>
+<li>Levanta a máquina e accede nela para crear un ficheiro de texto chamado <strong>oTeuNome.txt</strong></li>
+<li>Sae da MV e revisa o directorio <strong>tmp</strong> no host. Apareceu algo novo?</li>
+</ol>
+</li>
+</ul>
+<p><strong><a href="exemplos/07/Vagrantfile">ex07</a></strong></p>
+<ul>
+<li><code>config.vm.synced_folder &quot;tmp&quot;, &quot;/tmp/src&quot;</code></li>
+</ul>
+<hr>
+<h2 id="exercicio-comparte-o-directorio-web-de-apache">Exercicio: Comparte o directorio web de apache.</h2>
+<p>Na máquina de referencia tes que:</p>
+<ul>
+<li>Crea no directorio do teu proxecto vagrant o directorio web.</li>
+<li>Edita o Vagrantfile para que compartas o directorio creado no host dentro da máquina virtual no directorio <strong>/var/www/html</strong></li>
+<li>No directorio web inclue o ficheiro index.html co seguinte contido<pre class="hljs"><code><div><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span> Ola mundo!!! <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span> 
+</div></code></pre>
+</li>
+<li>Realiza nat do porto do servidor web para o porto 8080 no host.</li>
+</ul>
+<hr>
+<h3 id="soluci%C3%B3n">Solución</h3>
+<p><strong><a href="exemplos/07-02/Vagrantfile">ex07-02</a></strong></p>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+  config.vm.box = <span class="hljs-string">"deb/bull"</span>
+  config.vm.hostname =<span class="hljs-string">"p2"</span>
+
+  config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb|</span>
+    vb.memory = <span class="hljs-string">"2048"</span>
+    vb.cpus = <span class="hljs-number">2</span>
+    vb.name = <span class="hljs-string">"ex07-02-web"</span>
+   <span class="hljs-comment"># vb.gui=true</span>
+   <span class="hljs-keyword">end</span>
+   <span class="hljs-comment">#config.vm.provision "shell", path: "script.sh"</span>
+   config.vm.provision <span class="hljs-string">"shell"</span>, <span class="hljs-symbol">inline:</span> <span class="hljs-string">&lt;&lt;-SHELL
+     sudo apt update
+     sudo apt install apache2 -y
+    SHELL</span>
+config.vm.network <span class="hljs-string">"forwarded_port"</span>, <span class="hljs-symbol">guest:</span> <span class="hljs-number">80</span>, <span class="hljs-symbol">host:</span> <span class="hljs-number">8080</span>
+config.vm.synced_folder <span class="hljs-string">"web"</span>, <span class="hljs-string">"/var/www/html"</span>
+<span class="hljs-keyword">end</span>
+
+</div></code></pre>
+<hr>
+<h1 id="configuraci%C3%B3n-rede">Configuración rede.</h1>
+<ul>
+<li>
+<p><strong>IP estática</strong></p>
+<pre class="hljs"><code><div>config.vm.network <span class="hljs-string">"private_network"</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"192.168.33.10"</span>
+</div></code></pre>
+</li>
+<li>
+<p><strong>DHCP</strong></p>
+<pre class="hljs"><code><div>config.vm.network <span class="hljs-string">"private_network"</span>, <span class="hljs-symbol">type:</span> <span class="hljs-string">"dhcp"</span>
+</div></code></pre>
+</li>
+<li>
+<p><strong>Adaptador ponte</strong></p>
+<pre class="hljs"><code><div>config.vm.network <span class="hljs-symbol">:public_network</span>,<span class="hljs-symbol">:bridge=&gt;<span class="hljs-string">"eth0"</span></span>
+</div></code></pre>
+<hr>
+<h2 id="configuraci%C3%B3n-en-adaptador-ponte">Configuración en adaptador ponte</h2>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+config.vm.box = <span class="hljs-string">"ubuntu/focal64"</span>
+config.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb|</span>
+   vb.memory = <span class="hljs-string">"1024"</span>
+   vb.linked_clone = <span class="hljs-literal">true</span>
+<span class="hljs-keyword">end</span>
+config.vm.network <span class="hljs-string">"public_network"</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<hr>
+<h2 id="exemplo-configuraci%C3%B3n-rede-multim%C3%A1quina">Exemplo configuración rede multimáquina</h2>
+<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+ config.vm.define <span class="hljs-string">"maquina1"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|m1|</span>
+   m1.vm.box = <span class="hljs-string">"ubuntu/trusty64"</span>
+   m1.vm.hostname=<span class="hljs-string">"web"</span>
+   m1.vm.network <span class="hljs-string">"public_network"</span>, <span class="hljs-symbol">bridge:</span> <span class="hljs-string">"wlan0"</span>
+   m1.vm.network <span class="hljs-string">"private_network"</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"10.0.100.101"</span>
+ <span class="hljs-keyword">end</span>
+ config.vm.define <span class="hljs-string">"maquina2"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|m2|</span>
+   m2.vm.box = <span class="hljs-string">"ubuntu/trusty64"</span>
+   m2.vm.hostname=<span class="hljs-string">"db"</span>
+   m2.vm.network <span class="hljs-string">"private_network"</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"10.0.100.102"</span>
+ <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<hr>
+</li>
+<li>
+<p><strong>Configuración nun script en liña</strong></p>
+<pre class="hljs"><code><div> <span class="hljs-comment"># manual ip</span>
+config.vm.provision <span class="hljs-string">"shell"</span>,
+  <span class="hljs-symbol">run:</span> <span class="hljs-string">"always"</span>,
+  <span class="hljs-symbol">inline:</span> <span class="hljs-string">"ifconfig eth1 192.168.0.17 netmask 255.255.255.0 up"</span>
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<hr>
+<h2 id="configuraci%C3%B3n-rede">Configuración rede.</h2>
+<ul>
+<li>Configura un equipo cunha IP estática como a seguinte
+<strong>192.168.0.&quot;número de lista&quot;.3</strong>.
+<ul>
+<li><strong><a href="exemplos/08/Vagrantfile">ex08</a></strong></li>
+</ul>
+</li>
+<li>Configuración en ponte de rede
+<ul>
+<li><strong><a href="exemplos/08-02/Vagrantfile">ex08-02</a></strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="configuraci%C3%B3n-m%C3%BAltiples-m%C3%A1quinas">Configuración múltiples máquinas</h2>
+<ul>
+<li>Creamos varias máquinas que se definen como <em>nodo1</em> e <em>nodo2</em> cadansúa empregan o mesmo box e con nomes diferentes e IPS correlativas.</li>
+</ul>
+<pre class="hljs"><code><div>   Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+
+     config.vm.define <span class="hljs-symbol">:nodo1</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|nodo1|</span>
+       nodo1.vm.box = <span class="hljs-string">"precise32"</span>
+       nodo1.vm.hostname = <span class="hljs-string">"nodo1"</span>
+       nodo1.vm.network <span class="hljs-symbol">:private_network</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"10.1.1.101"</span>
+     <span class="hljs-keyword">end</span>
+
+     config.vm.define <span class="hljs-symbol">:nodo2</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|nodo2|</span>
+       nodo2.vm.box = <span class="hljs-string">"precise32"</span>
+       nodo2.vm.hostname = <span class="hljs-string">"nodo2"</span>
+       nodo2.vm.network <span class="hljs-symbol">:private_network</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"10.1.1.102"</span>
+     <span class="hljs-keyword">end</span>
+   <span class="hljs-keyword">end</span>
+</div></code></pre>
+<ul>
+<li>Acceso por ssh <code>vagrant ssh nodo1</code></li>
+<li>Deter unha MV  <code>vagrant halt  nodo1</code></li>
+</ul>
+<hr>
+<h1 id="xerar-un-box-personalizado">Xerar un box personalizado</h1>
+<ul>
+<li>
+<p>Podemos xerar un box coas nosas personalizacións para elo empregamos o subcomando <strong>package</strong></p>
+</li>
+<li>
+<p>Recorda que debes empregar na base o mesmo nome que o da MV.</p>
+</li>
+<li>
+<p>Exemplo de uso co MV do exemplo 08-02</p>
+<ul>
+<li><code>vagrant package --base &quot;Exemplo08-02&quot; --output &quot;exemplo0802.box&quot;</code></li>
+</ul>
+</li>
+<li>
+<p>Windows PowerShell: <code>Get-FileHash FICHEIRO -Algorithm MD5</code></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.3">Documentación</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="xerar-un-box-dende-unha-ova">Xerar un box dende unha OVA</h1>
+<ul>
+<li><a href="https://gist.github.com/aondio/66a79be10982f051116bc18f1a5d07dc">Documéntase o proceso en GitHub</a></li>
+</ul>
+<ol>
+<li>List your VMs to find the VM id you want to convert:</li>
+</ol>
+<pre class="hljs"><code><div>$ VBoxManage list vms
+&quot;testing&quot; {a3f59eed-b9c5-4a5f-9977-187f8eb8c4d4}
+</div></code></pre>
+<ol start="2">
+<li>You can now package the .ova VM as Vagrant box:</li>
+</ol>
+<pre class="hljs"><code><div>$ vagrant package --base a3f59eed-b9c5-4a5f-9977-187f8eb8c4d4 --output name-of-your-box.box
+
+</div></code></pre>
+<p>the command <code>vagrant package</code> runs for quite some time before it can creates a Vagrant box. Be faithful and wait.</p>
+<hr>
+<ol start="3">
+<li>Add the new box to the list of local Vagrant boxes:</li>
+</ol>
+<pre class="hljs"><code><div>$ vagrant box add new-box-name name-of-your-box.box
+</div></code></pre>
+<ol start="4">
+<li>Init, up, ssh and start usign your Vagrant box:</li>
+</ol>
+<pre class="hljs"><code><div>$ vagrant init #Init the new box with a Vagrantfile
+$ vagrant up
+$ vagrant ssh
+</div></code></pre>
+<p>And enjoy!</p>
+<hr>
+<h1 id="truco-creaci%C3%B3n-en-bucle">Truco: Creación en bucle</h1>
+<ul>
+<li><a href="https://developer.hashicorp.com/vagrant/docs/vagrantfile/tips">Documentación</a></li>
+<li>
+<pre class="hljs"><code><div>  (<span class="hljs-number">1</span>..<span class="hljs-number">3</span>).each <span class="hljs-keyword">do</span> <span class="hljs-params">|i|</span>
+    config.vm.define <span class="hljs-string">"node-<span class="hljs-subst">#{i}</span>"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|node|</span>
+      node.vm.provision <span class="hljs-string">"shell"</span>,
+        <span class="hljs-symbol">inline:</span> <span class="hljs-string">"echo hello from node <span class="hljs-subst">#{i}</span>"</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="exercicio">Exercicio</h2>
+<ul>
+<li>Crea en Vagrant  un bucle con 3 equipos coa mesma configuración.</li>
+<li>Os equipos deben ter configurado unha tarxeta de rede de modo interna e con ips correlativas.</li>
+<li>Configuración
+<ul>
+<li><strong><a href="exemplos/10/Vagrantfile">ex10</a></strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="truco-agrupar-m%C3%A1quinas">Truco: Agrupar máquinas</h2>
+<ul>
+<li>Podemos agrupar as máquinas dun escenario  coa propiedade <em>customize</em> para elo podemos configuralo como neste exemplo:</li>
+</ul>
+<pre class="hljs"><code><div>          vb.customize [&quot;modifyvm&quot;, :id, &quot;--groups&quot;, &quot;/grupoMaquinas&quot;]
+</div></code></pre>
+<p>O resultado en virtualbox é semellante ao seguinte:</p>
+<p><img src="file:///e:/Documentos/edubelay/MME-blog/unidade06/01-vagrant/01-ppt/img/grupo_maquinas.png" alt=""></p>
+<hr>
+<h2 id="agrupado-en-virtualbox">Agrupado en virtualbox</h2>
+<pre class="hljs"><code><div>IMAGE_NAME = <span class="hljs-string">"ubuntu/bionic64"</span>
+N = <span class="hljs-number">3</span>
+Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+    
+    (<span class="hljs-number">1</span>..N).each <span class="hljs-keyword">do</span> <span class="hljs-params">|i|</span>
+        config.vm.define <span class="hljs-string">"node-<span class="hljs-subst">#{i}</span>"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|node|</span>
+                node.vm.box = IMAGE_NAME
+                node.vm.hostname = <span class="hljs-string">"node-<span class="hljs-subst">#{i}</span>"</span>
+                node.vm.network <span class="hljs-symbol">:private_network</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"192.168.56.<span class="hljs-subst">#{<span class="hljs-number">10</span>+i}</span>"</span>                
+                node.vm.provider <span class="hljs-string">"virtualbox"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|v|</span>
+                        v.memory = <span class="hljs-number">1024</span>
+                        v.customize [<span class="hljs-string">"modifyvm"</span>, <span class="hljs-symbol">:id</span>, <span class="hljs-string">"--groups"</span>, <span class="hljs-string">"/grupoMaquinas"</span>]
+                <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<ul>
+<li><strong><a href="exemplos/10-2//Vagrantfile">ex10-2</a></strong></li>
+</ul>
+<hr>
+<h1 id="discos">Discos</h1>
+<ul>
+<li><a href="https://developer.hashicorp.com/vagrant/docs/disks/configuration">Documentación</a>
+<ul>
+<li>Funcionalidade experimental, é preciso indicalo no ficheiro coa seguinte liña <code>ENV['VAGRANT_EXPERIMENTAL'] = &quot;disks&quot;</code></li>
+</ul>
+</li>
+<li>Existen 3 tipos de discos que nos permite Vagrant, estos son: <strong>disk</strong>, <strong>dvd</strong>, <strong>floppy</strong></li>
+<li>Exemplo:<pre class="hljs"><code><div>config.vm.disk <span class="hljs-symbol">:disk</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"backup"</span>, <span class="hljs-symbol">size:</span> <span class="hljs-string">"10GB"</span>
+config.vm.disk <span class="hljs-symbol">:dvd</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"installer"</span>, <span class="hljs-symbol">file:</span> <span class="hljs-string">"./installer.iso"</span>
+config.vm.disk <span class="hljs-symbol">:floppy</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"cool_files"</span>
+
+</div></code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="discos---exemplo-de-configuraci%C3%B3n">Discos - Exemplo de configuración</h2>
+<pre class="hljs"><code><div><span class="hljs-comment">#Activamos o FLAG </span>
+ENV[<span class="hljs-string">'VAGRANT_EXPERIMENTAL'</span>] = <span class="hljs-string">"disks"</span>
+
+
+Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+
+<span class="hljs-comment">#Configuración da MV</span>
+  config.vm.define <span class="hljs-string">"open-media-vault"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|omv|</span>
+    omv.vm.box = <span class="hljs-string">"rreye/omv6"</span>
+    omv.vm.hostname = <span class="hljs-string">"open-media-vault"</span>
+    omv.vm.network <span class="hljs-string">"private_network"</span>, <span class="hljs-symbol">ip:</span> <span class="hljs-string">"192.168.50.10"</span>
+    omv.vm.network <span class="hljs-string">"forwarded_port"</span>, <span class="hljs-symbol">guest:</span> <span class="hljs-number">80</span>, <span class="hljs-symbol">host:</span> <span class="hljs-number">8080</span>
+    omv.vm.disk <span class="hljs-symbol">:disk</span>, <span class="hljs-symbol">size:</span> <span class="hljs-string">"2GB"</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"extra_storage1"</span>
+    omv.vm.disk <span class="hljs-symbol">:disk</span>, <span class="hljs-symbol">size:</span> <span class="hljs-string">"1GB"</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"extra_storage2"</span>
+    omv.vm.disk <span class="hljs-symbol">:disk</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"backup"</span>, <span class="hljs-symbol">size:</span> <span class="hljs-string">"10GB"</span>
+
+    omv.vm.provider <span class="hljs-symbol">:virtualbox</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|vb1|</span>
+      vb1.name = <span class="hljs-string">"open-media-vault"</span>
+      vb1.cpus= <span class="hljs-string">"4"</span>
+   <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span> 
+</div></code></pre>
+<hr>
+<h2 id="discos---exemplo-de-configuraci%C3%B3n-en-bucle">Discos - Exemplo de configuración en bucle</h2>
+<pre class="hljs"><code><div><span class="hljs-comment">#VAGRANT_EXPERIMENTAL="disks"</span>
+ENV[<span class="hljs-string">'VAGRANT_EXPERIMENTAL'</span>] = <span class="hljs-string">"disks"</span>
+
+Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+    config.vm.define <span class="hljs-string">"hashicorp"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|h|</span>
+      h.vm.box = <span class="hljs-string">"hashicorp/bionic64"</span>
+      h.vm.provider <span class="hljs-symbol">:virtualbox</span>
+      h.vm.disk <span class="hljs-symbol">:disk</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"backup"</span>, <span class="hljs-symbol">size:</span> <span class="hljs-string">"10GB"</span>
+
+      (<span class="hljs-number">0</span>..<span class="hljs-number">3</span>).each <span class="hljs-keyword">do</span> <span class="hljs-params">|i|</span>
+        h.vm.disk <span class="hljs-symbol">:disk</span>, <span class="hljs-symbol">size:</span> <span class="hljs-string">"5GB"</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">"disk-<span class="hljs-subst">#{i}</span>"</span>
+        
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+  
+</div></code></pre>
+<hr>
+<h1 id="plugins-en-vagrant">Plugins en Vagrant</h1>
+<ul>
+<li>Vagrant permite instalar complementos (plugins) para mellorar algunhas funcionalidades. Para elo temos os seguintes subcomandos de <code>vagrant plugin</code>:
+<ul>
+<li>expunge</li>
+<li>install</li>
+<li>license</li>
+<li>list</li>
+<li>repair</li>
+<li>uninstall</li>
+<li>update</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="exemplo-guiado-de-plugins-en-vagrant">Exemplo guiado de plugins en Vagrant</h2>
+<ol>
+<li>Instalaación dun plugin<pre class="hljs"><code><div>$ vagrant plugin install [plugin_name] 
+$ vagrant plugin install vbinfo
+
+</div></code></pre>
+</li>
+<li>Uso do plugin instalado<pre class="hljs"><code><div>$ vagrant vbinfo
+</div></code></pre>
+</li>
+<li>Lista de plugins instalados<pre class="hljs"><code><div>$  vagrant plugin list
+</div></code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="exemplo-guiado-de-plugins-en-vagrant">Exemplo guiado de plugins en Vagrant</h2>
+<ol start="4">
+<li>Actualización do plugin<pre class="hljs"><code><div>$  vagrant plugin update [nome_plugin]
+</div></code></pre>
+</li>
+<li>No suposto de ter erros co plugin e precismoes reparalo<pre class="hljs"><code><div>$  vagrant plugin repair [nome_plugin]
+</div></code></pre>
+</li>
+<li>Para borrar o plugin<pre class="hljs"><code><div>$  vagrant plugin uninstall  [nome_plugin]
+</div></code></pre>
+</li>
+<li>Para borrar todos os plugins<pre class="hljs"><code><div>$  vagrant plugin expunge
+</div></code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="plugins-de-interese">Plugins de interese</h2>
+<ul>
+<li>vagrant-vbguest
+<ul>
+<li>Instala automáticamente os <em>vbguest</em>  no sistema</li>
+<li><code>vagrant plugin install vagrant-vbguest</code></li>
+</ul>
+</li>
+<li>vagrant-winnfsd
+<ul>
+<li>Habilita a compatibilidade con NFS.</li>
+<li><code>vagrant plugin install vagrant-winnfsd</code></li>
+</ul>
+</li>
+<li>vagrant-netinfo
+<ul>
+<li>Para amosar os portos reenviados do invitado ao host.</li>
+<li><code>vagrant plugin install vagrant-netinfo</code></li>
+</ul>
+</li>
+<li>vagrant-hostmanager
+<ul>
+<li>Para configuracións de varias máquinas.</li>
+<li><code>vagrant plugin install vagrant-hostmanager </code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="vagrant-diferentes-proveedores">Vagrant diferentes proveedores</h1>
+<ul>
+<li>Vagrant soporta que se implemente en diferentes aplicativos de virtualización como pode ser: <strong>Virtualbox</strong>, <strong>Hyper-V</strong> ou <strong>Vmware</strong>.</li>
+<li>Podemos indicar o proveedor dende a liña de comandos do seguinte modo:<pre class="hljs"><code><div>$  vagrant up --provider=vmware_fusion
+$  vagrant up --provider=virtualbox
+</div></code></pre>
+</li>
+<li>Normalmente non é preciso indicar o proveedor xa que o obtén da variable de entorno  <code>VAGRANT_DEFAULT_PROVIDER</code></li>
+</ul>
+<hr>
+<h2 id="vagrant-diferentes-proveedores-ficheiro-vagrantfile">Vagrant diferentes proveedores: ficheiro Vagrantfile.</h2>
+<ul>
+<li>Outra estratexia é indicarlle a preferencia do proveedor no ficheiro <strong>Vagrantfile</strong> para elo é preciso definir <code>config.vm.provider</code>. No seguinte exemplo ten preferencia sobre vmware e se non é posible escollería virtualbox.<pre class="hljs"><code><div>Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+  <span class="hljs-comment"># ... datos de configuración....</span>
+
+  <span class="hljs-comment"># Ten prioridade VMware Fusion sobre VirtualBox</span>
+  config.vm.provider <span class="hljs-string">"vmware_fusion"</span>
+  config.vm.provider <span class="hljs-string">"virtualbox"</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+</li>
+<li><a href="https://developer.hashicorp.com/vagrant/docs/providers">Documentación</a></li>
+</ul>
+<hr>
+<hr>
+<h1 id="chuleta">Chuleta</h1>
+<ul>
+<li><a href="02-chuleta.md">Chuleta de comandos habituais</a></li>
+<li><a href="https://cheatography.com/1101trash/cheat-sheets/vagrant/pdf/">PDF Vagrant Cheat Sheet</a></li>
+</ul>
+<hr>
+<h1 id="ampliaci%C3%B3n">Ampliación</h1>
+<h2 id="vagrant-empregando-o-proveedor-docker">Vagrant empregando o proveedor docker</h2>
+<pre class="hljs"><code><div> Vagrant.configure(<span class="hljs-string">"2"</span>) <span class="hljs-keyword">do</span> <span class="hljs-params">|config|</span>
+ config.vm.provider <span class="hljs-string">"docker"</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|d|</span>
+   d.image = <span class="hljs-string">"ubuntu/lunar64"</span>
+ <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</div></code></pre>
+<p>Terminal:</p>
+<pre class="hljs"><code><div>$ vagrant up --provider=docker
+</div></code></pre>
+<hr>
+<h1 id="recursos">Recursos</h1>
+<h2 id="documentaci%C3%B3n">Documentación</h2>
+<ul>
+<li><a href="https://developer.hashicorp.com/vagrant">Documentación oficial</a></li>
+</ul>
+<h2 id="gu%C3%ADas-de-interese">Guías de interese</h2>
+<ul>
+<li><a href="https://josejuansanchez.org/iaw/practica-vagrant/index.html">Práctica con Vagrant</a></li>
+<li><a href="https://www.josedomingo.org/pledin/2013/09/gestionando-maquinas-virtuales-con-vagrant/">Xestionando máquinas virtuais con Vagrant</a></li>
+<li><a href="https://www.busindre.com/guia_rapida_de_vagrant">Guía rápida de Vagrant</a></li>
+</ul>
+<hr>
+<h2 id="outros-recursos-para-ampliar">Outros recursos para ampliar</h2>
+<ul>
+<li><a href="https://www.josedomingo.org/pledin/2014/02/instalando-openstack-en-mi-portatil/">Openstack</a></li>
+<li><a href="https://www.josedomingo.org/pledin/2016/01/usando-openstack-desde-vagrant/">Usando OpenStack desde Vagrant</a></li>
+<li><a href="https://brain2life.hashnode.dev/how-to-use-vagrant-plugins">How to use Vagrant plugins</a></li>
+</ul>
+
+</body>
+</html>

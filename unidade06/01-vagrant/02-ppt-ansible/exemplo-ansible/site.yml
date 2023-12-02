@@ -1,0 +1,12 @@
+---
+- hosts: all
+  sudo: True
+  tasks:
+    - name: Ensure system is updated
+      apt: update_cache=yes upgrade=yes
+    - name: Change file ownership, group and permissions
+      ansible.builtin.file:
+        path: /etc/foo.conf
+        owner: foo
+        group: foo
+        mode: '0644'
