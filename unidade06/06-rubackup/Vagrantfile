@@ -1,0 +1,74 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+
+#urbackup
+config.vm.define "urbackup" do |ub| 
+  ub.vm.box = "ubuntu/lunar64"
+  ub.vm.hostname="urbackup.local"
+  
+  ub.vm.network "forwarded_port", guest: 55414, host: 9000, host_ip: "127.0.0.1"
+  ub.vm.network "private_network", ip: "192.168.50.4"
+  #
+  ub.vm.provider "virtualbox" do |vb|
+     vb.name = "urbackup"
+     vb.memory = "1024"
+  end
+
+  ub.vm.provision "shell", inline: <<-SHELL
+     apt-get update
+     apt install sqlite3 libcurl3-nss libfuse2 
+	 wget https://hndl.urbackup.org/Server/2.5.32/urbackup-server_2.5.32_amd64.deb
+	 sudo dpkg -i urbackup-server_2.5.32_amd64.deb
+  SHELL
+end
+
+#Cliente
+config.vm.define "cliente1" ,  autostart: false do |c1|
+  c1.vm.box = "gusztavvargadr/windows-10"
+  c1.vm.hostname="cliente1.local"
+  
+  c1.vm.provider "virtualbox" do |vb|
+     vb.name = "cliente1"
+     vb.memory = "1024"
+  end
+  c1.vm.network "private_network", ip: "192.168.50.101"
+end 
+
+
+
+#Cliente
+config.vm.define "cliente2" ,  autostart: false do |c2|
+  c2.vm.box = "acntech/xubuntu"
+  c2.vm.hostname="cliente2.local"
+  
+  c2.vm.provider "virtualbox" do |vb|
+     vb.name = "cliente1"
+     vb.memory = "1024"
+  end
+  c2.vm.network "private_network", ip: "192.168.50.102"
+  
+  c2.vm.provision "shell", inline: <<-SHELL
+     apt-get update
+     #apt install sqlite3 libcurl3-nss libfuse2 
+	 #wget https://hndl.urbackup.org/Server/2.5.32/urbackup-server_2.5.32_amd64.deb
+	 #sudo dpkg -i urbackup-server_2.5.32_amd64.deb
+	 TF=$(mktemp) && wget "https://hndl.urbackup.org/Client/2.5.25/UrBackup%20Client%20Linux%202.5.25.sh" -O $TF && sudo sh $TF; rm -f $TF
+
+	#demonio
+	ssystemctl status urbackupclientbackend
+	#Ejecuta el siguiente comando para añadir un directorio de copia de seguridad:
+    /usr/local/bin/urbackupclientctl add-backupdir -x -f -d /etc
+	# Cliente
+	/usr/local/bin/urbackupclientctl start -i
+	
+	
+  SHELL
+end 
+
+end
