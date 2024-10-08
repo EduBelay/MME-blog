@@ -12,11 +12,3 @@ autoinstall:
   keyboard:
     layout: es # Layout del teclado en español
     variant: ''
-# Configuración de los usuarios sin contraseña
-users:
-  - name: alumnado
-    passwd: "*"
-    lock_passwd: false
-    shell: /bin/bash
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    ssh_authorized_keys: []
