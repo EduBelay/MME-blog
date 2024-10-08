@@ -4,7 +4,7 @@ autoinstall:
   identity:
     hostname: ubuntu-desktop
     username: alumnado
-    password: $6$rounds=4096$SALT$HASH # La contraseña "abc123"
+    password: "*" # Indica que el usuario no tendrá contraseña
   locale: es_ES.UTF-8 # Configura el idioma en español
   timezone: Europe/Madrid # Configura la zona horaria en Madrid
 
@@ -12,40 +12,11 @@ autoinstall:
   keyboard:
     layout: es # Layout del teclado en español
     variant: ''
-
-# Particiones del disco
-storage:
-  layout:
-    name: direct
-  grub:
-    reorder_uefi: false
-    device: /dev/sda
-
-  # Partición de swap de 4GB
-  swap:
-    size: 4GB
-
-  # Partición home de 40GB
-  filesystem: ext4
-  preserve: false
-  path: /home
-  size: 40GB
-
-  # Partición para el sistema operativo (restante del disco)
-  - device: /dev/sda
-    size: 100%
-    wipe: superblock
-    preserve: false
-    type: format
-    filesystem: ext4
-    label: system
-
-# Configuración del sistema
-user-data:
-  disable-ssh: false
-  ssh:
-    allow-pw: true
-
-# Configuración adicional
-late-commands:
-  - curtin in-target --target=/target -- passwd --lock root
+# Configuración de los usuarios sin contraseña
+users:
+  - name: alumnado
+    passwd: "*"
+    lock_passwd: false
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys: []
