@@ -4,7 +4,8 @@ autoinstall:
   identity:
     hostname: ubuntu-desktop
     username: alumnado
-    password: "*" # Indica que el usuario no tendrá contraseña
+    # password: "*" # Indica que el usuario no tendrá contraseña
+    password: $6$rounds=4096$vBaVe7SEiwlIVp0e$MpAgzxKmwZpHbPBou0rQppfTRx546OlZNRelvT.7UxB92MbvqB.kVcRn.d6A0HWmJhtsqDmhUyJc7FVLC4Owl.
   locale: es_ES.UTF-8 # Configura el idioma en español
   timezone: Europe/Madrid # Configura la zona horaria en Madrid
 
